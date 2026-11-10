@@ -1,0 +1,187 @@
+{
+  "episodeNumber": 3,
+  "format": "16:9",
+  "cycleDate": "2026-11-10",
+  "scheduledTime": "17:00",
+  "theme": {
+    "pt": "O Grande Mistério do Biscoito Dourado (Episódio Completo)",
+    "en": "The Great Golden Cookie Mystery (Full Episode)"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "O Mistério do Biscoito Gigante! 🍪🔍 Quem Comeu o Doce da Mamãe Raven? | Funny Spitz Family",
+      "description": "Um aroma delicioso de baunilha e chocolate tomou conta da casa azul da Funny Spitz Family! 🍪🐶\nA mamãe Raven acabou de assar um biscoito gigante especial para a sobremesa da família, mas quando ela voltou para a cozinha... o prato estava completamente vazio!\n\nAcompanhe a investigação completa com a detetive Raven, a dancinha da Luna, o quebra-cabeça gigante do Theo, o faro de detetive do pequeno Jonny e o flagra hilário do Papai Vlad!\n\nCapítulos:\n00:00 A noite mágica na Casa Azul\n00:09 A fornada especial da Mamãe Raven\n00:18 O choque: O biscoito sumiu!\n00:26 Detetive Raven inicia a investigação\n00:35 O álibi dançante da Luna\n00:45 O quebra-cabeça gigante do Theo\n00:54 Jonny encontra a trilha de farelos\n01:03 O flagra do Papai Vlad no sofá!\n01:13 A desculpa do Alfa da Família\n01:23 Festa dos biscoitos com a Funny Spitz Family!\n\n👉 Inscreva-se no canal, deixe seu like e ative o sininho para novas aventuras todos os dias às 17h!\n\n#FunnySpitzFamily #SpitzAlemao #LuluDaPomerania #HistoriaInfantil #DesenhoDeCachorro #FamiliaPet",
+      "tags": [
+        "Funny Spitz Family",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "episódio completo cachorro",
+        "história infantil em família",
+        "O Mistério do Biscoito Gigante",
+        "Raven Vlad Luna Theo Jonny",
+        "cachorrinhos falantes",
+        "comédia familiar",
+        "vídeo para crianças e família",
+        "animação pet",
+        "cachorro detetive"
+      ],
+      "thumbnailText": "O MISTÉRIO DO BISCOITO!",
+      "scheduledTime": "17:00"
+    },
+    "en": {
+      "selectedTitle": "The Giant Cookie Mystery! 🍪🔍 Who Ate Mom Raven's Sweet Treat? | Funny Spitz Family",
+      "description": "A delicious aroma of vanilla and chocolate filled the blue house of the Funny Spitz Family! 🍪🐶\nMom Raven just baked a giant special chocolate-chip cookie for family dessert, but when she turned around... the plate was completely empty!\n\nJoin the full detective investigation with Mom Raven, Luna's dance alibi, Theo's giant puzzle, little Jonny's detective nose, and Daddy Vlad caught red-handed on the couch!\n\nChapters:\n00:00 A magical evening at the Blue House\n00:09 Mom Raven's special giant cookie\n00:18 Shock in the kitchen: The cookie vanished!\n00:26 Detective Raven starts the investigation\n00:35 Luna's upbeat dance alibi\n00:45 Theo's giant puzzle alibi\n00:54 Jonny follows the trail of crumbs\n01:03 Daddy Vlad caught sleeping on the sofa!\n01:13 The Alpha Dad's hilarious excuse\n01:23 Family cookie party & Finale!\n\n👉 Subscribe, hit the like button, and join our fluffy family every day at 5 PM!\n\n#FunnySpitzFamily #Pomeranian #DogStories #FamilyAnimation #CuteDogs #KidsStory",
+      "tags": [
+        "Funny Spitz Family",
+        "Pomeranian family",
+        "German Spitz",
+        "funny dog full episode",
+        "kids detective story",
+        "The Giant Cookie Mystery",
+        "Raven Vlad Luna Theo Jonny",
+        "talking pomeranians",
+        "family comedy",
+        "cute dog adventure"
+      ],
+      "thumbnailText": "THE COOKIE MYSTERY!",
+      "scheduledTime": "17:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Casa_Azul_Noite_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "pan_right_zoom_in",
+      "vfx": "fireflies",
+      "text": {
+        "pt": "Era uma noite estrelada na casa azul da Funny Spitz Family, e um cheirinho delicioso de chocolate perfumava todo o ar...",
+        "en": "It was a starry evening at the Funny Spitz Family blue house, and a delicious aroma of chocolate filled the air..."
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Raven_Fornada_Biscoito_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Acabei de tirar do forno o maior e mais crocante biscoito de gotas de chocolate para a nossa noite em família!",
+        "en": "I just pulled the biggest, crunchiest chocolate-chip cookie out of the oven for our special family night!"
+      }
+    },
+    {
+      "id": "02",
+      "character": "RAVEN",
+      "imageFile": "02_Raven_Chocada_Prato_Vazio_16x9.png",
+      "mood": "shock_mystery",
+      "sfx": "dun_dun_dun",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "O quê?! Pelos meus bigodes! O prato está vazio! Só sobraram migalhas! Quem comeu o biscoito gigante?!",
+        "en": "What?! By my whiskers! The plate is completely empty! Only crumbs are left! Who ate the giant cookie?!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "RAVEN",
+      "imageFile": "03_Raven_Detetive_Lupa_16x9.png",
+      "mood": "suspense_detective",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Atenção todos na sala! Peguei minha lupa de detetive e não vou descansar até descobrir esse mistério!",
+        "en": "Attention everyone in the living room! I grabbed my detective magnifying glass to solve this mystery!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "LUNA",
+      "imageFile": "04_Luna_Dancando_16x9.png",
+      "mood": "upbeat_dance",
+      "sfx": "disco_drop",
+      "motion": "dance_bounce",
+      "vfx": "disco_notes",
+      "text": {
+        "pt": "Não fui eu, mamãe! Olha só meus passos de dança, eu estava gravando minha coreografia nova o tempo todo!",
+        "en": "It wasn't me, Mom! Check out my dance moves, I was filming my brand new choreography the whole time!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "THEO",
+      "imageFile": "05_Theo_Quebra_Cabeca_16x9.png",
+      "mood": "curious_pop",
+      "sfx": "pop_click",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Eu também sou inocente! Só falta uma pecinha para eu terminar este quebra-cabeça de mil peças no tapete!",
+        "en": "I'm innocent too! I only need one last piece to finish this thousand-piece puzzle right here on the rug!"
+      }
+    },
+    {
+      "id": "06",
+      "character": "JONNY",
+      "imageFile": "06_Jonny_Seguidor_Pistas_16x9.png",
+      "mood": "tiptoe_suspense",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Psiu! Olhem aqui no chão! Tem uma trilha de farelos indo direto para trás do sofá... e está roncando!",
+        "en": "Shh! Look right here on the floor! There is a trail of cookie crumbs leading to the sofa... and it's snoring!"
+      }
+    },
+    {
+      "id": "07",
+      "character": "VLAD",
+      "imageFile": "07_Vlad_Dormindo_Sofa_16x9.png",
+      "mood": "funny_snore",
+      "sfx": "snore",
+      "motion": "breathing_zoom",
+      "vfx": "zzz_bubbles",
+      "text": {
+        "pt": "Ronc... hummm... que biscoito divino... o papai alfa merece só mais um pedacinho... ronc...",
+        "en": "Snore... mmm... what a divine cookie... the alpha dad deserves just one more little bite... snore..."
+      }
+    },
+    {
+      "id": "08",
+      "character": "VLAD",
+      "imageFile": "08_Vlad_Acordando_Assustado_16x9.png",
+      "mood": "comedy_boing",
+      "sfx": "boing",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Hã?! O quê?! Eu não comi tudo, família! Como alfa da casa, eu só fiz o teste oficial de qualidade!",
+        "en": "Huh?! What?! I didn't eat it all, family! As the alpha of the house, I was just doing the official quality test!"
+      }
+    },
+    {
+      "id": "09",
+      "character": "FAMILIA",
+      "imageFile": "09_Familia_Festa_Biscoitos_16x9.png",
+      "isFinale": true,
+      "mood": "happy_celebration",
+      "sfx": "yay_fanfare",
+      "motion": "celebration_zoom",
+      "vfx": "hearts_confetti",
+      "banner": {
+        "pt": ["Somos a Funny Spitz Family!", "Inscreva-se! Vídeos novos às 17h!"],
+        "en": ["We are the Funny Spitz Family!", "Subscribe! New videos at 5 PM!"]
+      },
+      "text": {
+        "pt": "Haha! Ainda bem que a mamãe Raven assou uma segunda bandeja! Inscreva-se na Funny Spitz Family e até a próxima aventura!",
+        "en": "Haha! Good thing Mom Raven baked a second tray! Subscribe to the Funny Spitz Family and see you on the next adventure!"
+      }
+    }
+  ]
+}

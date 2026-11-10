@@ -201,7 +201,10 @@ export async function uploadVideoToYouTube({
   });
 
   const videoId = response.data.id;
-  const videoUrl = `https://www.youtube.com/shorts/${videoId}`;
+  const isWidescreen = videoPath.toLowerCase().includes("16x9");
+  const videoUrl = isWidescreen
+    ? `https://www.youtube.com/watch?v=${videoId}`
+    : `https://www.youtube.com/shorts/${videoId}`;
   console.log(`✅ Upload concluído! ID: ${videoId} | URL: ${videoUrl}`);
 
   if (thumbnailPath && fs.existsSync(thumbnailPath)) {

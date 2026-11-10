@@ -3,6 +3,7 @@ import path from "node:path";
 import https from "node:https";
 import { CHARACTERS } from "./characters.js";
 import { produceEpisodeForLanguage } from "./produce-episode.js";
+import { produceLongEpisode16x9 } from "./produce-long-16x9.js";
 import { uploadVideoToYouTube } from "./youtube-upload.js";
 
 const HISTORY_PATH = path.resolve("config/history.json");
@@ -296,6 +297,37 @@ async function runDailyCloudCycle() {
     tags: episodeData.seo.en.tags,
     defaultLanguage: "en-US",
     publishAtIso: `${cycleDate}T18:00:00-03:00`,
+    madeForKids: true
+  });
+
+  // Produz e agenda também o Vídeo Longo 16:9 para as 17:00 (America/Sao_Paulo)
+  episodeData.scenes.forEach((s) => {
+    if (!s.mood) s.mood = s.isFinale ? "happy_celebration" : "cozy";
+    if (!s.sfx) s.sfx = s.isFinale ? "yay_fanfare" : "chime";
+    if (!s.motion) s.motion = "gentle_float";
+    if (!s.vfx) s.vfx = "sparkles";
+    if (!fs.existsSync(path.join(imagesDir, s.imageFile)) && s.fallbackAsset) {
+      fs.copyFileSync(
+        path.join(assetsDir, s.fallbackAsset),
+        path.join(imagesDir, s.imageFile)
+      );
+    }
+  });
+
+  const ptLong16x9 = await produceLongEpisode16x9({
+    episodeData,
+    episodeDir: epFolder,
+    lang: "pt"
+  });
+
+  const ptLongUpload = await uploadVideoToYouTube({
+    videoPath: ptLong16x9.videoPath,
+    thumbnailPath: ptLong16x9.thumbnailPath,
+    title: episodeData.seo.pt.selectedTitle.replace(/#Shorts/gi, "").trim(),
+    description: episodeData.seo.pt.description,
+    tags: episodeData.seo.pt.tags,
+    defaultLanguage: "pt-BR",
+    publishAtIso: `${cycleDate}T17:00:00-03:00`,
     madeForKids: true
   });
 
