@@ -41,7 +41,12 @@ function fetchGoogleTTSBuffer(text, lang) {
  * - Para os demais personagens: ajusta timbre e cadência mantendo clareza cristalina.
  */
 function applyVoiceMastering({ rawMp3, outPath, voiceProfile }) {
-  const { pitch = 1.0, tempo = 1.05, bassGainDb = 0 } = voiceProfile || {};
+  const {
+    pitch = 1.0,
+    tempo = 1.05,
+    bassGainDb = 0,
+    smoothTreble = false
+  } = voiceProfile || {};
   const adjustedTempo = Math.max(0.5, Math.min(2.0, tempo / pitch)).toFixed(3);
 
   const filters = [
@@ -50,8 +55,20 @@ function applyVoiceMastering({ rawMp3, outPath, voiceProfile }) {
     `atempo=${adjustedTempo}`
   ];
 
+  if (smoothTreble) {
+    filters.push(`highpass=f=75`);
+  }
+
   if (bassGainDb > 0) {
-    filters.push(`equalizer=f=115:width_type=o:width=1.8:g=${bassGainDb}`);
+    const freq = smoothTreble ? 130 : 115;
+    const width = smoothTreble ? 1.6 : 1.8;
+    filters.push(`equalizer=f=${freq}:width_type=o:width=${width}:g=${bassGainDb}`);
+  }
+
+  if (smoothTreble) {
+    filters.push(`equalizer=f=3500:width_type=o:width=1.5:g=-2.5`);
+    filters.push(`volume=1.25`);
+  } else if (bassGainDb > 0) {
     filters.push(`volume=1.35`);
   }
 

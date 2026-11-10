@@ -24,11 +24,11 @@ export const CHARACTERS = {
     name: "Vlad (Papai - Alfa da Família)",
     visual: "Cream/light golden-white Pomeranian (German Spitz) dog wearing thin round gold-rimmed glasses, a blue-and-white vertical striped button-down shirt, and a dark navy blue bow tie with tiny dots.",
     voices: {
-      pt: "pt-BR-AntonioNeural",
-      en: "en-US-ChristopherNeural"
+      pt: "en-US-BrianMultilingualNeural",
+      en: "en-US-BrianMultilingualNeural"
     },
-    // Entonação bem grave, encorpada e imponente (Alfa da família)
-    voiceProfile: { pitch: 0.78, tempo: 0.96, bassGainDb: 7 }
+    // Tom paterno grave, calmo, macio e aveludado (BrianMultilingualNeural)
+    voiceProfile: { pitch: 0.90, tempo: 1.00, bassGainDb: 3, smoothTreble: true }
   },
   LUNA: {
     name: "Luna (15 anos)",
