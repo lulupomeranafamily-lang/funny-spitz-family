@@ -82,10 +82,43 @@ Retorne APENAS um JSON válido seguindo exatamente este schema:
 }
 `;
 
-  const endpoints = [
-    `https://aiplatform.googleapis.com/v1/publishers/google/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`
+  const candidateModels = [
+    "gemini-3.0-flash",
+    "gemini-3-flash-preview",
+    "gemini-2.5-flash"
   ];
+
+  // Descobre automaticamente modelos flash disponíveis na conta caso os nomes mudem no futuro
+  try {
+    const listRes = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`
+    );
+    if (listRes.ok) {
+      const listData = await listRes.json();
+      const dynamicFlash = (listData.models || [])
+        .filter(
+          (m) =>
+            m.name?.includes("gemini") &&
+            m.name?.includes("flash") &&
+            !m.name?.includes("2.5") &&
+            (m.supportedGenerationMethods || []).includes("generateContent")
+        )
+        .map((m) => m.name.replace(/^models\//, ""));
+      for (const m of dynamicFlash) {
+        if (!candidateModels.includes(m)) candidateModels.unshift(m);
+      }
+    }
+  } catch {
+    // Segue com a lista padrão
+  }
+
+  const endpoints = [];
+  for (const model of candidateModels) {
+    endpoints.push(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
+      `https://aiplatform.googleapis.com/v1/publishers/google/models/${model}:generateContent?key=${apiKey}`
+    );
+  }
 
   let lastErr = "";
   for (const endpoint of endpoints) {
@@ -104,30 +137,71 @@ Retorne APENAS um JSON válido seguindo exatamente este schema:
     if (res.ok) {
       const data = await res.json();
       const rawJson = data.candidates?.[0]?.content?.parts?.[0]?.text;
-      return JSON.parse(rawJson);
+      if (rawJson) {
+        console.log(`✅ Roteiro gerado com sucesso via ${endpoint.split("?")[0]}`);
+        const cleaned = rawJson
+          .replace(/^```json\s*/i, "")
+          .replace(/^```\s*/i, "")
+          .replace(/\s*```$/i, "")
+          .trim();
+        return JSON.parse(cleaned);
+      }
+    } else {
+      lastErr = `(${res.status}) ${await res.text()}`;
     }
-    lastErr = `(${res.status}) ${await res.text()}`;
   }
 
   throw new Error(`Erro na Gemini/Vertex API: ${lastErr}`);
 }
 
+const CHARACTER_FALLBACK_IMAGES = {
+  RAVEN: "episodes/ep03/images/01_Raven_Prato_Vazio_9x16.png",
+  LUNA: "episodes/ep03/images/02_Luna_Inocente_9x16.png",
+  THEO: "episodes/ep03/images/03_Theo_Brincando_9x16.png",
+  JONNY: "episodes/ep03/images/04_Jonny_Apontando_9x16.png",
+  VLAD: "episodes/ep03/images/05_Vlad_Dormindo_Migalhas_9x16.png",
+  FAMILIA: "episodes/ep03/images/06_Familia_Rindo_9x16.png",
+  NARRADOR: "episodes/ep03/images/00_Abertura_Casa_Azul_9x16.png"
+};
+
 /**
- * Gera imagem 9:16 (1080x1920) na nuvem sem custo (tenta Gemini Imagen se disponível na chave,
- * com fallback gratuito imediato para motor Flux 9:16 de alta definição).
+ * Gera imagem 9:16 (1080x1920) na nuvem sem custo (com retry automático e fallback seguro
+ * para o banco de retratos oficiais dos personagens caso o servidor externo oscile).
  */
-async function generateCloudSceneImage({ prompt, outPath, seed }) {
-  const fullPrompt = `${prompt}, cozy warm home interior lighting, shallow depth of field, ultra detailed fluffy fur, Pixar-like live action photorealistic cinema quality, vertical 9:16 aspect ratio, no text, no watermark`;
+async function generateCloudSceneImage({ prompt, character, outPath, seed }) {
+  const fullPrompt = `${prompt}, cozy warm home interior lighting, shallow depth of field, ultra detailed fluffy fur, photorealistic cinema quality, vertical 9:16 aspect ratio, no text, no watermark`;
   const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(
     fullPrompt
   )}?width=1080&height=1920&model=flux&nologo=true&seed=${seed}`;
 
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error(`Falha ao gerar imagem na nuvem (${res.status})`);
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 35000);
+      const res = await fetch(url, { signal: controller.signal });
+      clearTimeout(timeout);
+      if (res.ok) {
+        const arrayBuf = await res.arrayBuffer();
+        if (arrayBuf.byteLength > 10000) {
+          fs.writeFileSync(outPath, Buffer.from(arrayBuf));
+          return;
+        }
+      }
+    } catch (err) {
+      console.warn(`⚠️ Tentativa ${attempt} de imagem externa falhou (${err.message})`);
+    }
   }
-  const arrayBuf = await res.arrayBuffer();
-  fs.writeFileSync(outPath, Buffer.from(arrayBuf));
+
+  // Fallback para o retrato oficial 9:16 do personagem no repositório
+  const fallbackRel =
+    CHARACTER_FALLBACK_IMAGES[character] || CHARACTER_FALLBACK_IMAGES.FAMILIA;
+  const fallbackAbs = path.resolve(fallbackRel);
+  if (fs.existsSync(fallbackAbs)) {
+    console.log(`🐾 Usando retrato oficial consistente de ${character}`);
+    fs.copyFileSync(fallbackAbs, outPath);
+    return;
+  }
+  throw new Error(`Falha ao gerar imagem da cena para ${character}`);
 }
 
 async function runDailyCloudCycle() {
@@ -152,7 +226,11 @@ async function runDailyCloudCycle() {
     pastThemes: history.publishedThemes
   });
 
-  // Garante abertura e encerramento oficiais
+  // Garante abertura, nomes de arquivos de imagem e encerramento oficiais
+  episodeData.scenes.forEach((s, idx) => {
+    s.id = String(idx).padStart(2, "0");
+    if (!s.imageFile) s.imageFile = `${s.id}_${s.character}_9x16.png`;
+  });
   episodeData.scenes[0].fallbackAsset = "00_Abertura_Casa_Azul_9x16.webp";
   const lastScene = episodeData.scenes[episodeData.scenes.length - 1];
   lastScene.isFinale = true;
@@ -176,6 +254,7 @@ async function runDailyCloudCycle() {
       console.log(`🖼️ Gerando imagem 9:16 da Cena ${scene.id}...`);
       await generateCloudSceneImage({
         prompt: scene.imagePrompt || CHARACTERS[scene.character]?.visual,
+        character: scene.character,
         outPath: imgOut,
         seed: nextEpNum * 100 + Number(scene.id)
       });

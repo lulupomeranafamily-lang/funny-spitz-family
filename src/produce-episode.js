@@ -376,12 +376,24 @@ export async function produceEpisodeForLanguage({ episodeData, episodeDir, asset
     fs.copyFileSync(joinedNoMusicMp4, finalMp4);
   }
 
-  // 7. Gera a Thumbnail
-  const thumbSourceScene = path.join(
-    episodeDir,
-    "images",
-    episodeData.scenes[5]?.imageFile || episodeData.scenes[1].imageFile
+  // 7. Gera a Thumbnail (escolhe uma cena existente ou o retrato da família)
+  const candidateThumbScenes = [
+    episodeData.scenes[5]?.imageFile,
+    episodeData.scenes[1]?.imageFile,
+    episodeData.scenes[2]?.imageFile
+  ].filter(Boolean);
+
+  let thumbSourceScene = path.join(
+    assetsDir,
+    "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp"
   );
+  for (const f of candidateThumbScenes) {
+    const p = path.join(episodeDir, "images", f);
+    if (fs.existsSync(p)) {
+      thumbSourceScene = p;
+      break;
+    }
+  }
   const thumbnailPath = await generateThumbnail({
     baseImagePath: thumbSourceScene,
     titleText: episodeData.seo[lang].thumbnailText,
