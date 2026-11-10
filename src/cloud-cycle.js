@@ -82,29 +82,34 @@ Retorne APENAS um JSON válido seguindo exatamente este schema:
 }
 `;
 
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
-    {
+  const endpoints = [
+    `https://aiplatform.googleapis.com/v1/publishers/google/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`
+  ];
+
+  let lastErr = "";
+  for (const endpoint of endpoints) {
+    const res = await fetch(endpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
+        contents: [{ role: "user", parts: [{ text: prompt }] }],
         generationConfig: {
           responseMimeType: "application/json",
           temperature: 0.8
         }
       })
-    }
-  );
+    });
 
-  if (!res.ok) {
-    const errText = await res.text();
-    throw new Error(`Erro na Gemini API (${res.status}): ${errText}`);
+    if (res.ok) {
+      const data = await res.json();
+      const rawJson = data.candidates?.[0]?.content?.parts?.[0]?.text;
+      return JSON.parse(rawJson);
+    }
+    lastErr = `(${res.status}) ${await res.text()}`;
   }
 
-  const data = await res.json();
-  const rawJson = data.candidates?.[0]?.content?.parts?.[0]?.text;
-  return JSON.parse(rawJson);
+  throw new Error(`Erro na Gemini/Vertex API: ${lastErr}`);
 }
 
 /**
