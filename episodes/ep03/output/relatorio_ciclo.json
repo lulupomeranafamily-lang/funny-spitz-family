@@ -1,0 +1,43 @@
+{
+  "ciclo": "2026-11-10",
+  "episodio": 3,
+  "videos": [
+    {
+      "idioma": "pt-BR",
+      "tema": "O Mistério do Biscoito Gigante na Cozinha",
+      "titulo": "Quem Comeu o Biscoito da Mamãe Raven?! 🍪🐾 #Shorts",
+      "duracao": "35s",
+      "arquivo_video": "C:\\Users\\vinic\\.gemini\\antigravity\\scratch\\funny-spitz-family\\episodes\\ep03\\output\\Ep03_PT_FunnySpitzFamily_9x16.mp4",
+      "arquivo_thumbnail": "C:\\Users\\vinic\\.gemini\\antigravity\\scratch\\funny-spitz-family\\episodes\\ep03\\output\\thumbnail_PT_1280x720.png",
+      "video_id": "ahaIzDOmioE",
+      "url": "https://www.youtube.com/shorts/ahaIzDOmioE",
+      "horario_publicacao": "2026-11-11T10:00:00.000Z",
+      "status": "agendado"
+    },
+    {
+      "idioma": "en-US",
+      "tema": "The Mystery of the Giant Cookie in the Kitchen",
+      "titulo": "Who Ate Mom Raven's Giant Cookie?! 🍪🐾 #Shorts",
+      "duracao": "36.9s",
+      "arquivo_video": "C:\\Users\\vinic\\.gemini\\antigravity\\scratch\\funny-spitz-family\\episodes\\ep03\\output\\Ep03_EN_FunnySpitzFamily_9x16.mp4",
+      "arquivo_thumbnail": "C:\\Users\\vinic\\.gemini\\antigravity\\scratch\\funny-spitz-family\\episodes\\ep03\\output\\thumbnail_EN_1280x720.png",
+      "video_id": "fkmWjY2Cm08",
+      "url": "https://www.youtube.com/shorts/fkmWjY2Cm08",
+      "horario_publicacao": "2026-11-10T21:00:00.000Z",
+      "status": "agendado"
+    }
+  ],
+  "controle_qualidade": {
+    "roteiro_original": true,
+    "audio_claro_sem_ruidos": true,
+    "imagens_coerentes_com_personagens": true,
+    "legendas_sincronizadas": true,
+    "sem_direitos_autorais": true
+  },
+  "erros": [],
+  "proximos_temas_sugeridos": [
+    "O Dia em que o Jonny Tentou Dar Banho no Papai Vlad",
+    "A Invenção Maluca do Theo na Garagem",
+    "O Concurso de Talentos na Sala da Família Spitz"
+  ]
+}

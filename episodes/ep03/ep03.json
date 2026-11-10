@@ -1,0 +1,151 @@
+{
+  "episodeNumber": 3,
+  "cycleDate": "2026-11-10",
+  "theme": {
+    "pt": "O Mistério do Biscoito Gigante na Cozinha",
+    "en": "The Mystery of the Giant Cookie in the Kitchen"
+  },
+  "seo": {
+    "pt": {
+      "titleOptions": [
+        "Quem Comeu o Biscoito da Mamãe Raven?! 🍪🐾 #Shorts",
+        "O Mistério do Biscoito Gigante! A Família Spitz 🐶🍪",
+        "Pegamos o Papai Vlad no Flagra! 😂🐾 Funny Spitz Family"
+      ],
+      "selectedTitle": "Quem Comeu o Biscoito da Mamãe Raven?! 🍪🐾 #Shorts",
+      "description": "Quem será que comeu o biscoito especial que a mamãe Raven assou para o jantar da Funny Spitz Family? 🍪🐶\n\nA Luna estava gravando dancinha, o Theo e o Jonny estavam montando quebra-cabeça... até que um barulho misterioso atrás do sofá entregou o verdadeiro culpado: o Papai Vlad!\n\nCapítulos:\n00:00 Uma casa, uma família, muitas aventuras\n00:04 O mistério do prato vazio da Raven\n00:11 Luna, Theo e Jonny são inocentes\n00:18 O flagra do Papai Vlad no sofá!\n00:25 Inscreva-se na Funny Spitz Family!\n\n👉 Inscreva-se no canal e venha fazer parte da nossa família!\n\n#FunnySpitzFamily #SpitzAlemao #LuluDaPomerania #ShortsInfantil #FamiliaPet",
+      "tags": [
+        "Funny Spitz Family",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "cachorros engraçados",
+        "história infantil",
+        "desenho de cachorrinho",
+        "família pet",
+        "Raven Vlad Luna Theo Jonny",
+        "shorts de cachorro",
+        "vídeo para família",
+        "comédia pet",
+        "cachorro falante"
+      ],
+      "hashtags": ["#FunnySpitzFamily", "#SpitzAlemao", "#Shorts", "#Pomeranian", "#FamiliaPet"],
+      "thumbnailText": "QUEM COMEU O BISCOITO?!",
+      "scheduledTime": "07:00"
+    },
+    "en": {
+      "titleOptions": [
+        "Who Ate Mom Raven's Giant Cookie?! 🍪🐾 #Shorts",
+        "The Great Cookie Mystery! Funny Spitz Family 🐶🍪",
+        "Caught Daddy Vlad Red-Handed! 😂🐾 Funny Spitz Family"
+      ],
+      "selectedTitle": "Who Ate Mom Raven's Giant Cookie?! 🍪🐾 #Shorts",
+      "description": "Who ate the special giant cookie that Mom Raven baked for the Funny Spitz Family dinner? 🍪🐶\n\nLuna was filming a dance, Theo and Jonny were building a puzzle... until a mysterious snoring sound behind the couch revealed the culprit: Daddy Vlad!\n\nChapters:\n00:00 One house, one family, many adventures\n00:04 Mom Raven's empty cookie plate\n00:11 Luna, Theo & Jonny have an alibi\n00:18 Daddy Vlad caught red-handed on the couch!\n00:25 Subscribe to the Funny Spitz Family!\n\n👉 Subscribe and join our fluffy family!\n\n#FunnySpitzFamily #Pomeranian #DogShorts #FamilyFriendly #CuteDogs",
+      "tags": [
+        "Funny Spitz Family",
+        "Pomeranian family",
+        "German Spitz",
+        "funny dog stories",
+        "talking dogs shorts",
+        "family friendly shorts",
+        "kids dog story",
+        "Raven Vlad Luna Theo Jonny",
+        "cute pomeranian",
+        "dog comedy",
+        "pet family",
+        "cookie mystery"
+      ],
+      "hashtags": ["#FunnySpitzFamily", "#Pomeranian", "#Shorts", "#CuteDogs", "#DogFamily"],
+      "thumbnailText": "WHO ATE THE COOKIE?!",
+      "scheduledTime": "18:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Abertura_Casa_Azul_9x16.png",
+      "fallbackAsset": "00_Abertura_Casa_Azul_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Uma casa, uma família, muitas aventuras...",
+        "en": "One house, one family, many adventures..."
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Raven_Prato_Vazio_9x16.png",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Quem comeu o biscoito especial que eu fiz para o jantar?!",
+        "en": "Who ate the special cookie I baked for dinner?!"
+      }
+    },
+    {
+      "id": "02",
+      "character": "LUNA",
+      "imageFile": "02_Luna_Inocente_9x16.png",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Não fui eu, mãe! Eu estava ensaiando minha dancinha!",
+        "en": "It wasn't me, Mom! I was practicing my new dance!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "imageFile": "03_Theo_Brincando_9x16.png",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Nem eu! Estava montando meu quebra-cabeça gigante!",
+        "en": "Not me either! I was building my giant puzzle!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "JONNY",
+      "imageFile": "04_Jonny_Apontando_9x16.png",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Psiu! Que barulho de ronco é esse vindo do sofá?",
+        "en": "Shh! What is that snoring sound coming from the couch?"
+      }
+    },
+    {
+      "id": "05",
+      "character": "VLAD",
+      "imageFile": "05_Vlad_Dormindo_Migalhas_9x16.png",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Hummm... que delícia... só mais um biscoitinho...",
+        "en": "Mmm... so yummy... just one more little cookie..."
+      }
+    },
+    {
+      "id": "06",
+      "character": "FAMILIA",
+      "imageFile": "06_Familia_Rindo_9x16.png",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Papai Vlad! Pegamos você cheio de farelo no bigode!",
+        "en": "Daddy Vlad! We caught you with crumbs on your whiskers!"
+      }
+    },
+    {
+      "id": "07",
+      "character": "NARRADOR",
+      "imageFile": "07_Final_Familia_Sofa_9x16.png",
+      "fallbackAsset": "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp",
+      "isFinale": true,
+      "zoomDirection": "in",
+      "banner": {
+        "pt": ["Somos a Spitz Funny Family!", "Bem-vindo à nossa família!"],
+        "en": ["We are the Funny Spitz Family!", "Welcome to our family!"]
+      },
+      "text": {
+        "pt": "Somos a Funny Spitz Family! Inscreva-se na nossa família!",
+        "en": "We are the Funny Spitz Family! Subscribe to our family!"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+node_modules/
+config/client_secret*.json
+config/youtube_token.json
+config/SECRETS_PARA_COPIAR_NO_GITHUB.txt
+reference/
+episodes/*/build/
+episodes/*/output/*.mp4

@@ -1,0 +1,19 @@
+{
+  "name": "funny-spitz-family-producer",
+  "version": "1.0.0",
+  "description": "Gerador e Publicador Automático Bilíngue (PT/EN) - Funny Spitz Family",
+  "type": "module",
+  "scripts": {
+    "generate": "node src/produce-episode.js",
+    "upload": "node src/youtube-upload.js",
+    "auth": "node src/youtube-auth.js",
+    "cloud": "node src/cloud-cycle.js"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0",
+    "ffprobe-static": "^3.1.0",
+    "googleapis": "^144.0.0",
+    "msedge-tts": "^2.0.4",
+    "sharp": "^0.33.5"
+  }
+}

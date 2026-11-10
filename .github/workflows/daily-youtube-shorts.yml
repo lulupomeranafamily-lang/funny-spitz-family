@@ -1,0 +1,46 @@
+name: 🐾 Funny Spitz Family - Produção Diária Automática (PT + EN)
+
+on:
+  schedule:
+    # Roda todos os dias às 05:00 da manhã (Horário de Brasília / 08:00 UTC)
+    # Já agenda o vídeo 1 para as 07:00 e o vídeo 2 para as 18:00!
+    - cron: "0 8 * * *"
+  workflow_dispatch: # Permite rodar manualmente com 1 clique no painel do GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  produce-and-upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: 📥 Baixar código do projeto
+        uses: actions/checkout@v4
+
+      - name: 🟢 Configurar Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: 📦 Instalar dependências (FFmpeg, Sharp, Edge-TTS, Google APIs)
+        run: |
+          npm install
+          node node_modules/ffmpeg-static/install.js
+
+      - name: 🎬 Executar Ciclo Diário (Roteiro + Imagens + Vozes + Vídeo + Upload YouTube)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_CLIENT_SECRET_JSON: ${{ secrets.YOUTUBE_CLIENT_SECRET_JSON }}
+          YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
+        run: node src/cloud-cycle.js
+
+      - name: 💾 Salvar Histórico de Episódios no Repositório (Evita repetir temas)
+        run: |
+          git config user.name "Funny Spitz Producer Bot"
+          git config user.email "bot@funnyspitzfamily.local"
+          git add config/history.json
+          git diff --staged --quiet || git commit -m "chore: registrar novo episódio publicado no histórico"
+          git push
