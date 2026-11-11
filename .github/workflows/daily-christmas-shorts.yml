@@ -2,9 +2,9 @@ name: 🎄 Funny Spitz Family - Série Especial de Natal (Shorts Diários)
 
 on:
   schedule:
-    # Roda todos os dias às 09:00 da manhã (Horário de Brasília / 12:00 UTC)
+    # Roda todos os dias à 01:00 da madrugada (Horário de Brasília / 04:00 UTC)
     # Agenda o Short de Natal PT-BR para as 12:00 e o EN-US para as 20:00!
-    - cron: "0 12 * * *"
+    - cron: "0 4 * * *"
   workflow_dispatch: # Permite disparar manualmente com 1 clique no GitHub
 
 permissions:

@@ -6,6 +6,7 @@ import ffprobeStatic from "ffprobe-static";
 import sharp from "sharp";
 import { synthesizeSpeech } from "./tts.js";
 import { CHARACTERS } from "./characters.js";
+import { ensureChristmasMusicMp3 } from "./christmas-music.js";
 
 const ffprobePath = ffprobeStatic.path;
 
@@ -332,11 +333,18 @@ export async function produceEpisodeForLanguage({ episodeData, episodeDir, asset
     throw new Error(`Erro ao concatenar cenas: ${concatRes.stderr}`);
   }
 
-  // 6. Mixa trilha sonora de fundo em -20 dB (volume 0.10) abaixo da narração
-  const bgMusicPath = path.join(assetsDir, "bg_music.mp3");
+  // 6. Mixa trilha sonora de fundo abaixo da narração (usa trilha natalina exclusiva na Série de Natal!)
+  const isChristmas = episodeData.series === "Especial_de_Natal";
+  const bgMusicPath = isChristmas
+    ? ensureChristmasMusicMp3(assetsDir)
+    : path.join(assetsDir, "bg_music.mp3");
+  const bgmVol = isChristmas ? "0.16" : "0.10";
+  const epPrefix = isChristmas
+    ? `Natal_Ep${String(episodeData.episodeNumber).padStart(2, "0")}`
+    : `Ep0${episodeData.episodeNumber}`;
   const finalMp4 = path.join(
     outDir,
-    `Ep0${episodeData.episodeNumber}_${lang.toUpperCase()}_FunnySpitzFamily_9x16.mp4`
+    `${epPrefix}_${lang.toUpperCase()}_FunnySpitzFamily_9x16.mp4`
   );
 
   if (fs.existsSync(bgMusicPath)) {
@@ -352,7 +360,7 @@ export async function produceEpisodeForLanguage({ episodeData, episodeDir, asset
         "-i",
         bgMusicPath,
         "-filter_complex",
-        `[1:a]volume=0.10,afade=t=in:st=0:d=1.0,afade=t=out:st=${fadeStart}:d=1.5[bgm];[0:a][bgm]amix=inputs=2:duration=first:dropout_transition=2[aout]`,
+        `[1:a]volume=${bgmVol},afade=t=in:st=0:d=1.0,afade=t=out:st=${fadeStart}:d=1.5[bgm];[0:a][bgm]amix=inputs=2:duration=first:dropout_transition=2[aout]`,
         "-map",
         "0:v",
         "-map",

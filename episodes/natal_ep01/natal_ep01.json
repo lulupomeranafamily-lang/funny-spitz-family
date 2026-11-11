@@ -1,0 +1,170 @@
+{
+  "episodeNumber": 1,
+  "series": "Especial_de_Natal",
+  "cycleDate": "2026-11-11",
+  "theme": {
+    "pt": "Dia 1 (11/11): Descobrindo as Caixas Mágicas de Natal no Sótão da Casa Azul",
+    "en": "Day 1 (11/11): Discovering the Magic Christmas Boxes in the Blue House Attic"
+  },
+  "seo": {
+    "pt": {
+      "titleOptions": [
+        "A Magia do Natal Começa no Sótão!",
+        "Abrindo as Caixas de Natal da Funny Spitz!",
+        "O Primeiro Dia dos Preparativos de Natal"
+      ],
+      "selectedTitle": "🎄 A Magia do Natal Começa no Sótão! | Especial de Natal #1 #Shorts",
+      "description": "Hoje a Funny Spitz Family sobe ao sótão para resgatar as caixas mágicas e dar início aos preparativos de Natal!",
+      "tags": [
+        "Funny Spitz Family",
+        "Especial de Natal",
+        "Natal em Família",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Shorts de Natal"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#EspecialDeNatal",
+        "#Shorts"
+      ],
+      "thumbnailText": "NATAL SPITZ #1",
+      "scheduledTime": "12:00"
+    },
+    "en": {
+      "titleOptions": [
+        "Christmas Magic Starts in the Attic!",
+        "Opening the Funny Spitz Christmas Boxes!",
+        "Day One of Christmas Preparations"
+      ],
+      "selectedTitle": "🎄 Christmas Magic Starts in the Attic! | Christmas Special #1 #Shorts",
+      "description": "Today the Funny Spitz Family goes to the attic to rescue the magic boxes and start Christmas preparations!",
+      "tags": [
+        "Funny Spitz Family",
+        "Christmas Special",
+        "Pomeranian Christmas",
+        "Cute Dogs",
+        "Holiday Shorts"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#ChristmasShorts",
+        "#Shorts"
+      ],
+      "thumbnailText": "SPITZ XMAS #1",
+      "scheduledTime": "20:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Abertura_Casa_Natal_9x16.png",
+      "fallbackAsset": "00_Abertura_Casa_Azul_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "O Natal chegou na Casa Azul e hoje vamos descobrir os tesouros escondidos no nosso sótão.",
+        "en": "Christmas has arrived at the Blue House and today we will discover treasures hidden in our attic."
+      }
+    },
+    {
+      "id": "01",
+      "character": "THEO",
+      "imagePrompt": "Photorealistic Pixar 3D style, 9:16 aspect ratio. A cream and light orange Pomeranian dog named Theo wearing rainbow multicolored frame glasses and a blue button-down shirt. He is looking up at an attic ladder with excitement. Background is a cozy hallway with warm golden Christmas lights and festive garlands.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "O grande dia finalmente chegou e o sótão da nossa casa azul está cheio de lindas surpresas.",
+        "en": "The big day is finally here and the attic of our blue house is full of surprises."
+      },
+      "imageFile": "01_THEO_Natal_9x16.png"
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imagePrompt": "Photorealistic Pixar 3D style, 9:16 aspect ratio. A cream and light golden-white Pomeranian dog named Vlad wearing thin round gold-rimmed glasses, a blue-and-white vertical striped button-down shirt, and a dark navy blue bow tie. He is holding a small vintage flashlight in a cozy attic filled with soft dust motes and Christmas glow.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Subam devagar, pois as caixas de Natal estão esperando por nós com muita magia e muita alegria.",
+        "en": "Go up slowly, because the Christmas boxes are waiting for us with much magic and much joy."
+      },
+      "imageFile": "02_VLAD_Natal_9x16.png"
+    },
+    {
+      "id": "03",
+      "character": "RAVEN",
+      "imagePrompt": "Photorealistic Pixar 3D style, 9:16 aspect ratio. A black Pomeranian dog named Raven wearing round gold-rimmed glasses, a white pearl necklace, and a colorful floral print dress. She is gently opening a large wooden chest in the attic. The scene is illuminated by warm fairy lights and holiday decorations.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Vejam quanta coisa linda nós guardamos, cada enfeite conta uma história muito especial da nossa querida família.",
+        "en": "Look at how many beautiful things we kept, each ornament tells a special story of our family."
+      },
+      "imageFile": "03_RAVEN_Natal_9x16.png"
+    },
+    {
+      "id": "04",
+      "character": "LUNA",
+      "imagePrompt": "Photorealistic Pixar 3D style, 9:16 aspect ratio. A black Pomeranian dog named Luna wearing round gold-rimmed glasses, a white pearl necklace, and a pink ruffled blouse. She is holding a shiny golden star ornament in her paws. Around her are boxes of tinsel and red baubles in a festive attic.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Eu encontrei a estrela dourada do topo da árvore, ela brilha tanto quanto o meu coração feliz.",
+        "en": "I found the golden star for the tree, it shines as much as my happy heart does."
+      },
+      "imageFile": "04_LUNA_Natal_9x16.png"
+    },
+    {
+      "id": "05",
+      "character": "JONNY",
+      "imagePrompt": "Photorealistic Pixar 3D style, 9:16 aspect ratio. A cream and light golden Pomeranian dog named Jonny with no glasses, wearing a white button-down shirt and a dark bow tie. He is happily wearing a small red Santa hat and holding a vintage plush snowman in a festive attic setting.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Olhem só este boneco de neve engraçado, ele vai ficar perfeito bem ali na nossa janela principal.",
+        "en": "Look at this funny little snowman, he will look perfect right there on our main window."
+      },
+      "imageFile": "05_JONNY_Natal_9x16.png"
+    },
+    {
+      "id": "06",
+      "character": "THEO",
+      "imagePrompt": "Photorealistic Pixar 3D style, 9:16 aspect ratio. Theo the Pomeranian with rainbow glasses and blue shirt is now surrounded by tangled warm golden Christmas lights that are glowing. He has a creative and curious expression. The attic background is filled with holiday magic and boxes.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "As luzes coloridas ainda funcionam perfeitamente e vão deixar a nossa sala muito mais quente e acolhedora.",
+        "en": "The colorful lights still work perfectly and will make our living room much warmer and more cozy."
+      },
+      "imageFile": "06_THEO_Natal_9x16.png"
+    },
+    {
+      "id": "07",
+      "character": "VLAD",
+      "imagePrompt": "Photorealistic Pixar 3D style, 9:16 aspect ratio. Vlad the Pomeranian with gold glasses and striped shirt is smiling warmly at his family (partially seen) in the attic. He is surrounded by open boxes of ornaments and festive ribbons. The atmosphere is extremely cozy and loving.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Este é apenas o começo da nossa jornada natalina, vamos decorar tudo com muito amor e união.",
+        "en": "This is just the start of our Christmas journey, let's decorate everything with love and unity."
+      },
+      "imageFile": "07_VLAD_Natal_9x16.png"
+    },
+    {
+      "id": "08",
+      "character": "FAMILIA",
+      "isFinale": true,
+      "imageFile": "08_Final_Familia_Natal_9x16.png",
+      "fallbackAsset": "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Nossa contagem regressiva para o Natal começou! Fiquem ligados para o próximo capítulo da nossa grande aventura.",
+        "en": "Our Christmas countdown has begun! Stay tuned for the next chapter of our great holiday adventure."
+      },
+      "banner": {
+        "pt": [
+          "🎄 Especial de Natal Spitz!",
+          "Todo dia um novo preparativo!"
+        ],
+        "en": [
+          "🎄 Spitz Christmas Special!",
+          "A new holiday story every day!"
+        ]
+      }
+    }
+  ]
+}

@@ -3,19 +3,31 @@ import path from "node:path";
 import { CHARACTERS } from "./characters.js";
 import { produceEpisodeForLanguage } from "./produce-episode.js";
 import { uploadVideoToYouTube } from "./youtube-upload.js";
+import { ensureChristmasMusicMp3 } from "./christmas-music.js";
 
 const CHRISTMAS_HISTORY_PATH = path.resolve("config/christmas_history.json");
+
+function resolveGeminiApiKey() {
+  if (process.env.GEMINI_API_KEY) return process.env.GEMINI_API_KEY;
+  const secretsFile = path.resolve("config/SECRETS_PARA_COPIAR_NO_GITHUB.txt");
+  if (fs.existsSync(secretsFile)) {
+    const lines = fs.readFileSync(secretsFile, "utf-8").split(/\r?\n/);
+    const keyLine = lines.find((l) => l.trim().startsWith("AQ.") || l.trim().startsWith("AIza"));
+    if (keyLine) return keyLine.trim();
+  }
+  throw new Error("Variável GEMINI_API_KEY não definida!");
+}
 
 async function generateChristmasScriptWithGemini({
   christmasDayNumber,
   cycleDate,
   suggestedChapter,
-  pastEpisodes
+  pastEpisodes,
+  isChristmasFinale
 }) {
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-    throw new Error("Variável GEMINI_API_KEY não definida!");
-  }
+  const apiKey = resolveGeminiApiKey();
+  const totalScenes = isChristmasFinale ? 12 : 9;
+  const lastSceneIdx = String(totalScenes - 1).padStart(2, "0");
 
   const prompt = `
 Você é o roteirista oficial da série especial "Especial de Natal da Funny Spitz Family" (@FunnySpitzFamily).
@@ -25,6 +37,7 @@ Crie o roteiro completo e metadados de SEO para o Episódio Especial de Natal #$
 
 CAPÍTULO DO DIA (TEMA CENTRAL DE HOJE):
 "${suggestedChapter}"
+${isChristmasFinale ? "ATENÇÃO: Este é o Grande Episódio Especial de Natal (mais longo e emocionante, com 12 cenas completas celebrando o grande dia da família!)." : ""}
 
 CAPÍTULOS DE NATAL JÁ PUBLICADOS (NÃO REPETIR):
 ${pastEpisodes.map((t) => `- ${t}`).join("\n") || "- Nenhum ainda (este é o grande episódio de estreia da série de Natal!)"}
@@ -36,15 +49,15 @@ PERSONAGENS FIXOS (mantenha 100% da aparência nas descrições em inglês de im
 - THEO (10 anos, curioso e criativo): ${CHARACTERS.THEO.visual}
 - JONNY (8 anos, caçula esperto): ${CHARACTERS.JONNY.visual}
 
-ESTRUTURA OBRIGATÓRIA DE 8 CENAS (00 a 07) E REGRAS DE DIÁLOGO NATURAL:
+ESTRUTURA OBRIGATÓRIA DE ${totalScenes} CENAS (00 a ${lastSceneIdx}) E REGRAS DE DIÁLOGO NATURAL:
 - Cena "00" (NARRADOR): Abertura na casa azul decorada para o Natal (imageFile: "00_Abertura_Casa_Natal_9x16.png", fallbackAsset: "00_Abertura_Casa_Azul_9x16.webp").
-- Cenas "01" a "06": Desenvolva a história divertida e emocionante dos preparativos de Natal do dia. Cada fala deve ter entre 8 e 15 palavras.
+- Cenas "01" a "${String(totalScenes - 2).padStart(2, "0")}": Desenvolva a história divertida, acolhedora e emocionante dos preparativos de Natal do dia com todos os membros da família participando. Cada fala deve ter entre 10 e 16 palavras.
 - REGRAS DE NATURALIDADE DAS FALAS (MUITO IMPORTANTE PARA O TTS):
   1. Escreva diálogos 100% naturais, coloquiais, calorosos e fluidos, como uma família real animada preparando o Natal.
   2. PROIBIDO escrever onomatopeias literais que soam robóticas no TTS (NUNCA escreva "Ronc...", "Haha!", "Ho ho ho", "Hã?!", "Snore..."). Use frases reais e naturais.
   3. PROIBIDO usar expressões artificiais traduzidas como "Pelos meus bigodes!".
-- Para cada cena de 01 a 06, inclua um campo "imagePrompt" em inglês descrevendo a cena vertical 9:16 fotorrealista estilo Pixar 3D com decoração natalina aconchegante (luzes pisca-pisca douradas, guirlandas, enfeites de Natal) e a descrição exata da roupa e óculos do personagem daquela cena!
-- Cena "07" (FAMILIA, isFinale: true): Encerramento natalino com todos felizes no sofá (imageFile: "07_Final_Familia_Natal_9x16.png", fallbackAsset: "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp").
+- Para cada cena intermediária, inclua um campo "imagePrompt" em inglês descrevendo a cena vertical 9:16 fotorrealista estilo Pixar 3D com decoração natalina aconchegante (luzes pisca-pisca douradas, guirlandas, enfeites de Natal) e a descrição exata da roupa e óculos do personagem daquela cena!
+- Cena "${lastSceneIdx}" (FAMILIA, isFinale: true): Encerramento natalino com todos felizes no sofá (imageFile: "${lastSceneIdx}_Final_Familia_Natal_9x16.png", fallbackAsset: "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp").
 
 Retorne APENAS um JSON válido seguindo exatamente este schema:
 {
@@ -94,7 +107,8 @@ Retorne APENAS um JSON válido seguindo exatamente este schema:
   const endpoints = [];
   for (const model of candidateModels) {
     endpoints.push(
-      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
+      `https://aiplatform.googleapis.com/v1/publishers/google/models/${model}:generateContent?key=${apiKey}`
     );
   }
 
@@ -175,10 +189,15 @@ async function generateChristmasSceneImage({ prompt, character, outPath, seed })
   throw new Error(`Falha ao gerar imagem natalina para ${character}`);
 }
 
-export async function runChristmasSpecialCycle() {
+export async function runChristmasSpecialCycle({ publishNow = false } = {}) {
   const history = JSON.parse(fs.readFileSync(CHRISTMAS_HISTORY_PATH, "utf-8"));
   const nextNum = history.lastChristmasEpisode + 1;
   const cycleDate = new Date().toISOString().slice(0, 10);
+
+  const isChristmasFinale =
+    cycleDate.endsWith("-12-24") ||
+    cycleDate.endsWith("-12-25") ||
+    nextNum >= 44;
 
   const suggestedChapter =
     history.plannedStoryArc[nextNum - 1] ||
@@ -190,6 +209,10 @@ export async function runChristmasSpecialCycle() {
   const imagesDir = path.join(epFolder, "images");
   fs.mkdirSync(imagesDir, { recursive: true });
 
+  // Garante a trilha sonora natalina 100% livre de direitos autorais
+  const assetsDir = path.resolve("assets");
+  ensureChristmasMusicMp3(assetsDir);
+
   console.log(
     `🎄 Iniciando Especial de Natal #${nextNum} (${cycleDate}) — Tema: ${suggestedChapter}`
   );
@@ -198,9 +221,11 @@ export async function runChristmasSpecialCycle() {
     christmasDayNumber: nextNum,
     cycleDate,
     suggestedChapter,
-    pastEpisodes: history.publishedEpisodes
+    pastEpisodes: history.publishedEpisodes,
+    isChristmasFinale
   });
 
+  episodeData.series = "Especial_de_Natal";
   episodeData.scenes.forEach((s, idx) => {
     s.id = String(idx).padStart(2, "0");
     if (!s.imageFile) s.imageFile = `${s.id}_${s.character}_Natal_9x16.png`;
@@ -234,7 +259,6 @@ export async function runChristmasSpecialCycle() {
     }
   }
 
-  const assetsDir = path.resolve("assets");
   const ptResult = await produceEpisodeForLanguage({
     episodeData,
     episodeDir: epFolder,
@@ -248,7 +272,19 @@ export async function runChristmasSpecialCycle() {
     lang: "en"
   });
 
-  // Agenda/publica os Shorts Especiais de Natal (12:00 PT-BR e 20:00 EN-US)
+  // Salva cópia no Google Drive se disponível localmente
+  const driveDir = "G:/Meu Drive/Funny Spitz Family";
+  if (fs.existsSync(driveDir)) {
+    fs.copyFileSync(
+      ptResult.videoPath,
+      path.join(driveDir, path.basename(ptResult.videoPath))
+    );
+    fs.copyFileSync(
+      enResult.videoPath,
+      path.join(driveDir, path.basename(enResult.videoPath))
+    );
+  }
+
   const ptUpload = await uploadVideoToYouTube({
     videoPath: ptResult.videoPath,
     thumbnailPath: ptResult.thumbnailPath,
@@ -256,7 +292,7 @@ export async function runChristmasSpecialCycle() {
     description: episodeData.seo.pt.description,
     tags: episodeData.seo.pt.tags,
     defaultLanguage: "pt-BR",
-    publishAtIso: `${cycleDate}T12:00:00-03:00`,
+    publishAtIso: publishNow ? null : `${cycleDate}T12:00:00-03:00`,
     madeForKids: true
   });
 
@@ -267,7 +303,7 @@ export async function runChristmasSpecialCycle() {
     description: episodeData.seo.en.description,
     tags: episodeData.seo.en.tags,
     defaultLanguage: "en-US",
-    publishAtIso: `${cycleDate}T20:00:00-03:00`,
+    publishAtIso: publishNow ? null : `${cycleDate}T20:00:00-03:00`,
     madeForKids: true
   });
 
@@ -277,14 +313,16 @@ export async function runChristmasSpecialCycle() {
   );
   fs.writeFileSync(CHRISTMAS_HISTORY_PATH, JSON.stringify(history, null, 2), "utf-8");
 
-  console.log("🎅🎄 Especial de Natal finalizado e agendado com sucesso!", {
+  console.log("🎅🎄 Especial de Natal finalizado com sucesso!", {
     ptUpload,
     enUpload
   });
+  return { ptUpload, enUpload, ptResult, enResult };
 }
 
 if (process.argv[1] && process.argv[1].endsWith("christmas-cycle.js")) {
-  runChristmasSpecialCycle().catch((err) => {
+  const publishNow = process.argv.includes("--publish-now");
+  runChristmasSpecialCycle({ publishNow }).catch((err) => {
     console.error("❌ Erro no ciclo Especial de Natal:", err);
     process.exit(1);
   });
