@@ -6,9 +6,11 @@
   "scripts": {
     "generate": "node src/produce-episode.js",
     "generate:16x9": "node src/produce-long-16x9.js",
+    "prepare:vids": "node src/prepare-vids-episode.js",
     "upload": "node src/youtube-upload.js",
     "auth": "node src/youtube-auth.js",
-    "cloud": "node src/cloud-cycle.js"
+    "cloud": "node src/cloud-cycle.js",
+    "christmas": "node src/christmas-cycle.js"
   },
   "dependencies": {
     "ffmpeg-static": "^5.2.0",
