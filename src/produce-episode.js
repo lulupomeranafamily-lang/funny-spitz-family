@@ -44,7 +44,7 @@ function wrapText(text, maxChars = 30) {
  * Gera o overlay SVG com o balão creme arredondado + patinha (estilo oficial Funny Spitz Family)
  * e, na cena final, a faixa superior de boas-vindas + botão Inscreva-se / Subscribe!
  */
-function buildOverlaySvg({ scene, lang }) {
+function buildOverlaySvg({ scene, lang, isChristmas = false }) {
   const width = 1080;
   const height = 1920;
   const text = scene.text[lang];
@@ -74,12 +74,48 @@ function buildOverlaySvg({ scene, lang }) {
     )
     .join("");
 
+  const badgeFill = isChristmas ? "#C81D25" : "#F5C542";
+  const badgeStroke = isChristmas ? "#FFD700" : "#5C3A1E";
+  const badgeTextFill = isChristmas ? "#FFFFFF" : "#2A180B";
+
   const speakerBadgeSvg = speakerLabel
     ? `
-    <rect x="190" y="${bubbleY - 32}" width="260" height="50" rx="25" fill="#F5C542" stroke="#5C3A1E" stroke-width="4"/>
-    <text x="320" y="${bubbleY + 2}" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#2A180B" text-anchor="middle">${escapeXml(
-        speakerLabel
-      )}</text>
+    <rect x="190" y="${bubbleY - 32}" width="290" height="52" rx="26" fill="${badgeFill}" stroke="${badgeStroke}" stroke-width="4"/>
+    <text x="335" y="${bubbleY + 3}" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="${badgeTextFill}" text-anchor="middle">${
+        isChristmas ? "🎄 " : ""
+      }${escapeXml(speakerLabel)}</text>
+  `
+    : "";
+
+  const christmasFrameSvg = isChristmas
+    ? `
+    <!-- Moldura Natalina: Festão de Pinheiro, Luzes Pisca-Pisca e Bolinhas de Natal -->
+    <g>
+      <!-- Festão verde no topo -->
+      <path d="M0,0 L1080,0 L1080,55 Q945,95 810,50 Q675,95 540,50 Q405,95 270,50 Q135,95 0,55 Z" fill="#1B4D2E" stroke="#0F331D" stroke-width="4"/>
+      <!-- Fio dourado de luzes -->
+      <path d="M0,45 Q135,95 270,45 Q405,95 540,45 Q675,95 810,45 Q945,95 1080,45" fill="none" stroke="#D4AF37" stroke-width="3"/>
+      <!-- Bolinhas de Natal penduradas -->
+      <line x1="135" y1="68" x2="135" y2="115" stroke="#FFD700" stroke-width="3"/>
+      <circle cx="135" cy="130" r="20" fill="#D92027" stroke="#FFD700" stroke-width="3"/>
+      <line x1="405" y1="68" x2="405" y2="108" stroke="#FFD700" stroke-width="3"/>
+      <circle cx="405" cy="123" r="18" fill="#FFD700" stroke="#FFF8DC" stroke-width="3"/>
+      <line x1="675" y1="68" x2="675" y2="115" stroke="#FFD700" stroke-width="3"/>
+      <circle cx="675" cy="130" r="20" fill="#D92027" stroke="#FFD700" stroke-width="3"/>
+      <line x1="945" y1="68" x2="945" y2="108" stroke="#FFD700" stroke-width="3"/>
+      <circle cx="945" cy="123" r="18" fill="#FFD700" stroke="#FFF8DC" stroke-width="3"/>
+      <!-- Luzinhas brilhantes -->
+      <circle cx="270" cy="48" r="10" fill="#FFF275"/>
+      <circle cx="270" cy="48" r="20" fill="#FFF275" opacity="0.35"/>
+      <circle cx="540" cy="48" r="11" fill="#FF4B4B"/>
+      <circle cx="540" cy="48" r="22" fill="#FF4B4B" opacity="0.35"/>
+      <circle cx="810" cy="48" r="10" fill="#FFF275"/>
+      <circle cx="810" cy="48" r="20" fill="#FFF275" opacity="0.35"/>
+      <!-- Flocos de neve e estrelas sutis -->
+      <text x="55" y="210" font-size="42" fill="#FFF8E7" opacity="0.85">❄️</text>
+      <text x="985" y="220" font-size="42" fill="#FFF8E7" opacity="0.85">✨</text>
+      <text x="920" y="1585" font-size="48" fill="#FFD700">🔔</text>
+    </g>
   `
     : "";
 
@@ -107,11 +143,15 @@ function buildOverlaySvg({ scene, lang }) {
   `
     : "";
 
+  const bubbleStroke = isChristmas ? "#C81D25" : "#D9C39E";
+  const bubbleStrokeWidth = isChristmas ? "7" : "5";
+
   return Buffer.from(`
   <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
+    ${christmasFrameSvg}
     ${finaleBannerSvg}
     <!-- Balão de Fala Creme Arredondado -->
-    <rect x="80" y="${bubbleY}" width="920" height="${bubbleHeight}" rx="75" fill="#F8F1E1" fill-opacity="0.96" stroke="#D9C39E" stroke-width="5"/>
+    <rect x="80" y="${bubbleY}" width="920" height="${bubbleHeight}" rx="75" fill="#F8F1E1" fill-opacity="0.96" stroke="${bubbleStroke}" stroke-width="${bubbleStrokeWidth}"/>
     ${speakerBadgeSvg}
     <!-- Ícone de Patinha 🐾 -->
     <g transform="translate(155, ${bubbleY + Math.round(bubbleHeight / 2)})">
@@ -239,7 +279,8 @@ export async function produceEpisodeForLanguage({ episodeData, episodeDir, asset
       .png()
       .toFile(baseCleanPng);
 
-    const svgBuffer = buildOverlaySvg({ scene, lang });
+    const isChristmas = episodeData.series === "Especial_de_Natal";
+    const svgBuffer = buildOverlaySvg({ scene, lang, isChristmas });
     await sharp(svgBuffer).png().toFile(overlayPng);
 
     // 4. Renderiza clipe MP4 da cena com efeito Ken Burns suave na imagem + balão fixo nítido

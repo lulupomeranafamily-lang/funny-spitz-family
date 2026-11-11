@@ -145,48 +145,40 @@ Retorne APENAS um JSON válido seguindo exatamente este schema:
   throw new Error(`Erro na Gemini API (Especial de Natal): ${lastErr}`);
 }
 
-const CHARACTER_FALLBACK_IMAGES = {
-  RAVEN: "episodes/ep03/images/01_Raven_Prato_Vazio_9x16.png",
-  LUNA: "episodes/ep03/images/02_Luna_Inocente_9x16.png",
-  THEO: "episodes/ep03/images/03_Theo_Brincando_9x16.png",
-  JONNY: "episodes/ep03/images/04_Jonny_Apontando_9x16.png",
-  VLAD: "episodes/ep03/images/05_Vlad_Dormindo_Migalhas_9x16.png",
-  FAMILIA: "episodes/ep03/images/06_Familia_Rindo_9x16.png",
-  NARRADOR: "episodes/ep03/images/00_Abertura_Casa_Azul_9x16.png"
+const CHRISTMAS_SCENE_BANK = {
+  NARRADOR: ["assets/christmas_scenes/00_house_christmas_exterior.jpg"],
+  RAVEN: [
+    "assets/christmas_scenes/raven_kitchen_gingerbread.jpg",
+    "assets/christmas_scenes/raven_dining_table_christmas.jpg"
+  ],
+  VLAD: [
+    "assets/christmas_scenes/vlad_living_room_tree.jpg",
+    "assets/christmas_scenes/vlad_santa_armchair.jpg"
+  ],
+  LUNA: [
+    "assets/christmas_scenes/luna_hallway_wreath.jpg",
+    "assets/christmas_scenes/luna_christmas_tree_star.jpg"
+  ],
+  THEO: [
+    "assets/christmas_scenes/theo_attic_boxes.jpg",
+    "assets/christmas_scenes/theo_window_village.jpg"
+  ],
+  JONNY: [
+    "assets/christmas_scenes/jonny_fireplace_stockings.jpg",
+    "assets/christmas_scenes/jonny_gift_wrapping_room.jpg"
+  ],
+  FAMILIA: ["assets/christmas_scenes/99_family_christmas_finale.jpg"]
 };
 
-async function generateChristmasSceneImage({ prompt, character, outPath, seed }) {
-  const fullPrompt = `${prompt}, magical cozy Christmas holiday decorations, warm golden fairy lights, red and gold Christmas ornaments, pine garlands, ultra detailed fluffy Pomeranian fur, 3D Pixar-style photorealistic cinema quality, vertical 9:16 aspect ratio, no text, no watermark`;
-  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(
-    fullPrompt
-  )}?width=1080&height=1920&model=flux&nologo=true&seed=${seed}`;
-
-  for (let attempt = 1; attempt <= 2; attempt++) {
-    try {
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 35000);
-      const res = await fetch(url, { signal: controller.signal });
-      clearTimeout(timeout);
-      if (res.ok) {
-        const arrayBuf = await res.arrayBuffer();
-        if (arrayBuf.byteLength > 10000) {
-          fs.writeFileSync(outPath, Buffer.from(arrayBuf));
-          return;
-        }
-      }
-    } catch (err) {
-      console.warn(`⚠️ Tentativa ${attempt} de imagem natalina falhou (${err.message})`);
-    }
-  }
-
-  const fallbackRel =
-    CHARACTER_FALLBACK_IMAGES[character] || CHARACTER_FALLBACK_IMAGES.FAMILIA;
-  const fallbackAbs = path.resolve(fallbackRel);
-  if (fs.existsSync(fallbackAbs)) {
-    fs.copyFileSync(fallbackAbs, outPath);
+function assignVariedChristmasScene({ character, charUsageCount, episodeNumber, outPath }) {
+  const pool = CHRISTMAS_SCENE_BANK[character] || CHRISTMAS_SCENE_BANK.FAMILIA;
+  const pickIdx = (episodeNumber + charUsageCount) % pool.length;
+  const chosenAbs = path.resolve(pool[pickIdx]);
+  if (fs.existsSync(chosenAbs)) {
+    fs.copyFileSync(chosenAbs, outPath);
     return;
   }
-  throw new Error(`Falha ao gerar imagem natalina para ${character}`);
+  throw new Error(`Cena natalina não encontrada: ${chosenAbs}`);
 }
 
 export async function runChristmasSpecialCycle({ publishNow = false } = {}) {
@@ -226,14 +218,26 @@ export async function runChristmasSpecialCycle({ publishNow = false } = {}) {
   });
 
   episodeData.series = "Especial_de_Natal";
+  const charCounter = {};
   episodeData.scenes.forEach((s, idx) => {
     s.id = String(idx).padStart(2, "0");
-    if (!s.imageFile) s.imageFile = `${s.id}_${s.character}_Natal_9x16.png`;
+    s.imageFile = `${s.id}_${s.character}_Natal_9x16.jpg`;
+    const isLast = idx === episodeData.scenes.length - 1;
+    const roleKey = idx === 0 ? "NARRADOR" : isLast ? "FAMILIA" : s.character;
+    const usage = charCounter[roleKey] || 0;
+    charCounter[roleKey] = usage + 1;
+
+    const imgOut = path.join(imagesDir, s.imageFile);
+    assignVariedChristmasScene({
+      character: roleKey,
+      charUsageCount: usage,
+      episodeNumber: nextNum,
+      outPath: imgOut
+    });
   });
-  episodeData.scenes[0].fallbackAsset = "00_Abertura_Casa_Azul_9x16.webp";
+
   const lastScene = episodeData.scenes[episodeData.scenes.length - 1];
   lastScene.isFinale = true;
-  lastScene.fallbackAsset = "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp";
   lastScene.banner = {
     pt: ["🎄 Especial de Natal Spitz!", "Todo dia um novo preparativo!"],
     en: ["🎄 Spitz Christmas Special!", "A new holiday story every day!"]
@@ -244,20 +248,6 @@ export async function runChristmasSpecialCycle({ publishNow = false } = {}) {
     `natal_ep${String(nextNum).padStart(2, "0")}.json`
   );
   fs.writeFileSync(epJsonPath, JSON.stringify(episodeData, null, 2), "utf-8");
-
-  for (const scene of episodeData.scenes) {
-    if (scene.id === "00" || scene.isFinale) continue;
-    const imgOut = path.join(imagesDir, scene.imageFile);
-    if (!fs.existsSync(imgOut)) {
-      console.log(`🖼️🎄 Gerando frame 9:16 natalino da Cena ${scene.id}...`);
-      await generateChristmasSceneImage({
-        prompt: scene.imagePrompt || CHARACTERS[scene.character]?.visual,
-        character: scene.character,
-        outPath: imgOut,
-        seed: 251200 + nextNum * 100 + Number(scene.id)
-      });
-    }
-  }
 
   const ptResult = await produceEpisodeForLanguage({
     episodeData,
