@@ -9,7 +9,7 @@ export const CHARACTERS = {
       pt: "pt-BR-AntonioNeural",
       en: "en-US-GuyNeural"
     },
-    voiceProfile: { pitch: 0.96, tempo: 1.06, bassGainDb: 2 }
+    voiceProfile: { pitch: 0.98, tempo: 1.02, bassGainDb: 2, smoothTreble: true }
   },
   RAVEN: {
     name: "Raven (Mamãe)",
@@ -18,7 +18,7 @@ export const CHARACTERS = {
       pt: "pt-BR-FranciscaNeural",
       en: "en-US-JennyNeural"
     },
-    voiceProfile: { pitch: 1.0, tempo: 1.06, bassGainDb: 0 }
+    voiceProfile: { pitch: 1.0, tempo: 1.03, bassGainDb: 0, smoothTreble: true }
   },
   VLAD: {
     name: "Vlad (Papai - Alfa da Família)",
@@ -37,7 +37,7 @@ export const CHARACTERS = {
       pt: "pt-BR-FranciscaNeural",
       en: "en-US-AriaNeural"
     },
-    voiceProfile: { pitch: 1.12, tempo: 1.08, bassGainDb: 0 }
+    voiceProfile: { pitch: 1.07, tempo: 1.04, bassGainDb: 0, smoothTreble: true }
   },
   THEO: {
     name: "Theo (10 anos)",
@@ -46,7 +46,7 @@ export const CHARACTERS = {
       pt: "pt-BR-AntonioNeural",
       en: "en-US-AnaNeural"
     },
-    voiceProfile: { pitch: 1.28, tempo: 1.08, bassGainDb: 0 }
+    voiceProfile: { pitch: 1.16, tempo: 1.04, bassGainDb: 0, smoothTreble: true }
   },
   JONNY: {
     name: "Jonny (8 anos)",
@@ -55,7 +55,7 @@ export const CHARACTERS = {
       pt: "pt-BR-FranciscaNeural",
       en: "en-US-AnaNeural"
     },
-    voiceProfile: { pitch: 1.24, tempo: 1.10, bassGainDb: 0 }
+    voiceProfile: { pitch: 1.14, tempo: 1.05, bassGainDb: 0, smoothTreble: true }
   },
   FAMILIA: {
     name: "Família Spitz",
@@ -64,6 +64,6 @@ export const CHARACTERS = {
       pt: "pt-BR-FranciscaNeural",
       en: "en-US-JennyNeural"
     },
-    voiceProfile: { pitch: 1.08, tempo: 1.08, bassGainDb: 0 }
+    voiceProfile: { pitch: 1.03, tempo: 1.04, bassGainDb: 0, smoothTreble: true }
   }
 };

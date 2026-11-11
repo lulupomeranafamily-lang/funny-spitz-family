@@ -57,8 +57,8 @@
       "motion": "pan_right_zoom_in",
       "vfx": "fireflies",
       "text": {
-        "pt": "Era uma noite estrelada na casa azul da Funny Spitz Family, e um cheirinho delicioso de chocolate perfumava todo o ar...",
-        "en": "It was a starry evening at the Funny Spitz Family blue house, and a delicious aroma of chocolate filled the air..."
+        "pt": "Boa noite, pessoal! Aqui na casa azul da Família Spitz, um cheirinho delicioso de biscoito quentinho acabou de tomar conta da cozinha.",
+        "en": "Good evening, everyone! Here at the Spitz Family blue house, the delicious smell of warm chocolate cookies just filled the kitchen."
       }
     },
     {
@@ -70,8 +70,8 @@
       "motion": "gentle_float",
       "vfx": "sparkles",
       "text": {
-        "pt": "Acabei de tirar do forno o maior e mais crocante biscoito de gotas de chocolate para a nossa noite em família!",
-        "en": "I just pulled the biggest, crunchiest chocolate-chip cookie out of the oven for our special family night!"
+        "pt": "Olhem só o que acabou de sair do forno! Fiz um biscoito gigante de gotas de chocolate especial para a nossa sobremesa de hoje!",
+        "en": "Look what just came out of the oven! I baked a giant chocolate-chip cookie especially for our family dessert tonight!"
       }
     },
     {
@@ -83,8 +83,8 @@
       "motion": "crash_zoom_shake",
       "vfx": "shock_lines",
       "text": {
-        "pt": "O quê?! Pelos meus bigodes! O prato está vazio! Só sobraram migalhas! Quem comeu o biscoito gigante?!",
-        "en": "What?! By my whiskers! The plate is completely empty! Only crumbs are left! Who ate the giant cookie?!"
+        "pt": "Ué, mas o que aconteceu aqui?! O prato está vazio, só sobrou farelo! Quem foi que pegou o biscoito gigante?!",
+        "en": "Wait a second, what happened here?! The plate is completely empty, only crumbs are left! Who took the giant cookie?!"
       }
     },
     {
@@ -96,8 +96,8 @@
       "motion": "detective_pan",
       "vfx": "magnifying_spotlight",
       "text": {
-        "pt": "Atenção todos na sala! Peguei minha lupa de detetive e não vou descansar até descobrir esse mistério!",
-        "en": "Attention everyone in the living room! I grabbed my detective magnifying glass to solve this mystery!"
+        "pt": "Todo mundo reunido na sala agora! Já peguei minha lupa e vou descobrir quem foi o espertinho que passou pela cozinha!",
+        "en": "Everyone gather in the living room right now! I have my magnifying glass and I'm going to find out who snuck into the kitchen!"
       }
     },
     {
@@ -109,8 +109,8 @@
       "motion": "dance_bounce",
       "vfx": "disco_notes",
       "text": {
-        "pt": "Não fui eu, mamãe! Olha só meus passos de dança, eu estava gravando minha coreografia nova o tempo todo!",
-        "en": "It wasn't me, Mom! Check out my dance moves, I was filming my brand new choreography the whole time!"
+        "pt": "Juro que não fui eu, mãe! Eu estava aqui na sala o tempo todo ensaiando a coreografia nova pro meu vídeo, olha só!",
+        "en": "I promise it wasn't me, Mom! I was right here the whole time practicing my new dance routine, look at this!"
       }
     },
     {
@@ -122,8 +122,8 @@
       "motion": "gentle_float",
       "vfx": "sparkles",
       "text": {
-        "pt": "Eu também sou inocente! Só falta uma pecinha para eu terminar este quebra-cabeça de mil peças no tapete!",
-        "en": "I'm innocent too! I only need one last piece to finish this thousand-piece puzzle right here on the rug!"
+        "pt": "Nem olha pra mim, mãe! Eu não saí deste tapete, só falta uma pecinha pra eu fechar meu quebra-cabeça de mil peças!",
+        "en": "Don't look at me, Mom! I haven't moved from this rug, I just need one last piece to finish my giant puzzle!"
       }
     },
     {
@@ -135,8 +135,8 @@
       "motion": "detective_pan",
       "vfx": "magnifying_spotlight",
       "text": {
-        "pt": "Psiu! Olhem aqui no chão! Tem uma trilha de farelos indo direto para trás do sofá... e está roncando!",
-        "en": "Shh! Look right here on the floor! There is a trail of cookie crumbs leading to the sofa... and it's snoring!"
+        "pt": "Psiu, gente, olhem aqui no tapete! Tem um caminho de farelo indo direto pro sofá... e tem alguém roncando bem alto lá!",
+        "en": "Hey guys, look right here on the rug! There's a trail of cookie crumbs going straight to the sofa, and someone is snoring over there!"
       }
     },
     {
@@ -148,8 +148,8 @@
       "motion": "breathing_zoom",
       "vfx": "zzz_bubbles",
       "text": {
-        "pt": "Ronc... hummm... que biscoito divino... o papai alfa merece só mais um pedacinho... ronc...",
-        "en": "Snore... mmm... what a divine cookie... the alpha dad deserves just one more little bite... snore..."
+        "pt": "Hummm... que delícia de biscoito da Raven... acho que o papai aqui merece só mais um pedacinho...",
+        "en": "Mmm... Raven's cookie is so delicious... I think Dad deserves just one more little bite..."
       }
     },
     {
@@ -161,8 +161,8 @@
       "motion": "crash_zoom_shake",
       "vfx": "shock_lines",
       "text": {
-        "pt": "Hã?! O quê?! Eu não comi tudo, família! Como alfa da casa, eu só fiz o teste oficial de qualidade!",
-        "en": "Huh?! What?! I didn't eat it all, family! As the alpha of the house, I was just doing the official quality test!"
+        "pt": "Opa, acordei! Calma, família, eu não comi tudo sozinho não! Como pai da casa, eu só estava fazendo o teste oficial de qualidade!",
+        "en": "Whoa, I'm awake! Relax, family, I didn't eat it all by myself! As the dad of the house, I was just running the official quality test!"
       }
     },
     {
@@ -179,8 +179,8 @@
         "en": ["We are the Funny Spitz Family!", "Subscribe! New videos at 5 PM!"]
       },
       "text": {
-        "pt": "Haha! Ainda bem que a mamãe Raven assou uma segunda bandeja! Inscreva-se na Funny Spitz Family e até a próxima aventura!",
-        "en": "Haha! Good thing Mom Raven baked a second tray! Subscribe to the Funny Spitz Family and see you on the next adventure!"
+        "pt": "Ainda bem que a mamãe Raven já tinha assado uma segunda fornada pra todo mundo! Inscreva-se no canal e até a próxima aventura!",
+        "en": "Good thing Mom Raven already baked a second warm tray for everyone! Subscribe to our channel and see you on the next adventure!"
       }
     }
   ]
