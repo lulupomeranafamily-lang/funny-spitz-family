@@ -1,0 +1,170 @@
+{
+  "episodeNumber": 2,
+  "series": "Especial_de_Natal",
+  "cycleDate": "2026-11-11",
+  "theme": {
+    "pt": "Dia 2 (12/11): Desembaraçando as Luzes de Natal com o Papai Vlad",
+    "en": "Day 2 (12/11): Untangling Christmas Lights with Dad Vlad"
+  },
+  "seo": {
+    "pt": {
+      "titleOptions": [
+        "O Desafio das Luzes com Papai Vlad",
+        "Luzes de Natal em Família",
+        "O Nó do Papai Vlad"
+      ],
+      "selectedTitle": "🎄 Desembaraçando as Luzes com Papai Vlad | Especial de Natal #2 #Shorts",
+      "description": "O segundo dia de preparativos é um desafio brilhante! Papai Vlad e a família tentam desembaraçar os fios para iluminar a casa azul.",
+      "tags": [
+        "Funny Spitz Family",
+        "Especial de Natal",
+        "Natal em Família",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Shorts de Natal"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#EspecialDeNatal",
+        "#Shorts"
+      ],
+      "thumbnailText": "NATAL SPITZ #2",
+      "scheduledTime": "12:00"
+    },
+    "en": {
+      "titleOptions": [
+        "Untangling Lights with Dad Vlad",
+        "Xmas Light Challenge",
+        "Dad Vlad's Glowing Mess"
+      ],
+      "selectedTitle": "🎄 Untangling Lights with Dad Vlad | Christmas Special #2 #Shorts",
+      "description": "The second day of preparations is a glowing challenge! Dad Vlad and the family try to untangle the wires to light up the blue house.",
+      "tags": [
+        "Funny Spitz Family",
+        "Christmas Special",
+        "Pomeranian Christmas",
+        "Cute Dogs",
+        "Holiday Shorts"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#ChristmasShorts",
+        "#Shorts"
+      ],
+      "thumbnailText": "SPITZ XMAS #2",
+      "scheduledTime": "20:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_NARRADOR_Natal_9x16.jpg",
+      "fallbackAsset": "00_Abertura_Casa_Azul_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "O segundo dia chegou e agora a família precisa enfrentar o grande desafio das luzes.",
+        "en": "The second day has arrived and now the family must face the great light challenge."
+      }
+    },
+    {
+      "id": "01",
+      "character": "VLAD",
+      "imagePrompt": "Photorealistic Pixar 3D style. Cream light golden-white Pomeranian dog wearing thin round gold-rimmed glasses, a blue-and-white vertical striped button-down shirt, and a dark navy blue bow tie. He is sitting on a rug holding a huge ball of tangled colorful Christmas lights. Cozy Christmas living room background, 9:16 vertical.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Muito bem família, vamos transformar essa montanha de fios em um milagre de Natal brilhante.",
+        "en": "Alright family, let's turn this mountain of wires into a shining Christmas miracle together today."
+      },
+      "imageFile": "01_VLAD_Natal_9x16.jpg"
+    },
+    {
+      "id": "02",
+      "character": "RAVEN",
+      "imagePrompt": "Photorealistic Pixar 3D style. Black Pomeranian dog wearing round gold-rimmed glasses, a white pearl necklace, and a colorful floral print dress. She is gently holding a strand of lights next to Vlad. Warm golden Christmas lights in the background, 9:16 vertical.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Cuidado para não puxar com muita força, querido, ou podemos acabar quebrando as lâmpadas pequenas.",
+        "en": "Be careful not to pull too hard, dear, or we might break the tiny bulbs."
+      },
+      "imageFile": "02_RAVEN_Natal_9x16.jpg"
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "imagePrompt": "Photorealistic Pixar 3D style. Cream light orange Pomeranian dog wearing rainbow multicolored frame glasses and a blue button-down shirt. He is pointing at a knot in the wires with his paw. Christmas tree with ornaments in background, 9:16 vertical.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Eu acho que encontrei a ponta do fio verde bem no meio desse nó enorme.",
+        "en": "I think I found the end of the green wire buried deep inside this knot."
+      },
+      "imageFile": "03_THEO_Natal_9x16.jpg"
+    },
+    {
+      "id": "04",
+      "character": "LUNA",
+      "imagePrompt": "Photorealistic Pixar 3D style. Black Pomeranian dog wearing round gold-rimmed glasses, a white pearl necklace, and a pink ruffled blouse. She is holding one end of the lights carefully. Festive atmosphere, 9:16 vertical.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Não se preocupe Theo, eu vou segurar o outro lado para não embaraçar tudo novamente.",
+        "en": "Don't worry Theo, I will hold the other side so it doesn't get tangled again."
+      },
+      "imageFile": "04_LUNA_Natal_9x16.jpg"
+    },
+    {
+      "id": "05",
+      "character": "JONNY",
+      "imagePrompt": "Photorealistic Pixar 3D style. Cream light golden Pomeranian dog with no glasses, wearing a white button-down shirt and a dark bow tie. He is looking at the colorful bulbs with wide eyes. Twinkling lights background, 9:16 vertical.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Vejam só quantas cores estão aparecendo conforme nós tiramos os fios de dentro da caixa.",
+        "en": "Look how many colors are appearing as we pull the wires out of the box."
+      },
+      "imageFile": "05_JONNY_Natal_9x16.jpg"
+    },
+    {
+      "id": "06",
+      "character": "VLAD",
+      "imagePrompt": "Photorealistic Pixar 3D style. Close up of Vlad the Cream Pomeranian with his glasses and blue striped shirt, smiling warmly at his family. He looks proud and happy. Cinematic lighting, 9:16 vertical.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Vocês estão fazendo um trabalho maravilhoso, já estamos quase prontos para iluminar toda a casa.",
+        "en": "You guys are doing a great job, we are almost ready to light the house."
+      },
+      "imageFile": "06_VLAD_Natal_9x16.jpg"
+    },
+    {
+      "id": "07",
+      "character": "RAVEN",
+      "imagePrompt": "Photorealistic Pixar 3D style. Raven the black Pomeranian smiling, her pearl necklace shining. She is surrounded by her family and Christmas decorations. Soft focus background, 9:16 vertical.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Essa é a minha parte favorita do ano, apenas passar esse tempo tão precioso juntos.",
+        "en": "This is my favorite part of the year, just spending this precious time with you."
+      },
+      "imageFile": "07_RAVEN_Natal_9x16.jpg"
+    },
+    {
+      "id": "08",
+      "character": "FAMILIA",
+      "isFinale": true,
+      "imageFile": "08_FAMILIA_Natal_9x16.jpg",
+      "fallbackAsset": "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Feliz Natal pessoal, nossa casa será a mais brilhante e bonita de toda a vizinhança hoje!",
+        "en": "Merry Christmas everyone, our house will be the brightest and most beautiful in the neighborhood!"
+      },
+      "banner": {
+        "pt": [
+          "🎄 Especial de Natal Spitz!",
+          "Todo dia um novo preparativo!"
+        ],
+        "en": [
+          "🎄 Spitz Christmas Special!",
+          "A new holiday story every day!"
+        ]
+      }
+    }
+  ]
+}
