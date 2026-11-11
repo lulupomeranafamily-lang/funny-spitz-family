@@ -1,0 +1,186 @@
+{
+  "episodeNumber": 4,
+  "format": "16:9",
+  "cycleDate": "2026-11-11",
+  "scheduledTime": "17:00",
+  "theme": {
+    "pt": "O Banho de Espuma Gigante do Papai Vlad (Episódio Completo)",
+    "en": "Daddy Vlad's Giant Bubble Bath Adventure (Full Episode)"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "O Banho de Espuma Gigante do Papai Vlad! 🛁🫧 Bagunça no Banheiro! | Funny Spitz Family",
+      "description": "Era dia de banho na casa azul da Funny Spitz Family, mas o pequeno Jonny resolveu ajudar colocando o vidro inteiro de shampoo de morango na banheira! 🛁🫧🐶\n\nAcompanhe essa aventura hilária com a mamãe Raven organizando o dia de spa, a Luna protegendo seu penteado, o Theo de óculos de mergulho, a montanha gigante de espuma do Jonny e o Papai Vlad transformado em um verdadeiro rei das bolhas!\n\nCapítulos:\n00:00 A manhã ensolarada na Casa Azul\n00:09 Mamãe Raven anuncia o Dia de Banho e Spa\n00:18 A ideia travessa do pequeno Jonny\n00:27 Explosão de bolhas de sabão pela casa!\n00:36 Luna tentando salvar seu laço rosa\n00:45 Theo pronto para mergulhar na espuma\n00:54 Onde foi parar o Papai Vlad?\n01:03 O Rei da Espuma aparece na banheira!\n01:13 O discurso calmo e engraçado do Papai Vlad\n01:23 Todos limpinhos e cheirosos no sofá!\n\n👉 Inscreva-se no canal, deixe seu like e ative o sininho para novos episódios todos os dias!\n\n#FunnySpitzFamily #SpitzAlemao #LuluDaPomerania #HistoriaInfantil #DesenhoDeCachorro #FamiliaPet",
+      "tags": [
+        "Funny Spitz Family",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "episódio completo cachorro",
+        "história infantil em família",
+        "O Banho de Espuma do Papai Vlad",
+        "Raven Vlad Luna Theo Jonny",
+        "cachorrinhos falantes",
+        "comédia familiar",
+        "vídeo para crianças e família",
+        "animação pet 3D"
+      ],
+      "thumbnailText": "BANHO DE ESPUMA GIGANTE!",
+      "scheduledTime": "17:00"
+    },
+    "en": {
+      "selectedTitle": "Daddy Vlad's Giant Bubble Bath! 🛁🫧 Funny Bathroom Mess! | Funny Spitz Family",
+      "description": "It was bath and spa day at the Funny Spitz Family blue house, but little Jonny decided to help by pouring the entire bottle of strawberry bubble bath into the tub! 🛁🫧🐶\n\nJoin this hilarious family adventure with Mom Raven's spa day plan, Luna protecting her fluffy hairdo, Theo wearing swimming goggles, Jonny's giant mountain of bubbles, and Daddy Vlad crowned the King of Bubbles!\n\nChapters:\n00:00 A sunny day at the Blue House\n00:09 Mom Raven announces Family Spa Day\n00:18 Little Jonny's mischievous bubble idea\n00:27 Giant soap bubbles floating everywhere!\n00:36 Luna saving her pink ruffled style\n00:45 Theo ready to dive into the foam\n00:54 Where did Daddy Vlad go?\n01:03 The Bubble King appears in the bathtub!\n01:13 Daddy Vlad's calm and hilarious excuse\n01:23 All fluffy, clean, and happy on the sofa!\n\n👉 Subscribe, hit the like button, and join our fluffy family every day!\n\n#FunnySpitzFamily #Pomeranian #DogStories #FamilyAnimation #CuteDogs #KidsStory",
+      "tags": [
+        "Funny Spitz Family",
+        "Pomeranian family",
+        "German Spitz",
+        "funny dog full episode",
+        "kids family story",
+        "Daddy Vlad Giant Bubble Bath",
+        "Raven Vlad Luna Theo Jonny",
+        "talking pomeranians",
+        "family comedy",
+        "cute dog adventure"
+      ],
+      "thumbnailText": "GIANT BUBBLE BATH!",
+      "scheduledTime": "17:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Casa_Azul_Manha_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "pan_right_zoom_in",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Era um dia lindo na casa azul da Família Spitz, e a mamãe Raven tinha preparado uma tarde especial de banho e cuidados para todo mundo.",
+        "en": "It was a bright, beautiful day at the Spitz Family blue house, and Mom Raven had planned a special bath and spa afternoon for everyone."
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Raven_Toalhas_Spa_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Família, já separei as toalhas macias e o shampoo de morango! Hoje todo mundo vai ficar com o pelo bem cheiroso e brilhante!",
+        "en": "Family, I already laid out the soft towels and the strawberry shampoo! Today everyone is going to have super shiny, sweet-smelling fur!"
+      }
+    },
+    {
+      "id": "02",
+      "character": "JONNY",
+      "imageFile": "02_Jonny_Shampoo_Travesso_16x9.png",
+      "mood": "curious_pop",
+      "sfx": "pop_click",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Deixa comigo, mãe! Se uma tampinha faz pouca espuma, acho que virar o pote inteiro na banheira vai deixar o banho muito mais legal!",
+        "en": "Leave it to me, Mom! If one little cap makes a few bubbles, pouring the whole bottle into the tub will make bath time way more fun!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "RAVEN",
+      "imageFile": "03_Raven_Chocada_Espuma_16x9.png",
+      "mood": "shock_mystery",
+      "sfx": "dun_dun_dun",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Mas o que é isso?! Tem uma nuvem gigante de espuma saindo pela porta do banheiro e invadindo o corredor inteiro!",
+        "en": "Wait a minute, what is happening?! There is a giant cloud of soap bubbles pouring out the bathroom door and filling the whole hallway!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "LUNA",
+      "imageFile": "04_Luna_Secador_Espuma_16x9.png",
+      "mood": "upbeat_dance",
+      "sfx": "disco_drop",
+      "motion": "dance_bounce",
+      "vfx": "disco_notes",
+      "text": {
+        "pt": "Cuidado com a minha blusa rosa, pessoal! Eu acabei de escovar minha franja e já tem bolha de sabão pousando até no meu nariz!",
+        "en": "Watch out for my pink blouse, guys! I just brushed my fluffy bangs and now there are soap bubbles landing right on my nose!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "THEO",
+      "imageFile": "05_Theo_Mergulhador_Espuma_16x9.png",
+      "mood": "curious_pop",
+      "sfx": "pop_click",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Isso aqui virou um parque aquático de nuvens! Ainda bem que eu já coloquei meu patinho de borracha pra navegar nessa espuma toda!",
+        "en": "The bathroom turned into a cloud waterpark! Good thing I already brought my rubber ducky to sail across all this foam!"
+      }
+    },
+    {
+      "id": "06",
+      "character": "RAVEN",
+      "imageFile": "06_Raven_Procurando_Vlad_16x9.png",
+      "mood": "suspense_detective",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Esperem um pouquinho... cadê o papai Vlad que entrou aí no banheiro há dez minutos para testar a temperatura da água?",
+        "en": "Hold on a second... where is Daddy Vlad? He went into the bathroom ten minutes ago just to check the water temperature!"
+      }
+    },
+    {
+      "id": "07",
+      "character": "VLAD",
+      "imageFile": "07_Vlad_Rei_Da_Espuma_16x9.png",
+      "mood": "funny_snore",
+      "sfx": "chime",
+      "motion": "breathing_zoom",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Que paz maravilhosa... essa água morna com cheirinho de morango é o verdadeiro descanso que o papai precisava hoje...",
+        "en": "What wonderful peace and quiet... this warm strawberry bubble bath is the exact relaxation that Dad needed today..."
+      }
+    },
+    {
+      "id": "08",
+      "character": "VLAD",
+      "imageFile": "08_Vlad_Coroa_Espuma_Falando_16x9.png",
+      "mood": "comedy_boing",
+      "sfx": "boing",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Podem entrar, família, está tudo sob controle! Eu até ganhei uma coroa e uma barba branca de espuma dignas de um verdadeiro rei!",
+        "en": "Come on in, family, everything is under control! I even got a giant foam crown and a white bubble beard fit for a real king!"
+      }
+    },
+    {
+      "id": "09",
+      "character": "FAMILIA",
+      "imageFile": "09_Familia_Limpinha_Sofa_16x9.png",
+      "isFinale": true,
+      "mood": "happy_celebration",
+      "sfx": "yay_fanfare",
+      "motion": "celebration_zoom",
+      "vfx": "hearts_confetti",
+      "banner": {
+        "pt": ["Somos a Funny Spitz Family!", "Inscreva-se! Vídeos novos todos os dias!"],
+        "en": ["We are the Funny Spitz Family!", "Subscribe! New videos every day!"]
+      },
+      "text": {
+        "pt": "No final, todo mundo saiu do banho super macio e perfumado! Inscreva-se no canal da Família Spitz e até o nosso próximo episódio!",
+        "en": "In the end, everyone came out of the bath super fluffy and smelling great! Subscribe to the Spitz Family channel and see you next time!"
+      }
+    }
+  ]
+}
