@@ -32,9 +32,14 @@ PERSONAGENS FIXOS (mantenha 100% da personalidade e aparência nas descrições 
 - THEO (10 anos, curioso e criativo): ${CHARACTERS.THEO.visual}
 - JONNY (8 anos, caçula esperto): ${CHARACTERS.JONNY.visual}
 
-ESTRUTURA OBRIGATÓRIA DE 8 CENAS (00 a 07):
+ESTRUTURA OBRIGATÓRIA DE 8 CENAS (00 a 07) E REGRAS DE DIÁLOGO NATURAL:
 - Cena "00" (NARRADOR): Sempre na casa azul (imageFile: "00_Abertura_Casa_Azul_9x16.png", fallbackAsset: "00_Abertura_Casa_Azul_9x16.webp").
-- Cenas "01" a "06": Desenvolva uma história divertida, familiar e com humor leve (gancho, mistério/confusão divertida, clímax engraçado com a família). Cada fala deve ter entre 7 e 13 palavras. Para cada cena de 01 a 06, inclua um campo "imagePrompt" em inglês descrevendo a cena vertical 9:16 fotorrealista cinematográfica com a descrição exata da roupa e óculos do personagem daquela cena!
+- Cenas "01" a "06": Desenvolva uma história divertida, familiar e com humor leve (gancho, mistério/confusão divertida, clímax engraçado com a família). Cada fala deve ter entre 8 e 15 palavras.
+- REGRAS DE NATURALIDADE DAS FALAS (MUITO IMPORTANTE PARA O TTS):
+  1. Escreva diálogos 100% naturais, coloquiais e fluidos, como uma família real conversando com carinho e bom humor.
+  2. PROIBIDO escrever onomatopeias literais que soam robóticas no TTS (NUNCA escreva "Ronc...", "Haha!", "Hahaha", "Hã?!", "Snore...", "Zzz"). Use palavras reais e pausas naturais com vírgulas.
+  3. PROIBIDO usar expressões traduzidas ou artificiais como "Pelos meus bigodes!" / "By my whiskers!".
+- Para cada cena de 01 a 06, inclua um campo "imagePrompt" em inglês descrevendo a cena vertical 9:16 fotorrealista cinematográfica com a descrição exata da roupa e óculos do personagem daquela cena!
 - Cena "07" (NARRADOR, isFinale: true): Encerramento com todos no sofá (imageFile: "07_Final_Familia_Sofa_9x16.png", fallbackAsset: "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp").
 
 Retorne APENAS um JSON válido seguindo exatamente este schema:
@@ -300,36 +305,8 @@ async function runDailyCloudCycle() {
     madeForKids: true
   });
 
-  // Produz e agenda também o Vídeo Longo 16:9 para as 17:00 (America/Sao_Paulo)
-  episodeData.scenes.forEach((s) => {
-    if (!s.mood) s.mood = s.isFinale ? "happy_celebration" : "cozy";
-    if (!s.sfx) s.sfx = s.isFinale ? "yay_fanfare" : "chime";
-    if (!s.motion) s.motion = "gentle_float";
-    if (!s.vfx) s.vfx = "sparkles";
-    if (!fs.existsSync(path.join(imagesDir, s.imageFile)) && s.fallbackAsset) {
-      fs.copyFileSync(
-        path.join(assetsDir, s.fallbackAsset),
-        path.join(imagesDir, s.imageFile)
-      );
-    }
-  });
-
-  const ptLong16x9 = await produceLongEpisode16x9({
-    episodeData,
-    episodeDir: epFolder,
-    lang: "pt"
-  });
-
-  const ptLongUpload = await uploadVideoToYouTube({
-    videoPath: ptLong16x9.videoPath,
-    thumbnailPath: ptLong16x9.thumbnailPath,
-    title: episodeData.seo.pt.selectedTitle.replace(/#Shorts/gi, "").trim(),
-    description: episodeData.seo.pt.description,
-    tags: episodeData.seo.pt.tags,
-    defaultLanguage: "pt-BR",
-    publishAtIso: `${cycleDate}T17:00:00-03:00`,
-    madeForKids: true
-  });
+  // Nota: O Vídeo Longo 16:9 das 17:00 agora é produzido em 3D Real no Desktop via Google Vids!
+  console.log("ℹ️ Shorts 9:16 com frames agendados! O episódio longo 16:9 em 3D será gerado à tarde no Desktop via Google Vids.");
 
   // Etapa 7: Atualiza histórico e salva relatório
   history.lastEpisodeNumber = nextEpNum;
