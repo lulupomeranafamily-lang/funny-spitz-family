@@ -1,0 +1,170 @@
+{
+  "episodeNumber": 3,
+  "series": "Especial_de_Natal",
+  "cycleDate": "2026-11-12",
+  "theme": {
+    "pt": "Dia 3 (13/11): A Primeira Lista de Desejos de Natal do Pequeno Jonny",
+    "en": "Day 3 (11/13): Little Jonny's First Christmas Wish List"
+  },
+  "seo": {
+    "pt": {
+      "titleOptions": [
+        "A Primeira Carta de Natal do Jonny",
+        "Desejos de Natal da Funny Spitz Family",
+        "O que o Jonny pediu de Natal?"
+      ],
+      "selectedTitle": "🎄 A Primeira Lista do Jonny! | Especial de Natal #3 #Shorts",
+      "description": "O pequeno Jonny está escrevendo sua primeira lista de desejos para o Papai Noel! Venha ver o que ele pediu nesta jornada mágica da Funny Spitz Family.",
+      "tags": [
+        "Funny Spitz Family",
+        "Especial de Natal",
+        "Natal em Família",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Shorts de Natal"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#EspecialDeNatal",
+        "#Shorts"
+      ],
+      "thumbnailText": "NATAL SPITZ #3",
+      "scheduledTime": "12:00"
+    },
+    "en": {
+      "titleOptions": [
+        "Jonny's First Christmas List",
+        "Christmas Wishes with Funny Spitz Family",
+        "What did Jonny ask for Christmas?"
+      ],
+      "selectedTitle": "🎄 Jonny's First Wish List! | Christmas Special #3 #Shorts",
+      "description": "Little Jonny is writing his very first wish list for Santa! Come see what he asked for in this magical Funny Spitz Family journey.",
+      "tags": [
+        "Funny Spitz Family",
+        "Christmas Special",
+        "Pomeranian Christmas",
+        "Cute Dogs",
+        "Holiday Shorts"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#ChristmasShorts",
+        "#Shorts"
+      ],
+      "thumbnailText": "SPITZ XMAS #3",
+      "scheduledTime": "20:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_NARRADOR_Natal_9x16.jpg",
+      "fallbackAsset": "00_Abertura_Casa_Azul_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Bem-vindos ao terceiro dia do nosso especial! Hoje o pequeno Jonny preparou algo muito especial.",
+        "en": "Welcome to the third day of our special! Today little Jonny has prepared something very special."
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imagePrompt": "Fotorrealistic Pixar 3D style, black Pomeranian dog Raven wearing round gold-rimmed glasses, pearl necklace, and floral dress. She is holding a golden paper in a cozy living room decorated with warm Christmas lights and garlands, 9:16 vertical.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Jonny, querido, pegue este papel dourado para escrevermos sua primeira cartinha para o Papai Noel.",
+        "en": "Jonny, dear, take this golden paper so we can write your first letter to Santa Claus."
+      },
+      "imageFile": "01_RAVEN_Natal_9x16.jpg"
+    },
+    {
+      "id": "02",
+      "character": "THEO",
+      "imagePrompt": "Fotorrealistic Pixar 3D style, cream-orange Pomeranian dog Theo wearing rainbow multicolored glasses and a blue button-down shirt. He is pointing at a toy catalog, surrounded by red and green Christmas ornaments, 9:16 vertical.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Ei Jonny, não esqueça de pedir aquela pista de corrida gigante e muitos petiscos crocantes!",
+        "en": "Hey Jonny, do not forget to ask for that giant race track and many crunchy treats!"
+      },
+      "imageFile": "02_THEO_Natal_9x16.jpg"
+    },
+    {
+      "id": "03",
+      "character": "JONNY",
+      "imagePrompt": "Fotorrealistic Pixar 3D style, cream-golden Pomeranian dog Jonny with NO glasses, wearing a white button-down shirt and a dark bow tie. He is sitting at a wooden table with a thoughtful expression, holding a quill, 9:16 vertical.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Eu quero pedir coisas legais, mas o mais importante é estarmos todos juntos nesta noite.",
+        "en": "I want to ask for cool things, but the most important is being all together tonight."
+      },
+      "imageFile": "03_JONNY_Natal_9x16.jpg"
+    },
+    {
+      "id": "04",
+      "character": "LUNA",
+      "imagePrompt": "Fotorrealistic Pixar 3D style, black Pomeranian dog Luna wearing round gold-rimmed glasses, pearl necklace, and a pink ruffled blouse. She is leaning over Jonny's shoulder in a warm, festive environment, 9:16 vertical.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Que lindo, maninho! Escrever os desejos ajuda a espalhar a magia do Natal por toda casa.",
+        "en": "How beautiful, little brother! Writing down wishes helps spread Christmas magic through the whole house."
+      },
+      "imageFile": "04_LUNA_Natal_9x16.jpg"
+    },
+    {
+      "id": "05",
+      "character": "VLAD",
+      "imagePrompt": "Fotorrealistic Pixar 3D style, cream-white Pomeranian dog Vlad wearing thin round gold-rimmed glasses, striped shirt, and navy bow tie. He is sitting in a large armchair next to a glowing Christmas tree, 9:16 vertical.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Isso mesmo, campeão! O verdadeiro presente é o amor que compartilhamos enquanto montamos nossa árvore.",
+        "en": "That is right, champ! The real gift is the love we share while setting our tree."
+      },
+      "imageFile": "05_VLAD_Natal_9x16.jpg"
+    },
+    {
+      "id": "06",
+      "character": "JONNY",
+      "imagePrompt": "Fotorrealistic Pixar 3D style, close up of cream-golden Pomeranian dog Jonny happily writing on the golden paper. Christmas lights are blurred in the background creating a bokeh effect, 9:16 vertical.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Prontinho! Minha lista está cheia de sonhos e muito carinho para toda a nossa família.",
+        "en": "All done! My list is full of dreams and lots of affection for our whole family."
+      },
+      "imageFile": "06_JONNY_Natal_9x16.jpg"
+    },
+    {
+      "id": "07",
+      "character": "RAVEN",
+      "imagePrompt": "Fotorrealistic Pixar 3D style, Raven and Vlad standing together, smiling warmly at Jonny. They are in a festive hallway with mistletoe and golden decorations, 9:16 vertical.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Estamos muito orgulhosos de você! Agora vamos colocar essa carta na nossa bota de Natal.",
+        "en": "We are so proud of you! Now let us put this letter in our Christmas stocking."
+      },
+      "imageFile": "07_RAVEN_Natal_9x16.jpg"
+    },
+    {
+      "id": "08",
+      "character": "FAMILIA",
+      "isFinale": true,
+      "imageFile": "08_FAMILIA_Natal_9x16.jpg",
+      "fallbackAsset": "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Desejamos que seus sonhos de Natal também comecem a se realizar hoje! Até amanhã, pessoal!",
+        "en": "We wish that your Christmas dreams also start coming true today! See you tomorrow, everyone!"
+      },
+      "banner": {
+        "pt": [
+          "🎄 Especial de Natal Spitz!",
+          "Todo dia um novo preparativo!"
+        ],
+        "en": [
+          "🎄 Spitz Christmas Special!",
+          "A new holiday story every day!"
+        ]
+      }
+    }
+  ]
+}
