@@ -1,0 +1,161 @@
+{
+  "episodeNumber": 5,
+  "cycleDate": "2026-11-12",
+  "theme": {
+    "pt": "A Caça ao Tesouro Secreta na Sala de Estar",
+    "en": "The Secret Living Room Treasure Hunt"
+  },
+  "seo": {
+    "pt": {
+      "titleOptions": [
+        "A Caça ao Tesouro Secreta da Família Spitz #Shorts",
+        "Onde está o tesouro escondido na sala? #Shorts",
+        "A grande aventura dos cãezinhos curiosos #Shorts"
+      ],
+      "selectedTitle": "A Caça ao Tesouro Secreta da Família Spitz #Shorts",
+      "description": "Neste episódio divertido, a família Spitz decide fazer uma caça ao tesouro na sala de estar. Quem será que vai encontrar a grande surpresa escondida pelo Papai Vlad?",
+      "tags": [
+        "Funny Spitz Family",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Cachorros Fofos",
+        "Caça ao Tesouro",
+        "Família"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#SpitzAlemao",
+        "#LuluDaPomerania",
+        "#Shorts"
+      ],
+      "thumbnailText": "TESOURO SECRETO NA SALA",
+      "scheduledTime": "07:00"
+    },
+    "en": {
+      "titleOptions": [
+        "The Spitz Family Secret Treasure Hunt #Shorts",
+        "Where is the hidden living room treasure? #Shorts",
+        "The cute puppies great adventure #Shorts"
+      ],
+      "selectedTitle": "The Spitz Family Secret Treasure Hunt #Shorts",
+      "description": "In this fun episode, the Spitz family decides to have a treasure hunt in the living room. Who will find the big surprise hidden by Dad Vlad?",
+      "tags": [
+        "Funny Spitz Family",
+        "Pomeranian",
+        "Cute Dogs",
+        "Treasure Hunt",
+        "Family Fun",
+        "Dogs"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#Pomeranian",
+        "#CuteDogs",
+        "#Shorts"
+      ],
+      "thumbnailText": "SECRET LIVING ROOM TREASURE",
+      "scheduledTime": "18:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Abertura_Casa_Azul_9x16.png",
+      "fallbackAsset": "00_Abertura_Casa_Azul_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Hoje tem uma caça ao tesouro misteriosa na casa mais divertida de todas!",
+        "en": "Today there is a mysterious treasure hunt in the most fun house of all!"
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Cena.png",
+      "imagePrompt": "Photorealistic cinematic 9:16 vertical portrait of Raven, a cute Black Pomeranian German Spitz dog wearing round gold-rimmed glasses, a white pearl necklace, and a colorful floral print blouse, standing in a cozy living room holding a mysterious golden map.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Eu encontrei um mapa antigo escondido bem debaixo do tapete da sala.",
+        "en": "I found an old map hidden right under the living room rug."
+      }
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imageFile": "02_Cena.png",
+      "imagePrompt": "Photorealistic cinematic 9:16 vertical portrait of Vlad, a cream light golden-white Pomeranian German Spitz dog wearing thin round gold-rimmed glasses, a blue-and-white vertical striped button-down shirt, and a dark navy blue bow tie with tiny dots, smiling mischievously in the living room.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Quem seguir todas as pistas com atenção vai ganhar um prêmio muito especial.",
+        "en": "Whoever follows all the clues very carefully will win a very special prize."
+      }
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "imageFile": "03_Cena.png",
+      "imagePrompt": "Photorealistic cinematic 9:16 vertical portrait of Theo, a cream light orange Pomeranian German Spitz dog wearing rainbow multicolored frame glasses and a blue button-down shirt, looking excitedly at the treasure map in the living room.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "A primeira pista diz que devemos procurar perto dos livros mais pesados.",
+        "en": "The first clue says that we must look near the heaviest books."
+      }
+    },
+    {
+      "id": "04",
+      "character": "LUNA",
+      "imageFile": "04_Cena.png",
+      "imagePrompt": "Photorealistic cinematic 9:16 vertical portrait of Luna, a black Pomeranian German Spitz dog wearing round gold-rimmed glasses, a white pearl necklace, and a pink ruffled blouse, searching near the bookshelf in the living room.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Olhem só o que eu achei escondido atrás daquela grande enciclopédia azul.",
+        "en": "Look what I found hidden right behind that large blue encyclopedia."
+      }
+    },
+    {
+      "id": "05",
+      "character": "JONNY",
+      "imageFile": "05_Cena.png",
+      "imagePrompt": "Photorealistic cinematic 9:16 vertical portrait of Jonny, a cream light golden Pomeranian German Spitz dog with no glasses, wearing a white button-down shirt and a dark bow tie, holding a small golden box in the living room with an excited expression.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "O tesouro verdadeiro estava aqui o tempo todo esperando por nós.",
+        "en": "The true treasure was right here the entire time waiting for us."
+      }
+    },
+    {
+      "id": "06",
+      "character": "VLAD",
+      "imageFile": "06_Cena.png",
+      "imagePrompt": "Photorealistic cinematic 9:16 vertical portrait of Vlad, a cream light golden-white Pomeranian German Spitz dog wearing thin round gold-rimmed glasses, a blue-and-white vertical striped button-down shirt, and a dark navy blue bow tie with tiny dots, opening a box full of tasty dog biscuits in the living room.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Biscoitos fresquinhos para comemorar o sucesso da nossa grande caça ao tesouro.",
+        "en": "Freshly baked biscuits to celebrate the great success of our treasure hunt."
+      }
+    },
+    {
+      "id": "07",
+      "character": "NARRADOR",
+      "imageFile": "07_Final_Familia_Sofa_9x16.png",
+      "fallbackAsset": "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp",
+      "isFinale": true,
+      "zoomDirection": "out",
+      "text": {
+        "pt": "A família Spitz sempre transforma qualquer dia comum em uma aventura inesquecível.",
+        "en": "The Spitz family always turns any ordinary day into an unforgettable adventure."
+      },
+      "banner": {
+        "pt": [
+          "Somos a Spitz Funny Family!",
+          "Bem-vindo à nossa família!"
+        ],
+        "en": [
+          "We are the Funny Spitz Family!",
+          "Welcome to our family!"
+        ]
+      }
+    }
+  ]
+}
