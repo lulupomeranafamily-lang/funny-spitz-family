@@ -1,0 +1,174 @@
+{
+  "episodeNumber": 4,
+  "series": "Especial_de_Natal",
+  "cycleDate": "2026-11-13",
+  "theme": {
+    "pt": "Mamãe Raven Planeja o Grande Cardápio da Ceia da Família",
+    "en": "Mom Raven Plans the Family's Grand Christmas Dinner Menu"
+  },
+  "seo": {
+    "pt": {
+      "titleOptions": [
+        "O Cardápio Secreto de Natal da Raven",
+        "Planejando a Ceia de Natal com os Spitz",
+        "Delícias de Natal da Funny Spitz Family"
+      ],
+      "selectedTitle": "🎄 O Cardápio Secreto de Natal da Raven | Especial de Natal #4 #Shorts",
+      "description": "No quarto dia do nosso Especial de Natal, a Mamãe Raven reúne toda a família para decidir os pratos deliciosos da nossa ceia mágica!",
+      "tags": [
+        "Funny Spitz Family",
+        "Especial de Natal",
+        "Natal em Família",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Shorts de Natal",
+        "Ceia de Natal"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#EspecialDeNatal",
+        "#CeiaDeNatal",
+        "#Shorts"
+      ],
+      "thumbnailText": "CEIA MÁGICA #4",
+      "scheduledTime": "12:00"
+    },
+    "en": {
+      "titleOptions": [
+        "Raven's Secret Christmas Menu",
+        "Planning Christmas Dinner with the Spitz Family",
+        "Christmas Delights with Funny Spitz Family"
+      ],
+      "selectedTitle": "🎄 Raven's Secret Christmas Menu | Christmas Special #4 #Shorts",
+      "description": "On the fourth day of our Christmas Special, Mom Raven gathers the whole family to decide the delicious dishes for our magical dinner!",
+      "tags": [
+        "Funny Spitz Family",
+        "Christmas Special",
+        "Pomeranian Christmas",
+        "Cute Dogs",
+        "Holiday Shorts",
+        "Christmas Dinner"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#ChristmasShorts",
+        "#XmasMenu",
+        "#Shorts"
+      ],
+      "thumbnailText": "XMAS DINNER #4",
+      "scheduledTime": "20:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_NARRADOR_Natal_9x16.jpg",
+      "fallbackAsset": "00_Abertura_Casa_Azul_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "A cozinha da Casa Azul está perfumada, pois hoje Mamãe Raven planeja a ceia perfeita.",
+        "en": "The Blue House kitchen smells amazing because today Mom Raven is planning the perfect dinner."
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imagePrompt": "Vertical 9:16 fotorrealistic Pixar 3D style. Raven, a black Pomeranian dog wearing round gold-rimmed glasses, a white pearl necklace, and a colorful floral print dress, sits at a wooden table with a notebook. The kitchen is decorated with golden Christmas lights and garlands.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Crianças e Vlad, venham aqui para escolhermos as receitas mágicas da nossa grande ceia natalina.",
+        "en": "Children and Vlad, come here so we can choose the magical recipes for our grand Christmas dinner."
+      },
+      "imageFile": "01_RAVEN_Natal_9x16.jpg"
+    },
+    {
+      "id": "02",
+      "character": "THEO",
+      "imagePrompt": "Vertical 9:16 fotorrealistic Pixar 3D style. Theo, a cream orange Pomeranian dog wearing rainbow multicolored frame glasses and a blue button-down shirt, stands excitedly near the kitchen counter decorated with ornaments.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Eu voto em fazermos uma sobremesa bem colorida que brilhe tanto quanto as luzes da árvore.",
+        "en": "I vote for making a very colorful dessert that shines as much as the tree lights."
+      },
+      "imageFile": "02_THEO_Natal_9x16.jpg"
+    },
+    {
+      "id": "03",
+      "character": "JONNY",
+      "imagePrompt": "Vertical 9:16 fotorrealistic Pixar 3D style. Jonny, a cream golden Pomeranian dog with no glasses, wearing a white button-down shirt and a dark bow tie, looks up with big eyes in the decorated kitchen.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Por favor, não esqueçam dos biscoitos crocantes que o Papai Noel sempre gosta de comer.",
+        "en": "Please, do not forget the crunchy cookies that Santa Claus always likes to eat."
+      },
+      "imageFile": "03_JONNY_Natal_9x16.jpg"
+    },
+    {
+      "id": "04",
+      "character": "LUNA",
+      "imagePrompt": "Vertical 9:16 fotorrealistic Pixar 3D style. Luna, a black Pomeranian dog wearing round gold-rimmed glasses, a white pearl necklace, and a pink ruffled blouse, holds a tablet showing food photos next to a Christmas garland.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Podemos incluir pratos modernos e saudáveis para deixar nossa mesa ainda mais bonita e equilibrada.",
+        "en": "We can include modern and healthy dishes to make our table even more beautiful and balanced."
+      },
+      "imageFile": "04_LUNA_Natal_9x16.jpg"
+    },
+    {
+      "id": "05",
+      "character": "VLAD",
+      "imagePrompt": "Vertical 9:16 fotorrealistic Pixar 3D style. Vlad, a cream golden-white Pomeranian dog wearing thin round gold-rimmed glasses, a blue-and-white vertical striped shirt, and a dark navy blue bow tie, smiling in the kitchen.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Eu cuido do assado principal para garantir que teremos aquele banquete tradicional que todos amamos.",
+        "en": "I will handle the main roast to ensure we have that traditional feast we all love."
+      },
+      "imageFile": "05_VLAD_Natal_9x16.jpg"
+    },
+    {
+      "id": "06",
+      "character": "RAVEN",
+      "imagePrompt": "Vertical 9:16 fotorrealistic Pixar 3D style. Raven, the black Pomeranian, writing enthusiastically in her recipe book. Close-up on her face and glasses with Christmas reflections.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Estou anotando tudo no meu caderno de receitas para que nada seja esquecido nessa noite especial.",
+        "en": "I am writing everything down in my recipe book so nothing is forgotten on this special night."
+      },
+      "imageFile": "06_RAVEN_Natal_9x16.jpg"
+    },
+    {
+      "id": "07",
+      "character": "JONNY",
+      "imagePrompt": "Vertical 9:16 fotorrealistic Pixar 3D style. Jonny, the small cream Pomeranian, jumping happily in the kitchen surrounded by festive decorations and family members' legs visible.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Planejar o cardápio com vocês é quase tão divertido quanto abrir os presentes na manhã seguinte.",
+        "en": "Planning the menu with you is almost as fun as opening presents the next morning."
+      },
+      "imageFile": "07_JONNY_Natal_9x16.jpg"
+    },
+    {
+      "id": "08",
+      "character": "FAMILIA",
+      "isFinale": true,
+      "imageFile": "08_FAMILIA_Natal_9x16.jpg",
+      "fallbackAsset": "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Nosso Natal será inesquecível e cheio de amor com a nossa família reunida nesta noite mágica.",
+        "en": "Our Christmas will be unforgettable and full of love with our family gathered on this magic night."
+      },
+      "banner": {
+        "pt": [
+          "🎄 Especial de Natal Spitz!",
+          "Todo dia um novo preparativo!"
+        ],
+        "en": [
+          "🎄 Spitz Christmas Special!",
+          "A new holiday story every day!"
+        ]
+      }
+    }
+  ]
+}
