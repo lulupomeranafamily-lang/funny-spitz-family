@@ -1,0 +1,161 @@
+{
+  "episodeNumber": 6,
+  "cycleDate": "2026-11-13",
+  "theme": {
+    "pt": "O Acampamento Engraçado no Quintal",
+    "en": "The Funny Backyard Camping Disaster"
+  },
+  "seo": {
+    "pt": {
+      "titleOptions": [
+        "Papai Vlad Tentou Acampar no Quintal!",
+        "O Desastre do Acampamento em Família!",
+        "Confusão na Barraca da Família Spitz!"
+      ],
+      "selectedTitle": "Papai Vlad Tentou Acampar no Quintal! #Shorts",
+      "description": "Papai Vlad tentou montar uma barraca de acampamento no quintal sem ler o manual e causou a maior confusão engraçada com toda a Família Spitz!",
+      "tags": [
+        "Funny Spitz Family",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Acampamento Engraçado",
+        "Humor Familiar",
+        "Cachorros Fofos",
+        "Pets Engraçados"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#SpitzAlemao",
+        "#Shorts"
+      ],
+      "thumbnailText": "DEU TUDO ERRADO NORMIS!",
+      "scheduledTime": "07:00"
+    },
+    "en": {
+      "titleOptions": [
+        "Dad Vlad Tried Backyard Camping!",
+        "The Funny Family Camping Disaster!",
+        "Tent Chaos with the Spitz Family!"
+      ],
+      "selectedTitle": "Dad Vlad Tried Backyard Camping! #Shorts",
+      "description": "Dad Vlad tried pitching a camping tent in the backyard without reading the manual and created total hilarious chaos with the Spitz Family!",
+      "tags": [
+        "Funny Spitz Family",
+        "Pomeranian",
+        "Cute Dogs",
+        "Funny Camping",
+        "Family Humor",
+        "Dog Shorts",
+        "Pet Videos"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#Pomeranian",
+        "#Shorts"
+      ],
+      "thumbnailText": "CAMPING GOES WRONG!",
+      "scheduledTime": "18:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Abertura_Casa_Azul_9x16.png",
+      "fallbackAsset": "00_Abertura_Casa_Azul_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Hoje a família Spitz decidiu acampar no quintal para uma noite muito divertida.",
+        "en": "Today the Spitz family decided to camp in the backyard for a very fun night."
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Cena.png",
+      "imagePrompt": "Photorealistic cinematic 9:16 vertical portrait of Raven, a fluffy black Pomeranian dog wearing round gold-rimmed glasses, a white pearl necklace, and a colorful floral print blouse. She is standing in a lush green backyard garden looking with an amused skeptical expression at a tangled camping tent.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Querido, você tem certeza de que sabe montar essa barraca grande sem olhar o manual?",
+        "en": "Honey, are you sure you can pitch this big tent without looking at the manual?"
+      }
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imageFile": "02_Cena.png",
+      "imagePrompt": "Photorealistic cinematic 9:16 vertical portrait of Vlad, a fluffy cream light golden-white Pomeranian dog wearing thin round gold-rimmed glasses, a blue-and-white vertical striped button-down shirt, and a dark navy blue bow tie with tiny dots. He is proudly holding flexible tent poles in the backyard with a confident big smile.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Com certeza, minha linda! Eu sou um grande especialista em acampamentos e aventuras na natureza.",
+        "en": "Of course, my dear! I am a great expert in camping and outdoor wilderness adventures."
+      }
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "imageFile": "03_Cena.png",
+      "imagePrompt": "Photorealistic cinematic 9:16 vertical portrait of Theo, a fluffy cream light orange Pomeranian dog wearing rainbow multicolored frame glasses and a blue button-down shirt. He is pointing curiously at a bright yellow camping instruction manual in a sunlit green backyard.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Papai, acho que essa vara dobrável deveria ficar por dentro do tecido da barraca.",
+        "en": "Dad, I think this folding pole should actually go inside the tent fabric."
+      }
+    },
+    {
+      "id": "04",
+      "character": "JONNY",
+      "imageFile": "04_Cena.png",
+      "imagePrompt": "Photorealistic cinematic 9:16 vertical portrait of Jonny, a small fluffy cream light golden Pomeranian dog with no glasses, wearing a crisp white button-down shirt and a dark bow tie. He is laughing joyously in the backyard as a green pop-up tent folds over playfully.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Olha só, a barraca se dobrou todinha e prendeu o papai lá dentro, pessoal!",
+        "en": "Look everyone, the tent completely collapsed and trapped dad inside right now!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "LUNA",
+      "imageFile": "05_Cena.png",
+      "imagePrompt": "Photorealistic cinematic 9:16 vertical portrait of Luna, a fluffy black Pomeranian dog wearing round gold-rimmed glasses, a white pearl necklace, and a pink ruffled blouse. She is holding a tablet with tent building guides in a bright sunny backyard garden, smiling warmly.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Eu disse que seria melhor ler as instruções antes de começar a montagem, papai.",
+        "en": "I told you it would be better to read the manual before starting assembly, dad."
+      }
+    },
+    {
+      "id": "06",
+      "character": "VLAD",
+      "imageFile": "06_Cena.png",
+      "imagePrompt": "Photorealistic cinematic 9:16 vertical portrait of Vlad, a fluffy cream light golden-white Pomeranian dog wearing thin round gold-rimmed glasses, a blue-and-white vertical striped button-down shirt, and a dark navy blue bow tie with tiny dots. He is cozy and asleep wrapped in a colorful sleeping bag inside a half-built camping tent.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Pelo menos o colchão de ar ficou bem quentinho para eu tirar uma soneca gostosa.",
+        "en": "At least the air mattress turned out very cozy for me to take a nice nap."
+      }
+    },
+    {
+      "id": "07",
+      "character": "NARRADOR",
+      "isFinale": true,
+      "imageFile": "07_Final_Familia_Sofa_9x16.png",
+      "fallbackAsset": "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "E assim a família acabou transformando o acampamento em uma festa super divertida no sofá.",
+        "en": "And that is how the family ended up turning camping into a fun couch party."
+      },
+      "banner": {
+        "pt": [
+          "Somos a Spitz Funny Family!",
+          "Bem-vindo à nossa família!"
+        ],
+        "en": [
+          "We are the Funny Spitz Family!",
+          "Welcome to our family!"
+        ]
+      }
+    }
+  ]
+}
