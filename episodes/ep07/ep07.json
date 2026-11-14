@@ -1,0 +1,155 @@
+{
+  "episodeNumber": 7,
+  "cycleDate": "2026-11-14",
+  "theme": {
+    "pt": "O Dia de Chef Pizzaiolo do Papai Vlad",
+    "en": "Daddy Vlad's Funny Pizza Chef Day"
+  },
+  "seo": {
+    "pt": {
+      "titleOptions": [
+        "O Dia de Chef Pizzaiolo do Papai Vlad! 🍕👨‍🍳 #Shorts",
+        "A Massa de Pizza Voadora na Cozinha! 🍕🐶 #Shorts",
+        "Noite de Pizza com a Família Spitz! 🍕 #Shorts"
+      ],
+      "selectedTitle": "O Dia de Chef Pizzaiolo do Papai Vlad! 🍕👨‍🍳 #Shorts",
+      "description": "Hoje é noite de pizza na casa azul e o Papai Vlad garantiu que sabia girar a massa no ar igual aos chefs da televisão! 🍕👨‍🍳🐶 #FunnySpitzFamily #SpitzAlemao #LuluDaPomerania #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Cachorros Engraçados",
+        "Noite de Pizza",
+        "Shorts"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#SpitzAlemao",
+        "#LuluDaPomerania",
+        "#Shorts"
+      ],
+      "thumbnailText": "CHEF PIZZAIOLO VLAD!",
+      "scheduledTime": "07:00"
+    },
+    "en": {
+      "titleOptions": [
+        "Daddy Vlad's Funny Pizza Chef Day! 🍕👨‍🍳 #Shorts",
+        "The Flying Pizza Dough in the Kitchen! 🍕🐶 #Shorts",
+        "Pizza Night with the Spitz Family! 🍕 #Shorts"
+      ],
+      "selectedTitle": "Daddy Vlad's Funny Pizza Chef Day! 🍕👨‍🍳 #Shorts",
+      "description": "It's pizza night at the blue house and Daddy Vlad promised he could spin the dough high in the air just like a TV chef! 🍕👨‍🍳🐶 #FunnySpitzFamily #Pomeranian #CuteDogs #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Pomeranian",
+        "Cute Dogs",
+        "Pizza Night",
+        "Funny Dog Story",
+        "Shorts"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#Pomeranian",
+        "#CuteDogs",
+        "#Shorts"
+      ],
+      "thumbnailText": "PIZZA CHEF VLAD!",
+      "scheduledTime": "18:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Abertura_Casa_Azul_9x16.png",
+      "fallbackAsset": "00_Abertura_Casa_Azul_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Hoje é sábado de pizzaria na cozinha mais animada da Família Spitz!",
+        "en": "Today is Saturday pizza night in the liveliest kitchen with the Spitz Family!"
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Cena.png",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Eu já deixei o molho caseiro pronto, mas cuidado com essa farinha toda, querido!",
+        "en": "I already made the homemade sauce, but be careful with all that flour, honey!"
+      }
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imageFile": "02_Cena.png",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Fica tranquila! Hoje o papai vai girar a massa no alto igual aos grandes chefs!",
+        "en": "Don't worry! Today Dad is going to spin the dough high in the air like a master chef!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "imageFile": "03_Cena.png",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Pai, acho que você colocou fermento em dobro e essa massa está elástica demais!",
+        "en": "Dad, I think you added double yeast and that dough is way too stretchy!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "JONNY",
+      "imageFile": "04_Cena.png",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Olhem para cima! A massa deu uma volta no lustre e caiu na cabeça do papai!",
+        "en": "Look up! The dough spun around the chandelier and landed right on Dad's head!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "LUNA",
+      "imageFile": "05_Cena.png",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Essa cena merece uma foto! O chapéu do papai virou uma touca gigante de pizza!",
+        "en": "This deserves a photo! Dad's chef hat turned into a giant pizza dough bonnet!"
+      }
+    },
+    {
+      "id": "06",
+      "character": "VLAD",
+      "imageFile": "06_Cena.png",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Foi tudo calculado, família! Fazia parte do meu treinamento secreto de equilíbrio italiano!",
+        "en": "It was all calculated, family! It was part of my secret Italian chef balance training!"
+      }
+    },
+    {
+      "id": "07",
+      "character": "NARRADOR",
+      "imageFile": "07_Final_Familia_Sofa_9x16.png",
+      "fallbackAsset": "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp",
+      "isFinale": true,
+      "zoomDirection": "out",
+      "text": {
+        "pt": "No final, a pizza ficou uma delícia e rendeu boas risadas para toda a família!",
+        "en": "In the end, the pizza turned out delicious and brought great laughs for the whole family!"
+      },
+      "banner": {
+        "pt": [
+          "Somos a Spitz Funny Family!",
+          "Bem-vindo à nossa família!"
+        ],
+        "en": [
+          "We are the Funny Spitz Family!",
+          "Welcome to our family!"
+        ]
+      }
+    }
+  ]
+}
