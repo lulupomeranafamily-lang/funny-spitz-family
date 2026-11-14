@@ -1,0 +1,174 @@
+{
+  "episodeNumber": 5,
+  "series": "Especial_de_Natal",
+  "cycleDate": "2026-11-14",
+  "theme": {
+    "pt": "Luna Escolhe as Cores da Decoração Natalina Deste Ano",
+    "en": "Luna Chooses the Colors for This Year's Christmas Decoration"
+  },
+  "seo": {
+    "pt": {
+      "titleOptions": [
+        "Definindo as Cores do Natal com a Luna",
+        "A Paleta de Cores Natalina da Família Spitz",
+        "Luna e o Design de Natal da Família"
+      ],
+      "selectedTitle": "🎄 Luna Escolhe as Cores da Decoração! | Especial de Natal #5 #Shorts",
+      "description": "No quinto dia do nosso Especial de Natal, a adolescente Luna assume o papel de designer e escolhe a paleta de cores oficial para a decoração da Casa Azul! Venha ver como a família se diverte ajudando.",
+      "tags": [
+        "Funny Spitz Family",
+        "Especial de Natal",
+        "Natal em Família",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Shorts de Natal",
+        "Decoração de Natal"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#EspecialDeNatal",
+        "#Shorts",
+        "#CoresDoNatal"
+      ],
+      "thumbnailText": "CORES DO NATAL #5",
+      "scheduledTime": "12:00"
+    },
+    "en": {
+      "titleOptions": [
+        "Choosing Christmas Colors with Luna",
+        "The Spitz Family Christmas Color Palette",
+        "Luna's Holiday Design Choices"
+      ],
+      "selectedTitle": "🎄 Luna Chooses the Decor Colors! | Christmas Special #5 #Shorts",
+      "description": "On the fifth day of our Christmas Special, teenage Luna takes over as designer and picks the official color palette for the Blue House decorations! See how the family helps out.",
+      "tags": [
+        "Funny Spitz Family",
+        "Christmas Special",
+        "Pomeranian Christmas",
+        "Cute Dogs",
+        "Holiday Shorts",
+        "Xmas Decor"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#ChristmasShorts",
+        "#Shorts",
+        "#XmasColors"
+      ],
+      "thumbnailText": "SPITZ XMAS #5",
+      "scheduledTime": "20:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_NARRADOR_Natal_9x16.jpg",
+      "fallbackAsset": "00_Abertura_Casa_Azul_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Bem-vindos ao quinto dia do nosso especial, onde a magia das cores começa a brilhar.",
+        "en": "Welcome to the fifth day of our special, where the magic of colors begins to shine."
+      }
+    },
+    {
+      "id": "01",
+      "character": "LUNA",
+      "imagePrompt": "Photorealistic 3D Pixar style, 9:16. A cute black Pomeranian dog (Luna) wearing round gold-rimmed glasses, a white pearl necklace, and a pink ruffled blouse. She is holding a color palette with gold and copper samples. Cozy blue house interior with warm Christmas lights.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Este ano eu quero que nossa árvore seja a mais elegante e moderna de todas.",
+        "en": "This year I want our tree to be the most elegant and modern of all."
+      },
+      "imageFile": "01_LUNA_Natal_9x16.jpg"
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imagePrompt": "Photorealistic 3D Pixar style, 9:16. A cream/white Pomeranian dog (Vlad) wearing thin round gold-rimmed glasses, a blue-and-white vertical striped button-down shirt, and a dark navy blue bow tie. He is looking curiously at Luna's color palette near a Christmas garland.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Essas cores suaves combinam muito bem com o brilho das luzes que nós já desembaraçamos.",
+        "en": "These soft colors match very well with the glow of the lights we already untangled."
+      },
+      "imageFile": "02_VLAD_Natal_9x16.jpg"
+    },
+    {
+      "id": "03",
+      "character": "RAVEN",
+      "imagePrompt": "Photorealistic 3D Pixar style, 9:16. A black Pomeranian dog (Raven) wearing round gold-rimmed glasses, a white pearl necklace, and a colorful floral print dress. She is smiling and nodding approvingly at Luna in a festive living room.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Adorei a ideia, querida, o importante é que a nossa casa transmita todo esse carinho.",
+        "en": "I loved the idea, honey, the important thing is that our home transmits all this affection."
+      },
+      "imageFile": "03_RAVEN_Natal_9x16.jpg"
+    },
+    {
+      "id": "04",
+      "character": "THEO",
+      "imagePrompt": "Photorealistic 3D Pixar style, 9:16. A cream/orange Pomeranian dog (Theo) wearing rainbow multicolored frame glasses and a blue button-down shirt. He is holding a blue ornament and looking hopeful at his sister Luna.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Será que podemos colocar alguns detalhes em azul para combinar com a minha nova camisa?",
+        "en": "Can we put some blue details to match my new shirt for the big night?"
+      },
+      "imageFile": "04_THEO_Natal_9x16.jpg"
+    },
+    {
+      "id": "05",
+      "character": "JONNY",
+      "imagePrompt": "Photorealistic 3D Pixar style, 9:16. A small cream/golden Pomeranian dog (Jonny) with NO glasses, wearing a white button-down shirt and a dark bow tie. He is surrounded by jars of glitter and sparkling Christmas stars.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Eu só quero que tudo brilhe muito e tenha bastante glitter por todos os lados.",
+        "en": "I just want everything to shine a lot and have plenty of glitter everywhere."
+      },
+      "imageFile": "05_JONNY_Natal_9x16.jpg"
+    },
+    {
+      "id": "06",
+      "character": "LUNA",
+      "imagePrompt": "Photorealistic 3D Pixar style, 9:16. Close up of the black Pomeranian dog (Luna) with her pink blouse and gold glasses. She is pointing to a beautiful copper ribbon. Warm holiday atmosphere in the background.",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Vamos usar tons de dourado e cobre para deixar a sala bem quente e muito aconchegante.",
+        "en": "Let's use shades of gold and copper to make the living room warm and cozy."
+      },
+      "imageFile": "06_LUNA_Natal_9x16.jpg"
+    },
+    {
+      "id": "07",
+      "character": "VLAD",
+      "imagePrompt": "Photorealistic 3D Pixar style, 9:16. The cream/white Pomeranian (Vlad) and the black Pomeranian (Luna) organizing boxes of ornaments together. Christmas tree in the background is partially decorated with lights.",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Parabéns pela escolha, Luna, agora vamos todos organizar as caixas com essas cores tão bonitas.",
+        "en": "Congratulations on the choice, Luna, now let's all organize the boxes with these beautiful colors."
+      },
+      "imageFile": "07_VLAD_Natal_9x16.jpg"
+    },
+    {
+      "id": "08",
+      "character": "FAMILIA",
+      "isFinale": true,
+      "imageFile": "08_FAMILIA_Natal_9x16.jpg",
+      "fallbackAsset": "09_Final_Familia_CORRIGIDA_5_dogs_9x16.webp",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "O Natal da nossa família está ficando cada vez mais lindo e cheio de cores especiais.",
+        "en": "Our family's Christmas is getting more and more beautiful and full of special colors."
+      },
+      "banner": {
+        "pt": [
+          "🎄 Especial de Natal Spitz!",
+          "Todo dia um novo preparativo!"
+        ],
+        "en": [
+          "🎄 Spitz Christmas Special!",
+          "A new holiday story every day!"
+        ]
+      }
+    }
+  ]
+}
