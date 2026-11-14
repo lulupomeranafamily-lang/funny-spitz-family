@@ -1,0 +1,186 @@
+{
+  "episodeNumber": 6,
+  "format": "16:9",
+  "cycleDate": "2026-11-13",
+  "scheduledTime": "17:00",
+  "theme": {
+    "pt": "O Acampamento Engraçado no Quintal do Papai Vlad (Episódio Completo)",
+    "en": "Daddy Vlad's Funny Backyard Camping Adventure (Full Episode)"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "O Acampamento no Quintal do Papai Vlad! ⛺🔥 Confusão com a Barraca! | Funny Spitz Family",
+      "description": "A Família Spitz decidiu fazer um grande acampamento no quintal da casa azul, e o Papai Vlad garantiu que conseguia montar a barraca gigante sem ler o manual de instruções! ⛺🔥🐶\n\nAcompanhe essa aventura divertida com a mamãe Raven preparando marshmallows, o Theo tentando ajudar com o manual, a barraca engolindo o Papai Vlad, o Jonny se divertindo e uma noite mágica sob as estrelas!\n\nCapítulos:\n00:00 A tarde perfeita no quintal da Casa Azul\n00:09 Mamãe Raven traz as lanternas e os marshmallows\n00:18 A confiança do Papai Vlad sem ler o manual\n00:27 Theo avisa sobre a vareta invertida\n00:36 A barraca se fecha sozinha com o Papai Vlad!\n00:45 Jonny e Luna caem na risada no jardim\n00:54 Luna mostra o tutorial no tablet\n01:03 Papai Vlad cochilando dentro do saco de dormir\n01:13 A desculpa tranquila do especialista em acampamento\n01:23 Noite de marshmallows e estrelas em família!\n\n👉 Inscreva-se no canal, deixe seu like e ative o sininho para novas aventuras todos os dias!\n\n#FunnySpitzFamily #SpitzAlemao #LuluDaPomerania #HistoriaInfantil #DesenhoDeCachorro #FamiliaPet",
+      "tags": [
+        "Funny Spitz Family",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "episódio completo cachorro",
+        "história infantil em família",
+        "Acampamento no Quintal",
+        "Raven Vlad Luna Theo Jonny",
+        "cachorrinhos falantes",
+        "comédia familiar",
+        "vídeo para crianças e família",
+        "animação pet 3D"
+      ],
+      "thumbnailText": "ACAMPAMENTO NO QUINTAL!",
+      "scheduledTime": "17:00"
+    },
+    "en": {
+      "selectedTitle": "Daddy Vlad's Backyard Camping Adventure! ⛺🔥 Funny Tent Chaos! | Funny Spitz Family",
+      "description": "The Spitz Family decided to go camping in the backyard of the blue house, and Daddy Vlad promised he could pitch the giant tent without reading the instruction manual! ⛺🔥🐶\n\nJoin this hilarious outdoor family adventure with Mom Raven's marshmallows, Theo holding the instruction book, the pop-up tent folding right over Daddy Vlad, and a magical starry night together!\n\nChapters:\n00:00 A beautiful evening in the Blue House backyard\n00:09 Mom Raven brings lanterns and marshmallows\n00:18 Daddy Vlad's confidence without the manual\n00:27 Theo spots the upside-down tent pole\n00:36 The tent collapses with Daddy Vlad inside!\n00:45 Jonny and Luna laughing in the garden\n00:54 Luna shows the step-by-step guide on her tablet\n01:03 Daddy Vlad napping cozy in his sleeping bag\n01:13 The camping expert's calm and funny excuse\n01:23 Starry marshmallow party with the whole family!\n\n👉 Subscribe, hit the like button, and join our fluffy family every day!\n\n#FunnySpitzFamily #Pomeranian #DogStories #FamilyAnimation #CuteDogs #KidsStory",
+      "tags": [
+        "Funny Spitz Family",
+        "Pomeranian family",
+        "German Spitz",
+        "funny dog full episode",
+        "kids family story",
+        "Backyard Camping Adventure",
+        "Raven Vlad Luna Theo Jonny",
+        "talking pomeranians",
+        "family comedy",
+        "cute dog adventure"
+      ],
+      "thumbnailText": "BACKYARD CAMPING CHAOS!",
+      "scheduledTime": "17:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Quintal_Casa_Azul_Tarde_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "pan_right_zoom_in",
+      "vfx": "fireflies",
+      "text": {
+        "pt": "O entardecer estava lindo na casa azul, e a Família Spitz decidiu transformar o quintal em um verdadeiro acampamento sob as estrelas.",
+        "en": "The sunset was beautiful at the blue house, and the Spitz Family decided to turn the backyard into a real campsite under the stars."
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Raven_Lanterna_Manual_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Querido, eu já trouxe as lanternas e os marshmallows, mas você tem certeza de que sabe montar essa barraca gigante sem ler o manual?",
+        "en": "Honey, I brought the lanterns and the marshmallows, but are you sure you can pitch this giant tent without reading the manual?"
+      }
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imageFile": "02_Vlad_Confiante_Varetas_16x9.png",
+      "mood": "curious_pop",
+      "sfx": "pop_click",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Fica tranquila, minha linda! O papai aqui é um verdadeiro especialista em natureza, não preciso de manual nenhum para três varetinhas!",
+        "en": "Relax, my dear! Dad right here is a true outdoor wilderness expert, I don't need any manual for three little tent poles!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "imageFile": "03_Theo_Manual_Instrucoes_16x9.png",
+      "mood": "suspense_detective",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Pai, eu estou olhando o desenho aqui no folheto e acho que essa vareta torta não deveria estar presa no seu bolso!",
+        "en": "Dad, I'm looking at the diagram in the booklet right here, and I don't think that bent pole is supposed to be stuck in your pocket!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "JONNY",
+      "imageFile": "04_Jonny_Rindo_Barraca_16x9.png",
+      "mood": "shock_mystery",
+      "sfx": "dun_dun_dun",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Corram aqui, pessoal! A barraca deu um pulo sozinha, se dobrou inteirinha e engoliu o papai lá dentro!",
+        "en": "Come quick, everyone! The tent just jumped up by itself, folded completely over, and swallowed Dad right inside!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "LUNA",
+      "imageFile": "05_Luna_Tablet_Tutorial_16x9.png",
+      "mood": "upbeat_dance",
+      "sfx": "disco_drop",
+      "motion": "dance_bounce",
+      "vfx": "disco_notes",
+      "text": {
+        "pt": "Eu avisei que era melhor ver o vídeo passo a passo no meu tablet! Agora a nossa barraca parece um embrulho de presente gigante!",
+        "en": "I told you we should have watched the tutorial video on my tablet! Now our camping tent looks like a giant wrapped present!"
+      }
+    },
+    {
+      "id": "06",
+      "character": "RAVEN",
+      "imageFile": "06_Raven_Procurando_Barraca_16x9.png",
+      "mood": "tiptoe_suspense",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Vlad, querido, você está bem aí debaixo dessa lona verde? Por que ficou tudo tão silencioso de repente?",
+        "en": "Vlad, honey, are you okay under all that green canvas? Why did it suddenly get so quiet in there?"
+      }
+    },
+    {
+      "id": "07",
+      "character": "VLAD",
+      "imageFile": "07_Vlad_Saco_De_Dormir_16x9.png",
+      "mood": "funny_snore",
+      "sfx": "snore",
+      "motion": "breathing_zoom",
+      "vfx": "zzz_bubbles",
+      "text": {
+        "pt": "Que cantinho mais aconchegante... esse saco de dormir acolchoado na grama fresquinha deu um soninho tão gostoso...",
+        "en": "What a cozy little spot... this soft sleeping bag on the cool grass made me feel so sleepy and relaxed..."
+      }
+    },
+    {
+      "id": "08",
+      "character": "VLAD",
+      "imageFile": "08_Vlad_Explicando_Barraca_16x9.png",
+      "mood": "comedy_boing",
+      "sfx": "boing",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Calma, família, não deu nada errado não! Eu dobrei a barraca desse jeito de propósito para testar o isolamento térmico!",
+        "en": "Relax, family, nothing went wrong at all! I folded the tent this way on purpose just to test the thermal insulation!"
+      }
+    },
+    {
+      "id": "09",
+      "character": "FAMILIA",
+      "imageFile": "09_Familia_Acampamento_Estrelas_16x9.png",
+      "isFinale": true,
+      "mood": "happy_celebration",
+      "sfx": "yay_fanfare",
+      "motion": "celebration_zoom",
+      "vfx": "hearts_confetti",
+      "banner": {
+        "pt": ["Somos a Funny Spitz Family!", "Inscreva-se! Vídeos novos todos os dias!"],
+        "en": ["We are the Funny Spitz Family!", "Subscribe! New videos every day!"]
+      },
+      "text": {
+        "pt": "Depois que a mamãe Raven ajudou a levantar a barraca, nossa noite sob as estrelas foi perfeita! Inscreva-se no canal e até amanhã!",
+        "en": "Once Mom Raven helped set up the tent, our night under the stars was perfect! Subscribe to our channel and see you tomorrow!"
+      }
+    }
+  ]
+}
