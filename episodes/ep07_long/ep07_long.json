@@ -1,0 +1,186 @@
+{
+  "episodeNumber": 7,
+  "format": "16:9",
+  "cycleDate": "2026-11-14",
+  "scheduledTime": "17:00",
+  "theme": {
+    "pt": "O Dia de Chef Pizzaiolo do Papai Vlad (Episódio Completo)",
+    "en": "Daddy Vlad's Funny Pizza Chef Day (Full Episode)"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "O Dia de Chef Pizzaiolo do Papai Vlad! 🍕👨‍🍳 A Massa Voadora na Cozinha! | Funny Spitz Family",
+      "description": "Hoje é sábado de pizza na casa azul, e o Papai Vlad colocou seu chapéu de mestre cuca garantindo que sabia girar a massa no ar igual aos chefs da televisão! 🍕👨‍🍳🐶\n\nAcompanhe essa comédia deliciosa com a mamãe Raven preparando o molho especial, o Theo medindo o queijo, a massa gigante voando até o lustre da cozinha, o Jonny e a Luna se divertindo e uma noite de pizza inesquecível em família!\n\nCapítulos:\n00:00 Sábado de pizzaria na cozinha da Casa Azul\n00:09 Mamãe Raven prepara os ingredientes fresquinhos\n00:18 O Chef Papai Vlad promete girar a massa no ar\n00:27 Theo avisa que a massa está elástica demais\n00:36 A massa gigante voa e cai direto no chapéu do Papai!\n00:45 Luna registra o novo visual de fantasma de pizza\n00:54 Jonny descobre onde foi parar o queijo ralado\n01:03 Papai Vlad descansando enquanto a pizza assa no forno\n01:13 A explicação hilária da técnica secreta italiana\n01:23 Rodízio de pizza quentinha com toda a Família Spitz!\n\n👉 Inscreva-se no canal, deixe seu like e ative o sininho para novas aventuras todos os dias!\n\n#FunnySpitzFamily #SpitzAlemao #LuluDaPomerania #NoiteDePizza #HistoriaInfantil #DesenhoDeCachorro #FamiliaPet",
+      "tags": [
+        "Funny Spitz Family",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "episódio completo cachorro",
+        "história infantil em família",
+        "Chef Pizzaiolo Papai Vlad",
+        "Raven Vlad Luna Theo Jonny",
+        "cachorrinhos falantes",
+        "comédia familiar",
+        "vídeo para crianças e família",
+        "animação pet 3D"
+      ],
+      "thumbnailText": "CHEF PIZZAIOLO VLAD!",
+      "scheduledTime": "17:00"
+    },
+    "en": {
+      "selectedTitle": "Daddy Vlad's Funny Pizza Chef Day! 🍕👨‍🍳 Flying Pizza Dough Chaos! | Funny Spitz Family",
+      "description": "It's Saturday pizza night at the blue house, and Daddy Vlad put on his tall chef hat promising he could toss and spin the pizza dough in the air just like a TV chef! 🍕👨‍🍳🐶\n\nJoin this hilarious kitchen comedy with Mom Raven making her special sauce, Theo measuring the cheese, the giant dough flying right onto Daddy Vlad's head, and a delicious pizza party with the whole family!\n\nChapters:\n00:00 Saturday pizza night in the Blue House kitchen\n00:09 Mom Raven prepares the fresh toppings\n00:18 Chef Daddy Vlad promises an acrobatic dough spin\n00:27 Theo warns that the dough is extra stretchy\n00:36 The giant dough flies up and lands on Dad's head!\n00:45 Luna snaps a photo of the funny dough hat\n00:54 Jonny spots the missing mozzarella bowl\n01:03 Daddy Vlad napping by the warm pizza oven\n01:13 The chef's hilarious secret Italian technique excuse\n01:23 Warm pizza feast with the entire Spitz Family!\n\n👉 Subscribe, hit the like button, and join our fluffy family every day!\n\n#FunnySpitzFamily #Pomeranian #DogStories #FamilyAnimation #CuteDogs #KidsStory",
+      "tags": [
+        "Funny Spitz Family",
+        "Pomeranian family",
+        "German Spitz",
+        "funny dog full episode",
+        "kids family story",
+        "Pizza Chef Adventure",
+        "Raven Vlad Luna Theo Jonny",
+        "talking pomeranians",
+        "family comedy",
+        "cute dog adventure"
+      ],
+      "thumbnailText": "FLYING PIZZA DOUGH!",
+      "scheduledTime": "17:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Cozinha_Pizzaria_Casa_Azul_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "pan_right_zoom_in",
+      "vfx": "fireflies",
+      "text": {
+        "pt": "Chegou a noite de sábado na casa azul, e a cozinha da Família Spitz se transformou em uma verdadeira pizzaria italiana cheia de alegria!",
+        "en": "Saturday night arrived at the blue house, and the Spitz Family kitchen turned into a real Italian pizzeria full of joy!"
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Raven_Molho_Tomate_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Eu já deixei o molho caseiro e o queijo separadinhos na bancada, mas cuidado com toda essa farinha voando pela cozinha, querido!",
+        "en": "I already set the homemade sauce and cheese right on the counter, but be careful with all that flour flying around the kitchen, honey!"
+      }
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imageFile": "02_Vlad_Chef_Pizzaiolo_16x9.png",
+      "mood": "curious_pop",
+      "sfx": "pop_click",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Podem aplaudir o mestre cuca da família! Hoje o papai vai abrir a massa jogando para o alto igualzinho aos grandes chefs da televisão!",
+        "en": "Give a round of applause for the family master chef! Today Dad is going to spin the dough high in the air just like the TV chefs!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "imageFile": "03_Theo_Medindo_Massa_16x9.png",
+      "mood": "suspense_detective",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Pai, pelos meus cálculos, você colocou fermento em dobro nessa receita e essa massa está crescendo rápido demais!",
+        "en": "Dad, according to my calculations, you put double the yeast in this recipe and that dough is growing way too fast!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "JONNY",
+      "imageFile": "04_Jonny_Olhando_Teto_Pizza_16x9.png",
+      "mood": "shock_mystery",
+      "sfx": "dun_dun_dun",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Olhem para cima, pessoal! O papai jogou a massa tão alto que ela deu uma volta no lustre e caiu inteirinha na cabeça dele!",
+        "en": "Look up, everyone! Dad tossed the dough so high that it spun around the chandelier and landed right on top of his head!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "LUNA",
+      "imageFile": "05_Luna_Rindo_Chef_Massa_16x9.png",
+      "mood": "upbeat_dance",
+      "sfx": "disco_drop",
+      "motion": "dance_bounce",
+      "vfx": "disco_notes",
+      "text": {
+        "pt": "Essa cena merece uma foto agora mesmo! O chapéu de chef do papai virou uma touca gigante de massa de pizza!",
+        "en": "This moment deserves a picture right now! Dad's tall chef hat just turned into a giant floppy pizza dough bonnet!"
+      }
+    },
+    {
+      "id": "06",
+      "character": "RAVEN",
+      "imageFile": "06_Raven_Forno_Pizza_16x9.png",
+      "mood": "tiptoe_suspense",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Depois que eu ajudei a colocar a segunda massa no forno, para onde será que o nosso grande pizzaiolo foi tão quietinho?",
+        "en": "After I helped put the second pizza in the oven, where in the world did our grand pizza chef sneak off to so quietly?"
+      }
+    },
+    {
+      "id": "07",
+      "character": "VLAD",
+      "imageFile": "07_Vlad_Cochilando_Pizzaiolo_16x9.png",
+      "mood": "funny_snore",
+      "sfx": "snore",
+      "motion": "breathing_zoom",
+      "vfx": "zzz_bubbles",
+      "text": {
+        "pt": "Que cheirinho maravilhoso de queijo derretido vindo do forno... trabalhar como chef dá um soninho tão gostoso nessa poltrona...",
+        "en": "What a wonderful smell of melted cheese coming from the oven... working as a master chef makes this armchair feel so cozy..."
+      }
+    },
+    {
+      "id": "08",
+      "character": "VLAD",
+      "imageFile": "08_Vlad_Explicando_Tecnica_16x9.png",
+      "mood": "comedy_boing",
+      "sfx": "boing",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Eu não estava cochilando não, família! A massa na cabeça fazia parte do meu treinamento secreto de equilíbrio italiano!",
+        "en": "I wasn't napping at all, family! Putting the dough on my head was part of my secret Italian chef balance training!"
+      }
+    },
+    {
+      "id": "09",
+      "character": "FAMILIA",
+      "imageFile": "09_Familia_Festa_Pizza_16x9.png",
+      "isFinale": true,
+      "mood": "happy_celebration",
+      "sfx": "yay_fanfare",
+      "motion": "celebration_zoom",
+      "vfx": "hearts_confetti",
+      "banner": {
+        "pt": ["Somos a Funny Spitz Family!", "Inscreva-se! Vídeos novos todos os dias!"],
+        "en": ["We are the Funny Spitz Family!", "Subscribe! New videos every day!"]
+      },
+      "text": {
+        "pt": "A pizza ficou crocante, deliciosa e cheia de boas risadas! Inscreva-se no canal da Família Spitz, deixe seu like e até amanhã!",
+        "en": "The pizza turned out crispy, delicious, and full of good laughs! Subscribe to the Spitz Family channel, leave a like, and see you tomorrow!"
+      }
+    }
+  ]
+}

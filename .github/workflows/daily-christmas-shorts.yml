@@ -43,4 +43,5 @@ jobs:
           git config user.email "bot@funnyspitzfamily.local"
           git add config/christmas_history.json episodes/natal_ep*/*.json
           git diff --staged --quiet || git commit -m "chore(natal): registrar novo episódio da Série Especial de Natal"
+          git pull --rebase origin main
           git push

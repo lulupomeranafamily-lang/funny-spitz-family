@@ -89,34 +89,10 @@ Retorne APENAS um JSON válido seguindo exatamente este schema:
 `;
 
   const candidateModels = [
-    "gemini-3.0-flash",
     "gemini-3-flash-preview",
-    "gemini-2.5-flash"
+    "gemini-2.5-flash",
+    "gemini-2.0-flash"
   ];
-
-  // Descobre automaticamente modelos flash disponíveis na conta caso os nomes mudem no futuro
-  try {
-    const listRes = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`
-    );
-    if (listRes.ok) {
-      const listData = await listRes.json();
-      const dynamicFlash = (listData.models || [])
-        .filter(
-          (m) =>
-            m.name?.includes("gemini") &&
-            m.name?.includes("flash") &&
-            !m.name?.includes("2.5") &&
-            (m.supportedGenerationMethods || []).includes("generateContent")
-        )
-        .map((m) => m.name.replace(/^models\//, ""));
-      for (const m of dynamicFlash) {
-        if (!candidateModels.includes(m)) candidateModels.unshift(m);
-      }
-    }
-  } catch {
-    // Segue com a lista padrão
-  }
 
   const endpoints = [];
   for (const model of candidateModels) {
@@ -128,32 +104,39 @@ Retorne APENAS um JSON válido seguindo exatamente este schema:
 
   let lastErr = "";
   for (const endpoint of endpoints) {
-    const res = await fetch(endpoint, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [{ role: "user", parts: [{ text: prompt }] }],
-        generationConfig: {
-          responseMimeType: "application/json",
-          temperature: 0.8
-        }
-      })
-    });
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ role: "user", parts: [{ text: prompt }] }],
+          generationConfig: {
+            responseMimeType: "application/json",
+            temperature: 0.8
+          }
+        })
+      });
 
-    if (res.ok) {
-      const data = await res.json();
-      const rawJson = data.candidates?.[0]?.content?.parts?.[0]?.text;
-      if (rawJson) {
-        console.log(`✅ Roteiro gerado com sucesso via ${endpoint.split("?")[0]}`);
-        const cleaned = rawJson
-          .replace(/^```json\s*/i, "")
-          .replace(/^```\s*/i, "")
-          .replace(/\s*```$/i, "")
-          .trim();
-        return JSON.parse(cleaned);
+      if (res.ok) {
+        const data = await res.json();
+        const rawJson = data.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (rawJson) {
+          const cleaned = rawJson
+            .replace(/^```json\s*/i, "")
+            .replace(/^```\s*/i, "")
+            .replace(/\s*```$/i, "")
+            .trim();
+          const parsed = JSON.parse(cleaned);
+          if (parsed && Array.isArray(parsed.scenes) && parsed.scenes.length >= 6) {
+            console.log(`✅ Roteiro gerado com sucesso via ${endpoint.split("?")[0]}`);
+            return parsed;
+          }
+        }
+      } else {
+        lastErr = `(${res.status}) ${await res.text()}`;
       }
-    } else {
-      lastErr = `(${res.status}) ${await res.text()}`;
+    } catch (err) {
+      lastErr = err.message;
     }
   }
 

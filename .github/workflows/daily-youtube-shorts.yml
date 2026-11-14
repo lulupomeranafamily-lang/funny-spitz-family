@@ -43,4 +43,5 @@ jobs:
           git config user.email "bot@funnyspitzfamily.local"
           git add config/history.json episodes/ep*/*.json
           git diff --staged --quiet || git commit -m "chore: registrar novo episódio publicado no histórico"
+          git pull --rebase origin main
           git push
