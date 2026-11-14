@@ -1,0 +1,186 @@
+{
+  "episodeNumber": 5,
+  "format": "16:9",
+  "cycleDate": "2026-11-13",
+  "scheduledTime": "19:00",
+  "theme": {
+    "pt": "A Caça ao Tesouro Secreta na Sala de Estar (Episódio Completo)",
+    "en": "The Secret Living Room Treasure Hunt (Full Episode)"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "A Caça ao Tesouro Secreta na Sala de Estar! 🗺️💎 O Mistério do Mapa Dourado! | Funny Spitz Family",
+      "description": "A mamãe Raven encontrou um mapa dourado misterioso escondido debaixo do tapete da sala de estar, e o Papai Vlad revelou uma grande caça ao tesouro para toda a Família Spitz! 🗺️💎🐶\n\nAcompanhe essa aventura emocionante com o Theo usando sua lupa de detetive na estante de livros, a Luna descobrindo uma pista atrás da enciclopédia azul, o Jonny seguindo pegadas até a poltrona e uma surpresa deliciosa no final!\n\nCapítulos:\n00:00 Tarde chuvosa e misteriosa na Casa Azul\n00:09 Mamãe Raven encontra o mapa dourado debaixo do tapete\n00:18 O desafio secreto do Capitão Papai Vlad\n00:27 Detetive Theo investiga os livros mais pesados\n00:36 Luna encontra a chave dourada atrás da enciclopédia\n00:45 Jonny descobre pegadas suspeitas perto da poltrona\n00:54 Mamãe Raven ouve um barulhinho vindo das almofadas\n01:03 Papai Vlad cochilando abraçado ao baú do tesouro!\n01:13 A desculpa hilária do guardião oficial do tesouro\n01:23 Festa dos biscoitos dourados com toda a família!\n\n👉 Inscreva-se no canal, deixe seu like e ative o sininho para novas aventuras todos os dias!\n\n#FunnySpitzFamily #SpitzAlemao #LuluDaPomerania #CacaAoTesouro #HistoriaInfantil #DesenhoDeCachorro #FamiliaPet",
+      "tags": [
+        "Funny Spitz Family",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "episódio completo cachorro",
+        "história infantil em família",
+        "Caça ao Tesouro na Sala",
+        "Raven Vlad Luna Theo Jonny",
+        "cachorrinhos falantes",
+        "comédia familiar",
+        "vídeo para crianças e família",
+        "animação pet 3D"
+      ],
+      "thumbnailText": "CAÇA AO TESOURO NA SALA!",
+      "scheduledTime": "19:00"
+    },
+    "en": {
+      "selectedTitle": "The Secret Living Room Treasure Hunt! 🗺️💎 Mystery of the Golden Map! | Funny Spitz Family",
+      "description": "Mom Raven found a mysterious golden map hidden under the living room rug, and Daddy Vlad announced a grand indoor treasure hunt for the entire Spitz Family! 🗺️💎🐶\n\nJoin this exciting family detective adventure as Theo investigates the heavy bookshelf with his magnifying glass, Luna finds a golden key behind the blue encyclopedia, Jonny spots suspicious pawprints near the armchair, and everyone celebrates with a delicious surprise!\n\nChapters:\n00:00 A mysterious afternoon inside the Blue House\n00:09 Mom Raven finds the golden map under the rug\n00:18 Captain Daddy Vlad's secret treasure challenge\n00:27 Detective Theo searches near the heaviest books\n00:36 Luna discovers the golden key behind the encyclopedia\n00:45 Jonny follows suspicious pawprints to the armchair\n00:54 Mom Raven hears a funny sound behind the cushions\n01:03 Daddy Vlad napping while hugging the treasure chest!\n01:13 The hilarious excuse from the official treasure guardian\n01:23 Golden biscuit celebration with the whole family!\n\n👉 Subscribe, hit the like button, and join our fluffy family every day!\n\n#FunnySpitzFamily #Pomeranian #DogStories #FamilyAnimation #CuteDogs #KidsStory",
+      "tags": [
+        "Funny Spitz Family",
+        "Pomeranian family",
+        "German Spitz",
+        "funny dog full episode",
+        "kids family story",
+        "Living Room Treasure Hunt",
+        "Raven Vlad Luna Theo Jonny",
+        "talking pomeranians",
+        "family comedy",
+        "cute dog adventure"
+      ],
+      "thumbnailText": "SECRET TREASURE HUNT!",
+      "scheduledTime": "19:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Sala_Casa_Azul_Misterio_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "pan_right_zoom_in",
+      "vfx": "fireflies",
+      "text": {
+        "pt": "Era uma tarde tranquila na casa azul, até que um mistério digno de cinema transformou a sala da Família Spitz em uma grande caça ao tesouro!",
+        "en": "It was a quiet afternoon at the blue house, until a movie-worthy mystery turned the Spitz Family living room into a grand treasure hunt!"
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Raven_Mapa_Dourado_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Meus amores, venham ver isso! Eu estava arrumando o tapete da sala e encontrei este mapa dourado cheio de pistas misteriosas!",
+        "en": "My loves, come look at this! I was straightening the living room rug and found this golden map full of mysterious clues!"
+      }
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imageFile": "02_Vlad_Capitao_Tesouro_16x9.png",
+      "mood": "curious_pop",
+      "sfx": "pop_click",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Atenção, pequenos exploradores! Quem decifrar os enigmas que o papai espalhou pela sala vai abrir o baú mais saboroso dos sete mares!",
+        "en": "Attention, little explorers! Whoever solves the riddles that Dad hid around the living room will unlock the tastiest chest of the seven seas!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "imageFile": "03_Theo_Estante_Livros_16x9.png",
+      "mood": "suspense_detective",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Deixem comigo! Pela minha lupa, a primeira charada manda procurar bem perto dos livros mais antigos e pesados da estante!",
+        "en": "Leave it to me! Through my magnifying glass, the first riddle says to look right near the oldest and heaviest books on the shelf!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "LUNA",
+      "imageFile": "04_Luna_Chave_Enciclopedia_16x9.png",
+      "mood": "upbeat_dance",
+      "sfx": "disco_drop",
+      "motion": "dance_bounce",
+      "vfx": "disco_notes",
+      "text": {
+        "pt": "Achei, pessoal! Escondida bem atrás da grande enciclopédia azul estava esta chave dourada brilhante com uma fita rosa!",
+        "en": "I found it, everyone! Hidden right behind the giant blue encyclopedia was this shiny golden key with a pink ribbon!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "JONNY",
+      "imageFile": "05_Jonny_Pegadas_Poltrona_16x9.png",
+      "mood": "shock_mystery",
+      "sfx": "dun_dun_dun",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Mas esperem um pouquinho! Se nós já temos a chave na mão, onde será que foi parar o baú do tesouro que estava no mapa?",
+        "en": "Wait just a second! If we already have the key in our paws, where in the world did the treasure chest from the map go?"
+      }
+    },
+    {
+      "id": "06",
+      "character": "RAVEN",
+      "imageFile": "06_Raven_Almofadas_Poltrona_16x9.png",
+      "mood": "tiptoe_suspense",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Silêncio, crianças... vocês estão ouvindo esse suspiro calminho vindo lá de trás das almofadas gigantes da poltrona?",
+        "en": "Quiet, kids... do you hear that peaceful little sigh coming from right behind the giant armchair cushions?"
+      }
+    },
+    {
+      "id": "07",
+      "character": "VLAD",
+      "imageFile": "07_Vlad_Dormindo_Bau_16x9.png",
+      "mood": "funny_snore",
+      "sfx": "snore",
+      "motion": "breathing_zoom",
+      "vfx": "zzz_bubbles",
+      "text": {
+        "pt": "Que poltrona mais macia... ninguém vai roubar esse baú cheio de biscoitos quentinhos enquanto o capitão tira uma sonequinha...",
+        "en": "What a soft armchair... nobody is going to steal this chest full of warm biscuits while the captain takes a little nap..."
+      }
+    },
+    {
+      "id": "08",
+      "character": "VLAD",
+      "imageFile": "08_Vlad_Guardiao_Tesouro_16x9.png",
+      "mood": "comedy_boing",
+      "sfx": "boing",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Eu não estava dormindo não, família! Eu sou o guardião oficial da última fase e estava protegendo o prêmio com o meu próprio abraço!",
+        "en": "I wasn't sleeping at all, family! I am the official final boss guardian and I was protecting the prize with my very own hug!"
+      }
+    },
+    {
+      "id": "09",
+      "character": "FAMILIA",
+      "imageFile": "09_Familia_Bau_Biscoitos_16x9.png",
+      "isFinale": true,
+      "mood": "happy_celebration",
+      "sfx": "yay_fanfare",
+      "motion": "celebration_zoom",
+      "vfx": "hearts_confetti",
+      "banner": {
+        "pt": ["Somos a Funny Spitz Family!", "Inscreva-se! Vídeos novos todos os dias!"],
+        "en": ["We are the Funny Spitz Family!", "Subscribe! New videos every day!"]
+      },
+      "text": {
+        "pt": "O maior tesouro de todos é estarmos juntos dando boas risadas na sala! Inscreva-se no canal, deixe seu like e até a próxima aventura!",
+        "en": "The greatest treasure of all is being together sharing good laughs in the living room! Subscribe, leave a like, and see you next adventure!"
+      }
+    }
+  ]
+}
