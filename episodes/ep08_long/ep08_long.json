@@ -1,0 +1,186 @@
+{
+  "episodeNumber": 8,
+  "format": "16:9",
+  "cycleDate": "2026-11-20",
+  "scheduledTime": "17:00",
+  "theme": {
+    "pt": "Papai Vlad Tenta Ser Atleta: O Desafio da Ginástica Maluca (Episódio Completo)",
+    "en": "Daddy Vlad Tries to Be an Athlete: The Crazy Fitness Challenge (Full Episode)"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "Papai Vlad Tenta Ser Atleta! 🏋️‍♂️🐶 O Desafio da Ginástica na Sala! | Funny Spitz Family",
+      "description": "O Papai Vlad colocou sua faixa de ginástica na cabeça e decidiu mostrar para toda a Família Spitz que ainda é um super atleta campeão na sala de estar! 🏋️‍♂️🐶✨\n\nAcompanhe essa comédia hilária com a mamãe Raven cronometrando o treino, a Luna colocando música animada de academia, o Theo contando as flexões, o Papai Vlad ficando preso na bola gigante de pilates e uma grande festa em família!\n\nCapítulos:\n00:00 Dia de academia na sala da Casa Azul\n00:09 Mamãe Raven prepara os tapetes e a água fresquinha\n00:18 O Super Atleta Papai Vlad promete bater o recorde\n00:27 Theo conta a primeira flexão que dura dez segundos\n00:36 A bola gigante de ginástica sai rolando com o Papai!\n00:45 Luna coloca o ritmo de aeróbica no tablet\n00:54 Mamãe Raven procura o atleta que sumiu do tapete\n01:03 Papai Vlad cochilando abraçado à bola de pilates!\n01:13 A desculpa hilária do alongamento avançado de relaxamento\n01:23 Medalha de ouro de alegria para toda a Família Spitz!\n\n👉 Inscreva-se no canal, deixe seu like e ative o sininho para novas aventuras todos os dias!\n\n#FunnySpitzFamily #SpitzAlemao #LuluDaPomerania #ComediaFamiliar #HistoriaInfantil #DesenhoDeCachorro #FamiliaPet",
+      "tags": [
+        "Funny Spitz Family",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "episódio completo cachorro",
+        "história infantil em família",
+        "Papai Vlad Atleta Ginástica",
+        "Raven Vlad Luna Theo Jonny",
+        "cachorrinhos falantes",
+        "comédia familiar",
+        "vídeo para crianças e família",
+        "animação pet 3D"
+      ],
+      "thumbnailText": "PAPAI VLAD ATLETA!",
+      "scheduledTime": "17:00"
+    },
+    "en": {
+      "selectedTitle": "Daddy Vlad Tries to Be an Athlete! 🏋️‍♂️🐶 The Crazy Fitness Challenge! | Funny Spitz Family",
+      "description": "Daddy Vlad put on his sporty sweatband and decided to prove to the whole Spitz Family that he is still a champion fitness athlete right in the living room! 🏋️‍♂️🐶✨\n\nJoin this hilarious family workout comedy with Mom Raven holding the stopwatch, Luna playing upbeat gym music, Theo counting push-ups, Daddy Vlad bouncing away on a giant exercise ball, and a fun family celebration!\n\nChapters:\n00:00 Living room gym day at the Blue House\n00:09 Mom Raven sets up the yoga mats and water bottles\n00:18 Super Athlete Daddy Vlad promises a new record\n00:27 Theo counts one single slow-motion push-up\n00:36 The giant exercise ball bounces away with Dad!\n00:45 Luna plays upbeat aerobics music on her tablet\n00:54 Mom Raven looks for the missing fitness champion\n01:03 Daddy Vlad napping comfortably on the yoga mat!\n01:13 The hilarious excuse about advanced meditation stretching\n01:23 Gold medal celebration with the entire Spitz Family!\n\n👉 Subscribe, hit the like button, and join our fluffy family every day!\n\n#FunnySpitzFamily #Pomeranian #DogStories #FamilyAnimation #CuteDogs #KidsStory",
+      "tags": [
+        "Funny Spitz Family",
+        "Pomeranian family",
+        "German Spitz",
+        "funny dog full episode",
+        "kids family story",
+        "Daddy Vlad Fitness Challenge",
+        "Raven Vlad Luna Theo Jonny",
+        "talking pomeranians",
+        "family comedy",
+        "cute dog adventure"
+      ],
+      "thumbnailText": "DADDY VLAD ATHLETE!",
+      "scheduledTime": "17:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Sala_Ginastica_Casa_Azul_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "pan_right_zoom_in",
+      "vfx": "fireflies",
+      "text": {
+        "pt": "O sol brilhava na casa azul, e a sala de estar da Família Spitz amanheceu transformada em uma academia super colorida e animada!",
+        "en": "The sun was shining at the blue house, and the Spitz Family living room woke up transformed into a super colorful and lively home gym!"
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Raven_Cronometro_Tapete_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Eu já estendi os tapetes de ioga e trouxe água fresquinha, mas vai com calma nos exercícios para não ficar com dor nas costas, querido!",
+        "en": "I already rolled out the yoga mats and brought fresh water, but take it easy on the exercises so you don't hurt your back, honey!"
+      }
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imageFile": "02_Vlad_Faixa_Atleta_16x9.png",
+      "mood": "curious_pop",
+      "sfx": "pop_click",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Podem preparar os aplausos! Com esta faixa esportiva na cabeça, o papai aqui vai fazer cinquenta flexões seguidas sem nem suar!",
+        "en": "Get your applause ready! With this sporty headband on, Dad right here is going to do fifty push-ups in a row without breaking a sweat!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "imageFile": "03_Theo_Contando_Flexoes_16x9.png",
+      "mood": "suspense_detective",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Pai, eu estou anotando tudo na minha prancheta, mas você desceu na primeira flexão há dez segundos e ainda não subiu!",
+        "en": "Dad, I am writing everything down on my clipboard, but you went down for the first push-up ten seconds ago and still haven't come back up!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "JONNY",
+      "imageFile": "04_Jonny_Bola_Pilates_16x9.png",
+      "mood": "shock_mystery",
+      "sfx": "dun_dun_dun",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Segurem o papai, pessoal! Ele tentou subir na bola gigante de ginástica e saiu quicando pela sala inteira igual a um canguru!",
+        "en": "Catch Dad, everyone! He tried to balance on the giant exercise ball and went bouncing across the whole living room like a kangaroo!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "LUNA",
+      "imageFile": "05_Luna_Musica_Academia_16x9.png",
+      "mood": "upbeat_dance",
+      "sfx": "disco_drop",
+      "motion": "dance_bounce",
+      "vfx": "disco_notes",
+      "text": {
+        "pt": "Esse treino do papai é a melhor comédia do ano! Vou até aumentar a música animada no meu tablet para acompanhar os pulinhos!",
+        "en": "Dad's workout is the best comedy of the year! I'm turning up the upbeat music on my tablet to match his funny bounces!"
+      }
+    },
+    {
+      "id": "06",
+      "character": "RAVEN",
+      "imageFile": "06_Raven_Procurando_Atleta_16x9.png",
+      "mood": "tiptoe_suspense",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Crianças, a bola azul parou ali perto do sofá, mas onde foi parar o nosso grande campeão olímpico da família?",
+        "en": "Kids, the blue exercise ball stopped right over by the sofa, but where did our family's grand Olympic champion go?"
+      }
+    },
+    {
+      "id": "07",
+      "character": "VLAD",
+      "imageFile": "07_Vlad_Dormindo_Tapete_Yoga_16x9.png",
+      "mood": "funny_snore",
+      "sfx": "snore",
+      "motion": "breathing_zoom",
+      "vfx": "zzz_bubbles",
+      "text": {
+        "pt": "Que tapetinho de ginástica mais fofinho... depois de uma flexão inteira o atleta merece um descanso profundo...",
+        "en": "What a soft little yoga mat... after one whole push-up the champion athlete deserves a deep cozy rest..."
+      }
+    },
+    {
+      "id": "08",
+      "character": "VLAD",
+      "imageFile": "08_Vlad_Explicando_Alongamento_16x9.png",
+      "mood": "comedy_boing",
+      "sfx": "boing",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Eu não dormi no meio do treino não, família! Essa é a postura avançada do cachorrinho relaxado, a parte mais importante da ioga!",
+        "en": "I didn't fall asleep during the workout, family! That was the advanced relaxed puppy pose, the most important part of yoga!"
+      }
+    },
+    {
+      "id": "09",
+      "character": "FAMILIA",
+      "imageFile": "09_Familia_Medalha_Ginastica_16x9.png",
+      "isFinale": true,
+      "mood": "happy_celebration",
+      "sfx": "yay_fanfare",
+      "motion": "celebration_zoom",
+      "vfx": "hearts_confetti",
+      "banner": {
+        "pt": ["Somos a Funny Spitz Family!", "Inscreva-se! Vídeos novos todos os dias!"],
+        "en": ["We are the Funny Spitz Family!", "Subscribe! New videos every day!"]
+      },
+      "text": {
+        "pt": "Quando o exercício é dar boas risadas em família, todo mundo ganha medalha de ouro! Inscreva-se no canal e até amanhã!",
+        "en": "When the workout is laughing together as a family, everyone wins a gold medal! Subscribe to our channel and see you tomorrow!"
+      }
+    }
+  ]
+}

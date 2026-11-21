@@ -1,0 +1,154 @@
+{
+  "episodeNumber": 7,
+  "series": "christmas_special",
+  "isChristmasSpecial": true,
+  "cycleDate": "2026-11-20",
+  "theme": {
+    "pt": "Limpando a Lareira da Sala para a Chegada do Papai Noel",
+    "en": "Cleaning the Living Room Fireplace for Santa's Arrival"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "🎄 Limpando a Lareira para o Papai Noel! | Especial de Natal #7 #Shorts",
+      "description": "Episódio 7 da Série Especial de Natal da Família Spitz! Hoje a família resolveu deixar a lareira da sala brilhando para a chegada do Papai Noel, mas o Papai Vlad acabou fazendo a maior confusão! 🎄🐾🎅 #FunnySpitzFamily #Natal #SpitzAlemao #LuluDaPomerania #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Natal",
+        "Especial de Natal",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Cachorros Fofos",
+        "Shorts"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#EspecialDeNatal",
+        "#SpitzAlemao",
+        "#Shorts"
+      ],
+      "thumbnailText": "LAREIRA DO PAPAI NOEL!",
+      "scheduledTime": "12:00"
+    },
+    "en": {
+      "selectedTitle": "🎄 Cleaning the Fireplace for Santa! | Christmas Special #7 #Shorts",
+      "description": "Episode 7 of the Spitz Family Christmas Special Series! Today the family decided to make the living room fireplace sparkle for Santa Claus, with plenty of funny moments from Daddy Vlad! 🎄🐾🎅 #FunnySpitzFamily #Christmas #Pomeranian #CuteDogs #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Christmas Special",
+        "Pomeranian",
+        "Cute Dogs",
+        "Christmas Dogs",
+        "Shorts"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#ChristmasShorts",
+        "#Pomeranian",
+        "#Shorts"
+      ],
+      "thumbnailText": "SANTA'S FIREPLACE!",
+      "scheduledTime": "20:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Cena_Natal.png",
+      "sourceScene": "assets/christmas_scenes/00_house_christmas_exterior.jpg",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Faltam poucos dias para dezembro e hoje a missão de Natal da Família Spitz é preparar a grande lareira da sala!",
+        "en": "December is right around the corner, and today the Spitz Family's Christmas mission is preparing the grand living room fireplace!"
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Cena_Natal.png",
+      "sourceScene": "assets/christmas_scenes/raven_dining_table_christmas.jpg",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Querido, precisamos deixar a lareira bem limpinha antes de pendurar as meias vermelhas das crianças!",
+        "en": "Honey, we need to get the fireplace nice and clean before we hang up the kids' red Christmas stockings!"
+      }
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imageFile": "02_Cena_Natal.png",
+      "sourceScene": "assets/christmas_scenes/vlad_living_room_tree.jpg",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Deixa comigo! O papai aqui vai deixar essa chaminé tão brilhante que o Papai Noel vai escorregar igual a um tobogã!",
+        "en": "Leave it to me! Dad is going to make this chimney shine so bright that Santa will slide down like a water slide!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "JONNY",
+      "imageFile": "03_Cena_Natal.png",
+      "sourceScene": "assets/christmas_scenes/jonny_fireplace_stockings.jpg",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Eu já escolhi a maior meia de lã de todas para caberem muitos biscoitos natalinos dentro!",
+        "en": "I already picked the biggest wool stocking of all so lots of Christmas biscuits can fit inside!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "THEO",
+      "imageFile": "04_Cena_Natal.png",
+      "sourceScene": "assets/christmas_scenes/theo_window_village.jpg",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Pai, cuidado com esse espanador gigante! Você acabou de levantar uma nuvem cinza bem no meio da sala!",
+        "en": "Dad, watch out with that giant duster! You just sent a big puff of chimney dust right into the living room!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "LUNA",
+      "imageFile": "05_Cena_Natal.png",
+      "sourceScene": "assets/christmas_scenes/luna_christmas_tree_star.jpg",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Olhem o focinho do papai! Ele ficou com um bigode escuro de chaminé que parece um Papai Noel ao contrário!",
+        "en": "Look at Dad's nose! He got a dark chimney smudge mustache that looks like an upside-down Santa Claus!"
+      }
+    },
+    {
+      "id": "06",
+      "character": "VLAD",
+      "imageFile": "06_Cena_Natal.png",
+      "sourceScene": "assets/christmas_scenes/vlad_santa_armchair.jpg",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Foi tudo planejado, família! Eu só queria testar se a passagem do Papai Noel estava bem desimpedida!",
+        "en": "It was all planned, family! I just wanted to make sure Santa's chimney passage was completely clear!"
+      }
+    },
+    {
+      "id": "07",
+      "character": "FAMILIA",
+      "imageFile": "07_Cena_Natal.png",
+      "sourceScene": "assets/christmas_scenes/99_family_christmas_finale.jpg",
+      "isFinale": true,
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Com a lareira pronta e enfeitada, nossa casa ficou ainda mais mágica! Inscreva-se para o próximo episódio de Natal amanhã!",
+        "en": "With the fireplace clean and decorated, our home feels even more magical! Subscribe for tomorrow's Christmas episode!"
+      },
+      "banner": {
+        "pt": [
+          "Especial de Natal • Funny Spitz Family",
+          "Um novo episódio mágico todo dia até o Natal!"
+        ],
+        "en": [
+          "Christmas Special • Funny Spitz Family",
+          "A new magical episode every day until Christmas!"
+        ]
+      }
+    }
+  ]
+}

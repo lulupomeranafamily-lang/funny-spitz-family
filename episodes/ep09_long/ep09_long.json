@@ -1,0 +1,186 @@
+{
+  "episodeNumber": 9,
+  "format": "16:9",
+  "cycleDate": "2026-11-20",
+  "scheduledTime": "19:00",
+  "theme": {
+    "pt": "O Mistério do Controle Remoto Sumido na Sala (Episódio Completo)",
+    "en": "The Missing TV Remote Mystery in the Living Room (Full Episode)"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "O Mistério do Controle Remoto Sumido! 📺🔍 Onde o Papai Vlad Escondeu? | Funny Spitz Family",
+      "description": "Tudo estava pronto para a sessão de cinema da Família Spitz na sala de estar, mas na hora de ligar a televisão o controle remoto simplesmente desapareceu! 📺🔍🐶\n\nAcompanhe essa investigação hilária com a mamãe Raven procurando nas estantes, o detetive Theo seguindo as pistas, a Luna e o Jonny revirando as almofadas e uma descoberta muito engraçada no bolso do roupão do Papai Vlad!\n\nCapítulos:\n00:00 Tudo pronto para o cinema na sala da Casa Azul\n00:09 Mamãe Raven percebe que o controle da TV sumiu\n00:18 Papai Vlad garante que deixou em cima da mesinha\n00:27 Detetive Theo investiga debaixo do tapete com a lupa\n00:36 A televisão começa a mudar de canal sozinha!\n00:45 Luna dança com os canais de música trocando sem parar\n00:54 Mamãe Raven nota um barulhinho vindo da poltrona\n01:03 Papai Vlad cochilando em cima do controle remoto!\n01:13 A desculpa engraçada do teste automático de canais\n01:23 Pipoca e sessão de cinema perfeita com toda a família!\n\n👉 Inscreva-se no canal, deixe seu like e ative o sininho para novas aventuras todos os dias!\n\n#FunnySpitzFamily #SpitzAlemao #LuluDaPomerania #MisterioEmFamilia #HistoriaInfantil #DesenhoDeCachorro #FamiliaPet",
+      "tags": [
+        "Funny Spitz Family",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "episódio completo cachorro",
+        "história infantil em família",
+        "Mistério do Controle Sumido",
+        "Raven Vlad Luna Theo Jonny",
+        "cachorrinhos falantes",
+        "comédia familiar",
+        "vídeo para crianças e família",
+        "animação pet 3D"
+      ],
+      "thumbnailText": "CADÊ O CONTROLE DA TV?",
+      "scheduledTime": "19:00"
+    },
+    "en": {
+      "selectedTitle": "The Missing TV Remote Mystery! 📺🔍 Where Did Daddy Vlad Hide It? | Funny Spitz Family",
+      "description": "Everything was ready for the Spitz Family movie night in the living room, but right when it was time to turn on the TV, the remote control mysteriously vanished! 📺🔍🐶\n\nJoin this hilarious detective comedy with Mom Raven checking the shelves, Theo investigating with his magnifying glass, the TV suddenly changing channels all by itself, and a very funny discovery under Daddy Vlad's cozy cushion!\n\nChapters:\n00:00 Movie night setup in the Blue House living room\n00:09 Mom Raven notices the TV remote is missing\n00:18 Daddy Vlad insists he left it on the coffee table\n00:27 Detective Theo searches under the rug with his magnifying glass\n00:36 The TV starts flipping channels all by itself!\n00:45 Luna dances as music channels switch non-stop\n00:54 Mom Raven spots a clue right under Dad's elbow\n01:03 Daddy Vlad napping right on top of the remote control!\n01:13 The funny excuse about automatic channel testing\n01:23 Popcorn and cozy movie night with the whole family!\n\n👉 Subscribe, hit the like button, and join our fluffy family every day!\n\n#FunnySpitzFamily #Pomeranian #DogStories #FamilyAnimation #CuteDogs #KidsStory",
+      "tags": [
+        "Funny Spitz Family",
+        "Pomeranian family",
+        "German Spitz",
+        "funny dog full episode",
+        "kids family story",
+        "Missing Remote Mystery",
+        "Raven Vlad Luna Theo Jonny",
+        "talking pomeranians",
+        "family comedy",
+        "cute dog adventure"
+      ],
+      "thumbnailText": "WHERE IS THE REMOTE?",
+      "scheduledTime": "19:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Sala_Cinema_Casa_Azul_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "pan_right_zoom_in",
+      "vfx": "fireflies",
+      "text": {
+        "pt": "A pipoca já estava quentinha na casa azul, mas a noite de cinema da Família Spitz começou com o grande mistério do controle remoto desaparecido!",
+        "en": "The popcorn was already warm at the blue house, but the Spitz Family movie night began with the grand mystery of the missing remote control!"
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Raven_Tigela_Pipoca_16x9.png",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Eu já trouxe a tigela de pipoca para a sala, mas alguém viu onde foi parar o controle remoto da nossa televisão?",
+        "en": "I already brought the big bowl of popcorn to the living room, but has anyone seen where our television remote control went?"
+      }
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imageFile": "02_Vlad_Procurando_Bolso_16x9.png",
+      "mood": "curious_pop",
+      "sfx": "pop_click",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "text": {
+        "pt": "Que coisa mais curiosa! Eu tenho certeza absoluta de que deixei esse controle bem alinhadinho em cima da mesa de centro!",
+        "en": "How very curious! I am completely sure that I left that remote control neatly lined up right on top of the coffee table!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "imageFile": "03_Theo_Lupa_Tapete_16x9.png",
+      "mood": "suspense_detective",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Já olhei debaixo do tapete e atrás dos livros com a minha lupa, e não tem nenhuma pista do controle por aqui!",
+        "en": "I already checked under the rug and behind the books with my magnifying glass, and there is no sign of the remote over here!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "JONNY",
+      "imageFile": "04_Jonny_Apontando_TV_16x9.png",
+      "mood": "shock_mystery",
+      "sfx": "dun_dun_dun",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Olhem para a televisão agora mesmo! Ela ligou sozinha e está trocando de canal sem parar, parece até mágica!",
+        "en": "Look at the television right now! It just turned on by itself and keeps flipping channels non-stop like magic!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "LUNA",
+      "imageFile": "05_Luna_Dancando_Canais_16x9.png",
+      "mood": "upbeat_dance",
+      "sfx": "disco_drop",
+      "motion": "dance_bounce",
+      "vfx": "disco_notes",
+      "text": {
+        "pt": "Espera, deixa nesse canal de videoclipes! Quem quer que esteja apertando os botões escolheu a música mais legal da noite!",
+        "en": "Wait, leave it on this music video channel! Whoever is pressing those buttons picked the coolest song of the night!"
+      }
+    },
+    {
+      "id": "06",
+      "character": "RAVEN",
+      "imageFile": "06_Raven_Olhando_Poltrona_16x9.png",
+      "mood": "tiptoe_suspense",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_spotlight",
+      "text": {
+        "pt": "Esperem um instante... toda vez que o papai se mexe na poltrona, o volume da televisão sobe e o canal muda de novo!",
+        "en": "Hold on a second... every single time Dad shifts in his armchair, the television volume goes up and the channel changes again!"
+      }
+    },
+    {
+      "id": "07",
+      "character": "VLAD",
+      "imageFile": "07_Vlad_Dormindo_Controle_16x9.png",
+      "mood": "funny_snore",
+      "sfx": "snore",
+      "motion": "breathing_zoom",
+      "vfx": "zzz_bubbles",
+      "text": {
+        "pt": "Que almofada mais aconchegante... só tem uma pecinha quadrada fazendo cócegas nas minhas costas enquanto eu cochilo...",
+        "en": "What a cozy armchair cushion... there's just a little rectangular bump tickling my back while I take a quick nap..."
+      }
+    },
+    {
+      "id": "08",
+      "character": "VLAD",
+      "imageFile": "08_Vlad_Mostrando_Controle_16x9.png",
+      "mood": "comedy_boing",
+      "sfx": "boing",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "text": {
+        "pt": "Achei o controle para vocês, família! Eu guardei debaixo da almofada de propósito só para testar se as pilhas estavam funcionando bem!",
+        "en": "I found the remote for you, family! I kept it under the cushion on purpose just to test if the batteries were working properly!"
+      }
+    },
+    {
+      "id": "09",
+      "character": "FAMILIA",
+      "imageFile": "09_Familia_Cinema_Pipoca_16x9.png",
+      "isFinale": true,
+      "mood": "happy_celebration",
+      "sfx": "yay_fanfare",
+      "motion": "celebration_zoom",
+      "vfx": "hearts_confetti",
+      "banner": {
+        "pt": ["Somos a Funny Spitz Family!", "Inscreva-se! Vídeos novos todos os dias!"],
+        "en": ["We are the Funny Spitz Family!", "Subscribe! New videos every day!"]
+      },
+      "text": {
+        "pt": "Mistério resolvido e sessão de cinema garantida com muita pipoca! Inscreva-se no canal da Família Spitz e até o próximo episódio!",
+        "en": "Mystery solved and movie night guaranteed with lots of popcorn! Subscribe to the Spitz Family channel and see you next episode!"
+      }
+    }
+  ]
+}

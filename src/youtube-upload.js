@@ -91,9 +91,19 @@ export async function getAuthenticatedClient() {
   );
 
   if (fs.existsSync(TOKEN_PATH)) {
-    const token = JSON.parse(fs.readFileSync(TOKEN_PATH, "utf-8"));
-    oauth2Client.setCredentials(token);
-    return oauth2Client;
+    try {
+      const token = JSON.parse(fs.readFileSync(TOKEN_PATH, "utf-8"));
+      oauth2Client.setCredentials(token);
+      await oauth2Client.getAccessToken();
+      return oauth2Client;
+    } catch (err) {
+      console.warn(
+        `⚠️ Token OAuth expirado (${err.message}). Iniciando renovação automática no navegador...`
+      );
+      try {
+        fs.unlinkSync(TOKEN_PATH);
+      } catch {}
+    }
   }
 
   const authUrl = oauth2Client.generateAuthUrl({
