@@ -2,18 +2,18 @@
   "episodeNumber": 10,
   "cycleDate": "2026-11-23",
   "theme": {
-    "pt": "O Show de Talentos e Mágicas do Papai Vlad",
-    "en": "Daddy Vlad's Funny Talent & Magic Show"
+    "pt": "Aventura no Parque de Diversões: O Algodão-Doce Gigante do Papai Vlad",
+    "en": "Amusement Park Adventure: Daddy Vlad's Giant Cotton Candy"
   },
   "seo": {
     "pt": {
-      "selectedTitle": "O Show de Talentos e Mágicas do Papai Vlad! 🎩✨ #Shorts",
-      "description": "A Família Spitz organizou um grande show de talentos e mágicas na casa azul, e o Papai Vlad prometeu um efeito especial inesquecível com bolhas gigantes! 🎩✨🐶 #FunnySpitzFamily #SpitzAlemao #LuluDaPomerania #Shorts",
+      "selectedTitle": "O Algodão-Doce Gigante do Papai Vlad no Parque! 🎡🍭 #Shorts",
+      "description": "A Família Spitz foi passar o dia no parque de diversões e o Papai Vlad acabou virando uma nuvem gigante de algodão-doce cor-de-rosa! 🎡🎢🍭🐶 #FunnySpitzFamily #SpitzAlemao #LuluDaPomerania #Shorts",
       "tags": [
         "Funny Spitz Family",
         "Spitz Alemão",
         "Lulu da Pomerânia",
-        "Show de Talentos",
+        "Parque de Diversões",
         "Cachorros Fofos",
         "Shorts"
       ],
@@ -23,18 +23,18 @@
         "#LuluDaPomerania",
         "#Shorts"
       ],
-      "thumbnailText": "MÁGICA DO PAPAI VLAD!",
+      "thumbnailText": "PARQUE DE DIVERSÕES!",
       "scheduledTime": "07:00"
     },
     "en": {
-      "selectedTitle": "Daddy Vlad's Funny Talent & Magic Show! 🎩✨ #Shorts",
-      "description": "The Spitz Family organized a grand talent and magic show at the blue house, and Daddy Vlad promised an unforgettable special effect with giant bubbles! 🎩✨🐶 #FunnySpitzFamily #Pomeranian #CuteDogs #Shorts",
+      "selectedTitle": "Daddy Vlad's Giant Cotton Candy at the Amusement Park! 🎡🍭 #Shorts",
+      "description": "The Spitz Family spent the day at the amusement park and Daddy Vlad accidentally turned into a giant pink cotton candy cloud! 🎡🎢🍭🐶 #FunnySpitzFamily #Pomeranian #CuteDogs #Shorts",
       "tags": [
         "Funny Spitz Family",
         "Pomeranian",
         "Cute Dogs",
-        "Talent Show",
-        "Magic Trick",
+        "Amusement Park",
+        "Cotton Candy",
         "Shorts"
       ],
       "hashtags": [
@@ -43,7 +43,7 @@
         "#CuteDogs",
         "#Shorts"
       ],
-      "thumbnailText": "DADDY VLAD'S MAGIC!",
+      "thumbnailText": "AMUSEMENT PARK CHAOS!",
       "scheduledTime": "18:00"
     }
   },
@@ -51,82 +51,90 @@
     {
       "id": "00",
       "character": "NARRADOR",
+      "sourceLongId": "00",
       "imageFile": "00_Cena.png",
       "zoomDirection": "in",
       "text": {
-        "pt": "Hoje é noite de show de talentos e mágicas na casa azul da Família Spitz!",
-        "en": "Tonight is the grand talent and magic show at the Spitz Family blue house!"
+        "pt": "Hoje a Família Spitz veio passar o dia inteiro no grande parque de diversões!",
+        "en": "Today the Spitz Family came to spend the whole day at the grand amusement park!"
       }
     },
     {
       "id": "01",
       "character": "RAVEN",
+      "sourceLongId": "01",
       "imageFile": "01_Cena.png",
       "zoomDirection": "out",
       "text": {
-        "pt": "Eu já preparei o pergaminho dourado com a programação de todos os talentos da família!",
-        "en": "I already prepared the golden scroll with the lineup for all our family talents!"
+        "pt": "Aqui estão as pulseiras douradas na bilheteria, todo mundo andando bem juntinho!",
+        "en": "Here are the golden wristbands at the ticket booth, everyone stay close together!"
       }
     },
     {
       "id": "02",
-      "character": "VLAD",
+      "character": "THEO",
+      "sourceLongId": "03",
       "imageFile": "02_Cena.png",
       "zoomDirection": "in",
       "text": {
-        "pt": "Preparem os aplausos porque o Grande Mágico Vlad vai apresentar um efeito especial inédito!",
-        "en": "Get your applause ready because the Great Magician Vlad is presenting a brand new special effect!"
+        "pt": "Olhando o mapa do parque, aquela montanha-russa gigante dá três voltas no ar!",
+        "en": "Looking at the park map, that giant roller coaster goes upside down three times!"
       }
     },
     {
       "id": "03",
-      "character": "THEO",
+      "character": "JONNY",
+      "sourceLongId": "06",
       "imageFile": "03_Cena.png",
       "zoomDirection": "out",
       "text": {
-        "pt": "Com a minha lupa de detetive, já descobri onde está escondida a primeira surpresa do show!",
-        "en": "With my detective magnifying glass, I already found where the show's first surprise is hidden!"
+        "pt": "Venham para a pista de bate-bate que o meu carrinho vermelho é o mais veloz!",
+        "en": "Come to the bumper car arena because my red car is the fastest one here!"
       }
     },
     {
       "id": "04",
       "character": "LUNA",
+      "sourceLongId": "12",
       "imageFile": "04_Cena.png",
       "zoomDirection": "in",
       "text": {
-        "pt": "E eu encontrei a chave dourada do nosso troféu e já estou gravando tudo no meu tablet!",
-        "en": "And I found the golden key to our trophy and I'm recording everything on my tablet!"
+        "pt": "Ganhamos o ursinho dourado gigante na máquina de garra bem na primeira tentativa!",
+        "en": "We won the giant golden teddy bear at the claw machine on the very first try!"
       }
     },
     {
       "id": "05",
-      "character": "JONNY",
+      "character": "VLAD",
+      "sourceLongId": "15",
       "imageFile": "05_Cena.png",
       "zoomDirection": "out",
       "text": {
-        "pt": "Olhem o efeito especial do papai! Ele encheu o palco de bolhas gigantes e meu patinho adorou!",
-        "en": "Look at Dad's special effect! He filled the stage with giant bubbles and my rubber ducky loves it!"
+        "pt": "Socorro, família! Apertei o botão turbo da máquina e virei um algodão-doce gigante!",
+        "en": "Help, family! I pressed the turbo button and turned into a giant walking cotton candy!"
       }
     },
     {
       "id": "06",
-      "character": "VLAD",
+      "character": "JONNY",
+      "sourceLongId": "16",
       "imageFile": "06_Cena.png",
       "zoomDirection": "in",
       "text": {
-        "pt": "Viram só? O Grande Mágico Vlad fez até aparecer uma coroa branca de espuma na cabeça!",
-        "en": "See that? The Great Magician Vlad even made a white foam crown appear right on his head!"
+        "pt": "Esse chapéu rosa do papai é o mais doce e divertido de todo o parque!",
+        "en": "Dad's giant pink cotton candy hat is the sweetest and funniest in the whole park!"
       }
     },
     {
       "id": "07",
       "character": "FAMILIA",
+      "sourceLongId": "19",
       "imageFile": "07_Cena.png",
       "isFinale": true,
       "zoomDirection": "out",
       "text": {
-        "pt": "Nosso show de talentos foi nota dez! Inscreva-se no canal da Família Spitz e até amanhã!",
-        "en": "Our family talent show was a perfect ten! Subscribe to the Spitz Family channel and see you tomorrow!"
+        "pt": "Com esse show de fogos no parque, nosso dia foi mágico! Inscreva-se no canal!",
+        "en": "With this fireworks show at the park, our day was magical! Subscribe to our channel!"
       },
       "banner": {
         "pt": [
