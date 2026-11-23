@@ -5,6 +5,7 @@ import { CHARACTERS } from "./characters.js";
 import { produceEpisodeForLanguage } from "./produce-episode.js";
 import { produceLongEpisode16x9 } from "./produce-long-16x9.js";
 import { uploadVideoToYouTube } from "./youtube-upload.js";
+import { generateUniqueSceneImage } from "./image-gen.js";
 
 const HISTORY_PATH = path.resolve("config/history.json");
 
@@ -235,18 +236,34 @@ async function runDailyCloudCycle() {
   );
   fs.writeFileSync(epJsonPath, JSON.stringify(episodeData, null, 2), "utf-8");
 
-  // Etapa 3: Gera as imagens das cenas intermediárias (01 a 06)
+  // Etapa 3: Gera imagens 9:16 100% inéditas para TODAS as cenas (00 até o final) via Cascata Multi-Provedor
   for (const scene of episodeData.scenes) {
-    if (scene.id === "00" || scene.isFinale) continue;
     const imgOut = path.join(imagesDir, scene.imageFile);
     if (!fs.existsSync(imgOut)) {
-      console.log(`🖼️ Gerando imagem 9:16 da Cena ${scene.id}...`);
-      await generateCloudSceneImage({
-        prompt: scene.imagePrompt || CHARACTERS[scene.character]?.visual,
-        character: scene.character,
-        outPath: imgOut,
-        seed: nextEpNum * 100 + Number(scene.id)
-      });
+      console.log(`🖼️ Gerando imagem 9:16 inédita da Cena ${scene.id} (${scene.character})...`);
+      const defaultPrompt =
+        scene.id === "00"
+          ? `3D Pixar Disney style exterior and entrance of a charming two-story blue family house with a lively scene for theme: "${episodeData.theme.en}"`
+          : scene.isFinale
+          ? `3D Pixar Disney style family of five fluffy Pomeranian dogs (black mom in floral dress, cream dad in striped shirt and bow tie, black girl in pink blouse, orange boy in rainbow glasses, cream boy in white shirt) celebrating together for: "${episodeData.theme.en}"`
+          : `${CHARACTERS[scene.character]?.visual || "cute fluffy Pomeranian dog"}, acting out: "${scene.text?.en || episodeData.theme.en}"`;
+
+      try {
+        await generateUniqueSceneImage({
+          prompt: scene.imagePrompt || defaultPrompt,
+          aspectRatio: "9:16",
+          outPath: imgOut,
+          seed: nextEpNum * 1000 + Number(scene.id) * 53
+        });
+      } catch (err) {
+        console.warn(`⚠️ Contingência final de imagem na cena ${scene.id}: ${err.message}`);
+        await generateCloudSceneImage({
+          prompt: scene.imagePrompt || defaultPrompt,
+          character: scene.character,
+          outPath: imgOut,
+          seed: nextEpNum * 100 + Number(scene.id)
+        });
+      }
     }
   }
 

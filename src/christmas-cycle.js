@@ -4,6 +4,7 @@ import { CHARACTERS } from "./characters.js";
 import { produceEpisodeForLanguage } from "./produce-episode.js";
 import { uploadVideoToYouTube } from "./youtube-upload.js";
 import { ensureChristmasMusicMp3 } from "./christmas-music.js";
+import { generateUniqueSceneImage } from "./image-gen.js";
 
 const CHRISTMAS_HISTORY_PATH = path.resolve("config/christmas_history.json");
 
@@ -226,22 +227,42 @@ export async function runChristmasSpecialCycle({ publishNow = false } = {}) {
 
   episodeData.series = "Especial_de_Natal";
   const charCounter = {};
-  episodeData.scenes.forEach((s, idx) => {
+  for (let idx = 0; idx < episodeData.scenes.length; idx++) {
+    const s = episodeData.scenes[idx];
     s.id = String(idx).padStart(2, "0");
-    s.imageFile = `${s.id}_${s.character}_Natal_9x16.jpg`;
+    s.imageFile = `${s.id}_${s.character}_Natal_9x16.png`;
     const isLast = idx === episodeData.scenes.length - 1;
     const roleKey = idx === 0 ? "NARRADOR" : isLast ? "FAMILIA" : s.character;
     const usage = charCounter[roleKey] || 0;
     charCounter[roleKey] = usage + 1;
 
     const imgOut = path.join(imagesDir, s.imageFile);
-    assignVariedChristmasScene({
-      character: roleKey,
-      charUsageCount: usage,
-      episodeNumber: nextNum,
-      outPath: imgOut
-    });
-  });
+    if (!fs.existsSync(imgOut)) {
+      const christmasPrompt =
+        s.imagePrompt ||
+        `${
+          CHARACTERS[roleKey]?.visual || "family of five fluffy Pomeranian dogs"
+        }, magical Christmas holiday setting with pine garlands, warm fairy lights, ornaments and snow outside, acting out: "${
+          s.text?.en || episodeData.theme.en
+        }"`;
+      try {
+        await generateUniqueSceneImage({
+          prompt: christmasPrompt,
+          aspectRatio: "9:16",
+          outPath: imgOut,
+          seed: 70000 + nextNum * 1000 + idx * 41
+        });
+      } catch (err) {
+        console.warn(`⚠️ Contingência natalina na cena ${s.id}: ${err.message}`);
+        assignVariedChristmasScene({
+          character: roleKey,
+          charUsageCount: usage,
+          episodeNumber: nextNum,
+          outPath: imgOut
+        });
+      }
+    }
+  }
 
   const lastScene = episodeData.scenes[episodeData.scenes.length - 1];
   lastScene.isFinale = true;

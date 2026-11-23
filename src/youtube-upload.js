@@ -187,8 +187,13 @@ export async function uploadVideoToYouTube({
     statusObj.publishAt = validPublishAt;
   }
 
+  const safeTitle = String(title || "Funny Spitz Family")
+    .replace(/[<>]/g, "")
+    .slice(0, 99)
+    .trim();
+
   console.log(
-    `🚀 Enviando vídeo para o YouTube: "${title}" (Agendado para: ${
+    `🚀 Enviando vídeo para o YouTube: "${safeTitle}" (Agendado para: ${
       validPublishAt || "Imediato"
     })...`
   );
@@ -196,7 +201,7 @@ export async function uploadVideoToYouTube({
     part: ["snippet", "status"],
     requestBody: {
       snippet: {
-        title,
+        title: safeTitle,
         description,
         tags,
         categoryId: "24", // Entertainment / Family

@@ -8,6 +8,7 @@ import { synthesizeSpeech } from "./tts.js";
 import { CHARACTERS } from "./characters.js";
 import { generateSfxWav, generateMoodMusicWav } from "./audio-fx.js";
 import { generateVeoRealMotionClip } from "./veo-video.js";
+import { generateUniqueSceneImage } from "./image-gen.js";
 
 const ffprobePath = ffprobeStatic.path;
 
@@ -255,8 +256,36 @@ async function generateWidescreenThumbnail({ baseImagePath, titleText, lang, out
 export async function produceLongEpisode16x9({ episodeData, episodeDir, lang }) {
   const workDir = path.join(episodeDir, "build", lang);
   const outDir = path.join(episodeDir, "output");
+  const imagesDir = path.join(episodeDir, "images");
   fs.mkdirSync(workDir, { recursive: true });
   fs.mkdirSync(outDir, { recursive: true });
+  fs.mkdirSync(imagesDir, { recursive: true });
+
+  // Pré-gera em lotes paralelos (3 por vez) todas as imagens 16:9 inéditas que ainda não existem
+  const missingScenes = episodeData.scenes.filter(
+    (s) => !fs.existsSync(path.join(imagesDir, s.imageFile))
+  );
+  for (let i = 0; i < missingScenes.length; i += 3) {
+    const batch = missingScenes.slice(i, i + 3);
+    await Promise.all(
+      batch.map((scene) => {
+        const imgPath = path.join(imagesDir, scene.imageFile);
+        const charVisual =
+          CHARACTERS[scene.character]?.visual || "cute fluffy Pomeranian dog family";
+        const autoPrompt =
+          scene.imagePrompt ||
+          `${charVisual}, acting out scene: "${scene.text.en || scene.text.pt}" inside a colorful 3D Pixar family setting`;
+        return generateUniqueSceneImage({
+          prompt: autoPrompt,
+          aspectRatio: "16:9",
+          outPath: imgPath,
+          seed:
+            Number(episodeData.episodeNumber || 10) * 1000 +
+            Number(scene.id) * 37
+        });
+      })
+    );
+  }
 
   const segmentFiles = [];
 
@@ -265,12 +294,23 @@ export async function produceLongEpisode16x9({ episodeData, episodeDir, lang }) 
       `🎬 [16:9 ${lang.toUpperCase()}] Cena ${scene.id} (${scene.character}) | Clima: ${scene.mood} | SFX: ${scene.sfx} | Motion: ${scene.motion}`
     );
 
-    const imgPath = path.join(episodeDir, "images", scene.imageFile);
+    const imagesDir = path.join(episodeDir, "images");
+    fs.mkdirSync(imagesDir, { recursive: true });
+    const imgPath = path.join(imagesDir, scene.imageFile);
     if (!fs.existsSync(imgPath)) {
-      throw new Error(`Imagem 16:9 não encontrada: ${imgPath}`);
+      const charVisual = CHARACTERS[scene.character]?.visual || "cute fluffy Pomeranian dog family";
+      const autoPrompt =
+        scene.imagePrompt ||
+        `${charVisual}, acting out scene: "${scene.text.en || scene.text.pt}" inside a colorful 3D Pixar family setting`;
+      await generateUniqueSceneImage({
+        prompt: autoPrompt,
+        aspectRatio: "16:9",
+        outPath: imgPath,
+        seed: Number(episodeData.episodeNumber || 10) * 1000 + Number(scene.id) * 37
+      });
     }
 
-    // 1. Voz neural do personagem (com Vlad Alfa bem grave nas cenas 07 e 08)
+    // 1. Voz neural do personagem (com Vlad Alfa suave e aveludada)
     const rawVoicePath = path.join(workDir, `scene_${scene.id}_voice.mp3`);
     if (!fs.existsSync(rawVoicePath) || fs.statSync(rawVoicePath).size < 1000) {
       await synthesizeSpeech({
@@ -281,7 +321,7 @@ export async function produceLongEpisode16x9({ episodeData, episodeDir, lang }) 
       });
     }
 
-    // Adiciona pequeno respiro antes (0.35s) para o efeito especial sonoro brilhar e depois (0.55s)
+    // Adiciona respiro cinematográfico antes (0.45s) e depois (0.85s) para ritmo fluido em episódios de 3+ minutos
     const paddedVoicePath = path.join(workDir, `scene_${scene.id}_voice_pad.wav`);
     spawnSync(
       ffmpegPath,
@@ -290,7 +330,7 @@ export async function produceLongEpisode16x9({ episodeData, episodeDir, lang }) 
         "-i",
         rawVoicePath,
         "-af",
-        "adelay=350|350,apad=pad_dur=0.55",
+        "adelay=450|450,apad=pad_dur=0.85",
         "-ar",
         "44100",
         "-ac",
@@ -300,7 +340,8 @@ export async function produceLongEpisode16x9({ episodeData, episodeDir, lang }) 
       { encoding: "utf-8" }
     );
 
-    const durationSec = Math.max(4.5, getAudioDurationSec(paddedVoicePath));
+    const minSceneDur = episodeData.scenes.length >= 18 ? 9.1 : 4.5;
+    const durationSec = Math.max(minSceneDur, getAudioDurationSec(paddedVoicePath));
 
     // 2. Gera Efeito Sonoro Especial (SFX) e Música Dinâmica da Cena (Suspense / Dançante / Comédia / Festa)
     const sfxWavPath = path.join(workDir, `scene_${scene.id}_sfx.wav`);
@@ -481,9 +522,10 @@ export async function produceLongEpisode16x9({ episodeData, episodeDir, lang }) 
     "utf-8"
   );
 
+  const epNumPadded = String(episodeData.episodeNumber).padStart(2, "0");
   const finalMp4 = path.join(
     outDir,
-    `Ep0${episodeData.episodeNumber}_Longo_16x9_${lang.toUpperCase()}_FunnySpitzFamily.mp4`
+    `Ep${epNumPadded}_Longo_16x9_${lang.toUpperCase()}_FunnySpitzFamily.mp4`
   );
 
   const concatRes = spawnSync(
@@ -509,11 +551,9 @@ export async function produceLongEpisode16x9({ episodeData, episodeDir, lang }) 
   }
 
   // 6. Gera a Thumbnail 16:9 de Alta Conversão
-  const thumbSource = path.join(
-    episodeDir,
-    "images",
-    episodeData.scenes[7]?.imageFile || episodeData.scenes[2].imageFile
-  );
+  const climaxScene =
+    episodeData.scenes[15] || episodeData.scenes[7] || episodeData.scenes[2];
+  const thumbSource = path.join(episodeDir, "images", climaxScene.imageFile);
   const thumbnailPath = await generateWidescreenThumbnail({
     baseImagePath: thumbSource,
     titleText: episodeData.seo[lang].thumbnailText,
