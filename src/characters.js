@@ -4,7 +4,7 @@
 export const CHARACTERS = {
   NARRADOR: {
     name: "Narrador",
-    visual: "Exterior of the cozy two-story blue family house at dusk with warm glowing windows, white picket fence, and garden roses.",
+    visual: "Photorealistic cinema-quality exterior of the cozy two-story blue-gray siding family house with yellow trim at dusk, warm glowing windows, white picket fence, and garden roses. Strictly NO humans anywhere, 100% dog-only universe.",
     voices: {
       pt: "pt-BR-AntonioNeural",
       en: "en-US-GuyNeural"
@@ -13,7 +13,7 @@ export const CHARACTERS = {
   },
   RAVEN: {
     name: "Raven (Mamãe)",
-    visual: "Black Pomeranian (German Spitz) dog wearing round gold-rimmed glasses, a white pearl necklace, and a colorful floral print blouse/dress.",
+    visual: "Photorealistic pure black fluffy Pomeranian (German Spitz) dog wearing thin round gold-rimmed eyeglasses with clear transparent lenses (NOT sunglasses), a white pearl necklace, and a cream/white blouse with colorful small floral print. Strictly NO humans anywhere, 100% dog-only universe.",
     voices: {
       pt: "pt-BR-FranciscaNeural",
       en: "en-US-JennyNeural"
@@ -22,7 +22,7 @@ export const CHARACTERS = {
   },
   VLAD: {
     name: "Vlad (Papai - Alfa da Família)",
-    visual: "Cream/light golden-white Pomeranian (German Spitz) dog wearing thin round gold-rimmed glasses, a blue-and-white vertical striped button-down shirt, and a dark navy blue bow tie with tiny dots.",
+    visual: "Photorealistic light cream/white fluffy Pomeranian (German Spitz) dog wearing thin round gold-rimmed eyeglasses with clear transparent lenses (NOT sunglasses), a light blue-and-white vertical pinstriped button-down shirt, and a dark navy blue bow tie with tiny white polka dots. Strictly NO humans anywhere, 100% dog-only universe.",
     voices: {
       pt: "en-US-BrianMultilingualNeural",
       en: "en-US-BrianMultilingualNeural"
@@ -32,7 +32,7 @@ export const CHARACTERS = {
   },
   LUNA: {
     name: "Luna (15 anos)",
-    visual: "Black Pomeranian (German Spitz) dog wearing round gold-rimmed glasses, a white pearl necklace, and a pink ruffled blouse.",
+    visual: "Photorealistic pure black fluffy Pomeranian (German Spitz) dog wearing thin round gold-rimmed eyeglasses with clear transparent lenses (NOT sunglasses), a white pearl necklace, and a light pink ruffled satin blouse. Strictly NO humans anywhere, 100% dog-only universe.",
     voices: {
       pt: "pt-BR-FranciscaNeural",
       en: "en-US-AriaNeural"
@@ -41,7 +41,7 @@ export const CHARACTERS = {
   },
   THEO: {
     name: "Theo (10 anos)",
-    visual: "Cream/light orange Pomeranian (German Spitz) dog wearing rainbow multicolored frame glasses and a blue button-down shirt.",
+    visual: "Photorealistic light cream/peach-orange fluffy Pomeranian (German Spitz) dog wearing thick multicolored rainbow-patterned eyeglasses with clear transparent lenses (NOT sunglasses) and a sky-blue button-down collared shirt. Strictly NO humans anywhere, 100% dog-only universe.",
     voices: {
       pt: "pt-BR-AntonioNeural",
       en: "en-US-AnaNeural"
@@ -50,7 +50,7 @@ export const CHARACTERS = {
   },
   JONNY: {
     name: "Jonny (8 anos)",
-    visual: "Cream/light golden Pomeranian (German Spitz) dog with NO glasses, wearing a white button-down shirt and a dark bow tie.",
+    visual: "Photorealistic golden-cream fluffy Pomeranian (German Spitz) dog with NO glasses, wearing a crisp white button-down collared shirt and a dark bow tie. Strictly NO humans anywhere, 100% dog-only universe.",
     voices: {
       pt: "pt-BR-FranciscaNeural",
       en: "en-US-AnaNeural"
@@ -59,7 +59,7 @@ export const CHARACTERS = {
   },
   FAMILIA: {
     name: "Família Spitz",
-    visual: "All 5 Pomeranian family members together: Raven, Vlad, Luna, Theo, and Jonny.",
+    visual: "Photorealistic group of all 5 fluffy Pomeranian family members together (Raven black mom in gold glasses, pearl necklace and floral blouse; Vlad cream dad in gold glasses, blue-white striped shirt and navy polka-dot bow tie; Luna black girl in gold glasses, pearl necklace and pink ruffled blouse; Theo cream-orange boy in rainbow glasses and blue shirt; Jonny golden-cream boy with no glasses in white shirt and dark bow tie). Strictly NO humans anywhere, 100% dog-only universe.",
     voices: {
       pt: "pt-BR-FranciscaNeural",
       en: "en-US-JennyNeural"

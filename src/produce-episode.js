@@ -283,56 +283,105 @@ export async function produceEpisodeForLanguage({ episodeData, episodeDir, asset
     const svgBuffer = buildOverlaySvg({ scene, lang, isChristmas });
     await sharp(svgBuffer).png().toFile(overlayPng);
 
-    // 4. Renderiza clipe MP4 da cena com efeito Ken Burns suave na imagem + balão fixo nítido
+    // 4. Renderiza clipe MP4 da cena (prioriza clipe 3D com movimento real em clips/scene_XX.mp4!)
     const fps = 25;
     const totalFrames = Math.ceil(durationSec * fps);
-    const zoomExpr =
-      scene.zoomDirection === "out"
-        ? `if(eq(on,1),1.12,max(1.0,zoom-0.0010))`
-        : `min(zoom+0.0010,1.12)`;
-
+    const clipsDir = path.join(episodeDir, "clips");
+    const realMotionClip = path.join(clipsDir, `scene_${scene.id}.mp4`);
     const segmentMp4 = path.join(workDir, `scene_${scene.id}_segment.mp4`);
-    const filterComplex = `[0:v]scale=1210:2150,zoompan=z='${zoomExpr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${totalFrames}:s=1080x1920:fps=${fps}[bg];[bg][1:v]overlay=0:0:format=auto,format=yuv420p[v]`;
 
-    const ffRes = spawnSync(
-      ffmpegPath,
-      [
-        "-y",
-        "-i",
-        baseCleanPng,
-        "-loop",
-        "1",
-        "-i",
-        overlayPng,
-        "-i",
-        paddedVoicePath,
-        "-filter_complex",
-        filterComplex,
-        "-map",
-        "[v]",
-        "-map",
-        "2:a",
-        "-t",
-        durationSec.toFixed(2),
-        "-c:v",
-        "libx264",
-        "-preset",
-        "veryfast",
-        "-crf",
-        "20",
-        "-c:a",
-        "aac",
-        "-b:a",
-        "192k",
-        "-ar",
-        "44100",
-        "-ac",
-        "2",
-        "-shortest",
-        segmentMp4
-      ],
-      { encoding: "utf-8" }
-    );
+    let ffRes;
+    if (fs.existsSync(realMotionClip)) {
+      console.log(`   🎥 [9:16] Usando clipe 3D com movimento natural: scene_${scene.id}.mp4`);
+      const filterComplex = `[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=${fps}[bg];[bg][1:v]overlay=0:0:format=auto,format=yuv420p[v]`;
+      ffRes = spawnSync(
+        ffmpegPath,
+        [
+          "-y",
+          "-stream_loop",
+          "-1",
+          "-i",
+          realMotionClip,
+          "-loop",
+          "1",
+          "-i",
+          overlayPng,
+          "-i",
+          paddedVoicePath,
+          "-filter_complex",
+          filterComplex,
+          "-map",
+          "[v]",
+          "-map",
+          "2:a",
+          "-t",
+          durationSec.toFixed(2),
+          "-c:v",
+          "libx264",
+          "-preset",
+          "veryfast",
+          "-crf",
+          "20",
+          "-c:a",
+          "aac",
+          "-b:a",
+          "192k",
+          "-ar",
+          "44100",
+          "-ac",
+          "2",
+          "-shortest",
+          segmentMp4
+        ],
+        { encoding: "utf-8" }
+      );
+    } else {
+      const zoomExpr =
+        scene.zoomDirection === "out"
+          ? `if(eq(on,1),1.12,max(1.0,zoom-0.0010))`
+          : `min(zoom+0.0010,1.12)`;
+      const filterComplex = `[0:v]scale=1210:2150,zoompan=z='${zoomExpr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=${totalFrames}:s=1080x1920:fps=${fps}[bg];[bg][1:v]overlay=0:0:format=auto,format=yuv420p[v]`;
+
+      ffRes = spawnSync(
+        ffmpegPath,
+        [
+          "-y",
+          "-i",
+          baseCleanPng,
+          "-loop",
+          "1",
+          "-i",
+          overlayPng,
+          "-i",
+          paddedVoicePath,
+          "-filter_complex",
+          filterComplex,
+          "-map",
+          "[v]",
+          "-map",
+          "2:a",
+          "-t",
+          durationSec.toFixed(2),
+          "-c:v",
+          "libx264",
+          "-preset",
+          "veryfast",
+          "-crf",
+          "20",
+          "-c:a",
+          "aac",
+          "-b:a",
+          "192k",
+          "-ar",
+          "44100",
+          "-ac",
+          "2",
+          "-shortest",
+          segmentMp4
+        ],
+        { encoding: "utf-8" }
+      );
+    }
 
     if (ffRes.status !== 0) {
       throw new Error(
@@ -382,7 +431,7 @@ export async function produceEpisodeForLanguage({ episodeData, episodeDir, asset
   const bgmVol = isChristmas ? "0.16" : "0.10";
   const epPrefix = isChristmas
     ? `Natal_Ep${String(episodeData.episodeNumber).padStart(2, "0")}`
-    : `Ep0${episodeData.episodeNumber}`;
+    : `Ep${String(episodeData.episodeNumber).padStart(2, "0")}`;
   const finalMp4 = path.join(
     outDir,
     `${epPrefix}_${lang.toUpperCase()}_FunnySpitzFamily_9x16.mp4`

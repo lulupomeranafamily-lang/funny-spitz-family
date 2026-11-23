@@ -257,19 +257,9 @@ export async function generateUniqueSceneImage({
   const targetWidth = isWidescreen ? 1920 : 1080;
   const targetHeight = isWidescreen ? 1080 : 1920;
 
-  const styledPrompt = `3D Pixar Disney animation, ${prompt}, ultra detailed fluffy Pomeranian fur, vibrant lighting, no text`;
+  const styledPrompt = `Photorealistic cinema quality, ${prompt}, ultra detailed fluffy Pomeranian German Spitz fur, clear transparent eyeglass lenses, warm golden bokeh lighting, STRICTLY NO HUMANS ANYWHERE, 100% dog-only world, no people in background, no text, no watermark`;
 
   const providers = [
-    {
-      name: "Pollinations FLUX Clean",
-      fn: (s) =>
-        generateWithPollinations({
-          prompt: styledPrompt,
-          seed: s,
-          isWidescreen,
-          model: "flux"
-        })
-    },
     {
       name: "FLUX.1-schnell (Gradio Space 1)",
       fn: (s) =>
@@ -291,12 +281,13 @@ export async function generateUniqueSceneImage({
         })
     },
     {
-      name: "AI Horde Community Cluster",
+      name: "Pollinations FLUX Clean",
       fn: (s) =>
-        generateWithAiHorde({
+        generateWithPollinations({
           prompt: styledPrompt,
           seed: s,
-          isWidescreen
+          isWidescreen,
+          model: "flux"
         })
     },
     {

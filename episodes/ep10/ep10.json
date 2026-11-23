@@ -1,0 +1,143 @@
+{
+  "episodeNumber": 10,
+  "cycleDate": "2026-11-23",
+  "theme": {
+    "pt": "O Show de Talentos e Mágicas do Papai Vlad",
+    "en": "Daddy Vlad's Funny Talent & Magic Show"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "O Show de Talentos e Mágicas do Papai Vlad! 🎩✨ #Shorts",
+      "description": "A Família Spitz organizou um grande show de talentos e mágicas na casa azul, e o Papai Vlad prometeu um efeito especial inesquecível com bolhas gigantes! 🎩✨🐶 #FunnySpitzFamily #SpitzAlemao #LuluDaPomerania #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Show de Talentos",
+        "Cachorros Fofos",
+        "Shorts"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#SpitzAlemao",
+        "#LuluDaPomerania",
+        "#Shorts"
+      ],
+      "thumbnailText": "MÁGICA DO PAPAI VLAD!",
+      "scheduledTime": "07:00"
+    },
+    "en": {
+      "selectedTitle": "Daddy Vlad's Funny Talent & Magic Show! 🎩✨ #Shorts",
+      "description": "The Spitz Family organized a grand talent and magic show at the blue house, and Daddy Vlad promised an unforgettable special effect with giant bubbles! 🎩✨🐶 #FunnySpitzFamily #Pomeranian #CuteDogs #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Pomeranian",
+        "Cute Dogs",
+        "Talent Show",
+        "Magic Trick",
+        "Shorts"
+      ],
+      "hashtags": [
+        "#FunnySpitzFamily",
+        "#Pomeranian",
+        "#CuteDogs",
+        "#Shorts"
+      ],
+      "thumbnailText": "DADDY VLAD'S MAGIC!",
+      "scheduledTime": "18:00"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "00_Cena.png",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Hoje é noite de show de talentos e mágicas na casa azul da Família Spitz!",
+        "en": "Tonight is the grand talent and magic show at the Spitz Family blue house!"
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "01_Cena.png",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Eu já preparei o pergaminho dourado com a programação de todos os talentos da família!",
+        "en": "I already prepared the golden scroll with the lineup for all our family talents!"
+      }
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imageFile": "02_Cena.png",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Preparem os aplausos porque o Grande Mágico Vlad vai apresentar um efeito especial inédito!",
+        "en": "Get your applause ready because the Great Magician Vlad is presenting a brand new special effect!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "imageFile": "03_Cena.png",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Com a minha lupa de detetive, já descobri onde está escondida a primeira surpresa do show!",
+        "en": "With my detective magnifying glass, I already found where the show's first surprise is hidden!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "LUNA",
+      "imageFile": "04_Cena.png",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "E eu encontrei a chave dourada do nosso troféu e já estou gravando tudo no meu tablet!",
+        "en": "And I found the golden key to our trophy and I'm recording everything on my tablet!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "JONNY",
+      "imageFile": "05_Cena.png",
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Olhem o efeito especial do papai! Ele encheu o palco de bolhas gigantes e meu patinho adorou!",
+        "en": "Look at Dad's special effect! He filled the stage with giant bubbles and my rubber ducky loves it!"
+      }
+    },
+    {
+      "id": "06",
+      "character": "VLAD",
+      "imageFile": "06_Cena.png",
+      "zoomDirection": "in",
+      "text": {
+        "pt": "Viram só? O Grande Mágico Vlad fez até aparecer uma coroa branca de espuma na cabeça!",
+        "en": "See that? The Great Magician Vlad even made a white foam crown appear right on his head!"
+      }
+    },
+    {
+      "id": "07",
+      "character": "FAMILIA",
+      "imageFile": "07_Cena.png",
+      "isFinale": true,
+      "zoomDirection": "out",
+      "text": {
+        "pt": "Nosso show de talentos foi nota dez! Inscreva-se no canal da Família Spitz e até amanhã!",
+        "en": "Our family talent show was a perfect ten! Subscribe to the Spitz Family channel and see you tomorrow!"
+      },
+      "banner": {
+        "pt": [
+          "Somos a Spitz Funny Family!",
+          "Bem-vindo à nossa família!"
+        ],
+        "en": [
+          "We are the Funny Spitz Family!",
+          "Welcome to our family!"
+        ]
+      }
+    }
+  ]
+}
