@@ -9,6 +9,7 @@ import { CHARACTERS } from "./characters.js";
 import { generateSfxWav, generateMoodMusicWav } from "./audio-fx.js";
 import { generateVeoRealMotionClip } from "./veo-video.js";
 import { generateUniqueSceneImage } from "./image-gen.js";
+import { renderLipSyncSceneClip } from "./lip-sync-animator.js";
 
 const ffprobePath = ffprobeStatic.path;
 
@@ -397,21 +398,31 @@ export async function produceLongEpisode16x9({ episodeData, episodeDir, lang }) 
     const svgBuffer = buildWidescreenVfxAndOverlaySvg({ scene, lang });
     await sharp(svgBuffer).png().toFile(overlayPng);
 
-    // 4. Verifica se há clipe MP4 com movimento real (Google Veo / Flow / Hailuo) na pasta clips/ ou gera via Veo API
+    // 4. Renderiza clipe 30fps com Lip-Sync (boca articulada sincronizada com a voz + piscar de olhos + giro 3D de cabeça)
     const clipsDir = path.join(episodeDir, "clips");
+    const backgroundsDir = path.join(episodeDir, "backgrounds");
     fs.mkdirSync(clipsDir, { recursive: true });
-    let realMotionVideoPath = scene.videoFile
-      ? path.join(clipsDir, scene.videoFile)
-      : path.join(clipsDir, `scene_${scene.id}.mp4`);
 
-    if (!fs.existsSync(realMotionVideoPath) && process.env.ENABLE_VEO_API === "true") {
-      await generateVeoRealMotionClip({
-        imagePath: baseCleanPng,
-        motionPrompt: scene.motionPrompt || `${scene.character} Pomeranian dog moving naturally: ${scene.text.en}`,
-        aspectRatio: "16:9",
-        outVideoPath: realMotionVideoPath
+    const bgForLipSync = fs.existsSync(path.join(backgroundsDir, `bg_${scene.id}.png`))
+      ? path.join(backgroundsDir, `bg_${scene.id}.png`)
+      : baseCleanPng;
+
+    const langLipSyncClip = path.join(workDir, `scene_${scene.id}_lipsync_${lang}.mp4`);
+    if (!fs.existsSync(langLipSyncClip) || fs.statSync(langLipSyncClip).size < 10000) {
+      console.log(`   👄 [${lang.toUpperCase()}] Renderizando Lip-Sync 30fps (boca + olhos + cabeça 3D) sincronizado com a voz: Cena ${scene.id} (${scene.character})`);
+      await renderLipSyncSceneClip({
+        character: scene.character,
+        sceneIndex: Number(scene.id) || 0,
+        backgroundPath: bgForLipSync,
+        voiceAudioPath: paddedVoicePath,
+        outputClipPath: langLipSyncClip,
+        durationSec,
+        fps: 30,
+        width: 1920,
+        height: 1080
       });
     }
+    let realMotionVideoPath = langLipSyncClip;
 
     const fps = 25;
     const totalFrames = Math.ceil(durationSec * fps);
@@ -554,9 +565,15 @@ export async function produceLongEpisode16x9({ episodeData, episodeDir, lang }) 
   const climaxScene =
     episodeData.scenes[15] || episodeData.scenes[7] || episodeData.scenes[2];
   const thumbSource = path.join(episodeDir, "images", climaxScene.imageFile);
+  const seoObj = episodeData.seo?.[lang] || {
+    title: episodeData.title?.[lang] || "Funny Spitz Family",
+    description: episodeData.description?.[lang] || "",
+    tags: episodeData.tags || [],
+    thumbnailText: lang === "pt" ? "BATALHA MASTERCHEF! 🎂🐾" : "MASTERCHEF BATTLE! 🎂🐾"
+  };
   const thumbnailPath = await generateWidescreenThumbnail({
     baseImagePath: thumbSource,
-    titleText: episodeData.seo[lang].thumbnailText,
+    titleText: seoObj.thumbnailText,
     lang,
     outDir
   });
@@ -571,7 +588,7 @@ export async function produceLongEpisode16x9({ episodeData, episodeDir, lang }) 
     videoPath: finalMp4,
     thumbnailPath,
     durationSec: Number(finalDurationSec.toFixed(1)),
-    seo: episodeData.seo[lang]
+    seo: seoObj
   };
 }
 

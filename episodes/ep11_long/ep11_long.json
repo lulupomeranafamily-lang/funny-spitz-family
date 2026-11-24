@@ -1,0 +1,320 @@
+{
+  "episodeNumber": 11,
+  "series": "Série_Normal_16x9_Longa",
+  "theme": {
+    "pt": "A Grande Batalha de MasterChef na Cozinha! O Bolo Gigante do Papai Vlad (Especial de 3 Minutos)",
+    "en": "The Great MasterChef Kitchen Battle! Daddy Vlad's Giant Cake Chaos (3-Minute Full Episode)"
+  },
+  "title": {
+    "pt": "Batalha de MasterChef na Cozinha! 👨‍🍳🎂 O Bolo Gigante do Papai Vlad! | Funny Spitz Family",
+    "en": "The MasterChef Kitchen Battle! 👨‍🍳🎂 Daddy Vlad's Giant Cake Chaos! | Funny Spitz Family"
+  },
+  "description": {
+    "pt": "A cozinha da Família Spitz virou um verdadeiro estúdio de MasterChef! 🐾👨‍🍳🎂 Mamãe Raven organizou o Grande Concurso do Bolo Perfeito, mas o Papai Vlad resolveu ligar a batedeira na velocidade turbo sem tampa, espalhando farinha pela cozinha inteira e construindo uma torre de bolo de três andares torta como a Torre de Pisa! Assista a essa aventura completa de 3 minutos com movimentos naturais e sincronia labial!\n\n🐶 Personagens:\n- Raven (Mamãe Spitz Alemão preta de óculos dourados e colar de pérolas)\n- Vlad (Papai Spitz Alemão creme de camisa listrada e gravata borboleta)\n- Luna (Filha de 15 anos de blusa rosa e óculos dourados)\n- Theo (Filho de 10 anos de óculos arco-íris e camisa azul)\n- Jonny (Caçula de 8 anos de camisa branca e gravata borboleta)\n\nInscreva-se no canal @FunnySpitzFamily e deixe seu like! 🐾❤️",
+    "en": "The Spitz Family kitchen has turned into a full MasterChef cooking studio! 🐾👨‍🍳🎂 Mommy Raven organized the Great Perfect Cake Contest, but Daddy Vlad turned the stand mixer to turbo speed without a lid, blasting flour clouds everywhere and building a three-tier cake leaning like the Tower of Pisa! Watch this full 3-minute comedy episode with natural movements and lip-sync!\n\nSubscribe to @FunnySpitzFamily and leave a like! 🐾❤️"
+  },
+  "tags": [
+    "Funny Spitz Family",
+    "Spitz Alemão",
+    "Lulu da Pomerânia",
+    "Pomeranian",
+    "Talking Dogs",
+    "Cachorros Falantes",
+    "Animação 3D Família",
+    "MasterChef",
+    "Desenho de Cachorro"
+  ],
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "mood": "happy_celebration",
+      "sfx": "chime",
+      "motion": "pan_right_zoom_in",
+      "vfx": "confetti",
+      "imageFile": "scene_00.png",
+      "bgPrompt": "3D Pixar luxury gourmet MasterChef kitchen studio golden spotlights marble counter copper pots no people no dogs",
+      "text": {
+        "pt": "Hoje a cozinha da Família Spitz se transformou no grande campeonato de confeitaria MasterChef! Quem fará o bolo mais gostoso da casa?",
+        "en": "Today the Spitz Family kitchen has transformed into the grand MasterChef baking championship! Who will bake the tastiest cake in the house?"
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "imageFile": "scene_01.png",
+      "bgPrompt": "3D Pixar gourmet kitchen counter golden mixing bowls silver whisks tray of fresh strawberries blueberries warm bokeh no people no dogs",
+      "text": {
+        "pt": "Atenção, meus confeiteiros favoritos! Cada um tem trinta minutos para preparar uma sobremesa especial, mantendo a bancada limpa e organizada!",
+        "en": "Attention, my favorite bakers! Each of you has thirty minutes to prepare a special dessert while keeping your counter clean and organized!"
+      }
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "mood": "curious_pop",
+      "sfx": "pop_click",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "imageFile": "scene_02.png",
+      "bgPrompt": "3D Pixar baking counter glass jars of white flour wooden rolling pins gleaming stainless stand mixer warm kitchen lights no people no dogs",
+      "text": {
+        "pt": "Podem entregar o troféu dourado para o papai aqui! Eu vou construir o lendário bolo imperial de três andares com recheio duplo de chocolate!",
+        "en": "You can hand the golden trophy to Daddy right now! I am going to build the legendary three-tier imperial cake with double chocolate filling!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "mood": "suspense_detective",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_glass",
+      "imageFile": "scene_03.png",
+      "bgPrompt": "3D Pixar pastry counter digital kitchen scale glass measuring beakers chocolate chips open recipe book warm bokeh no people no dogs",
+      "text": {
+        "pt": "Papai, segundo o livro de receitas científicas, você precisa pesar exatamente duzentos gramas de farinha, e não despejar o saco inteiro de uma vez!",
+        "en": "Daddy, according to the scientific recipe book, you need to weigh exactly two hundred grams of flour, not dump the whole bag at once!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "JONNY",
+      "mood": "upbeat_dance",
+      "sfx": "pop_click",
+      "motion": "dance_bounce",
+      "vfx": "music_notes",
+      "imageFile": "scene_04.png",
+      "bgPrompt": "3D Pixar dessert counter colorful frosting piping bags rainbow sprinkles jars chocolate syrup bottles warm bokeh no people no dogs",
+      "text": {
+        "pt": "Eu sou o provador oficial de cobertura! Se o glacê de chocolate estiver bom na tigela, significa que o bolo já está metade aprovado!",
+        "en": "I am the official frosting taster! If the chocolate icing tastes good in the bowl, that means the cake is already half approved!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "LUNA",
+      "mood": "upbeat_dance",
+      "sfx": "disco_drop",
+      "motion": "dance_bounce",
+      "vfx": "sparkles",
+      "imageFile": "scene_05.png",
+      "bgPrompt": "3D Pixar pastel bakery counter pink cupcakes fresh strawberries whipped cream swirls silver heart cookie cutters bokeh no people no dogs",
+      "text": {
+        "pt": "Enquanto vocês fazem bagunça, os meus cupcakes cor-de-rosa com morangos frescos e chantilly estão ficando dignos de capa de revista!",
+        "en": "While you guys make a mess, my pink cupcakes with fresh strawberries and whipped cream are looking worthy of a magazine cover!"
+      }
+    },
+    {
+      "id": "06",
+      "character": "VLAD",
+      "mood": "comedy_boing",
+      "sfx": "boing",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "imageFile": "scene_06.png",
+      "bgPrompt": "3D Pixar kitchen island covered in big white flour cloud explosion red electric stand mixer spinning flour dust in air no people no dogs",
+      "text": {
+        "pt": "Um verdadeiro mestre cuca não perde tempo medindo, Theo! Vamos ligar essa batedeira direto na potência turbo máxima... Eita, cadê a tampa?!",
+        "en": "A true master chef doesn't waste time measuring, Theo! Let's turn this mixer straight to maximum turbo power... Whoa, where is the lid?!"
+      }
+    },
+    {
+      "id": "07",
+      "character": "RAVEN",
+      "mood": "shock_mystery",
+      "sfx": "dun_dun_dun",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "imageFile": "scene_07.png",
+      "bgPrompt": "3D Pixar gourmet kitchen oven glowing warm golden biscuits inside glass oven door white flour dust floating in air no people no dogs",
+      "text": {
+        "pt": "Vlad do céu! Está nevando farinha de trigo dentro da minha cozinha! Você acabou de transformar a bancada inteira em uma pista de esqui!",
+        "en": "Goodness gracious, Vlad! It is snowing wheat flour inside my kitchen! You just turned the entire counter into a ski slope!"
+      }
+    },
+    {
+      "id": "08",
+      "character": "THEO",
+      "mood": "suspense_detective",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "magnifying_glass",
+      "imageFile": "scene_08.png",
+      "bgPrompt": "3D Pixar copper saucepan with bubbling golden caramel sauce kitchen thermometer cake diagram on marble counter bokeh no people no dogs",
+      "text": {
+        "pt": "Eu avisei que a velocidade centrífuga sem proteção ia lançar farinha num raio de três metros! Ainda bem que meu caramelo está protegido!",
+        "en": "I warned you that centrifugal speed without a cover would launch flour across a three-meter radius! Good thing my caramel is protected!"
+      }
+    },
+    {
+      "id": "09",
+      "character": "JONNY",
+      "mood": "comedy_boing",
+      "sfx": "boing",
+      "motion": "dance_bounce",
+      "vfx": "sparkles",
+      "imageFile": "scene_09.png",
+      "bgPrompt": "3D Pixar glossy chocolate ganache bowl mountain of white marshmallows and crunchy cookie crumbs on wooden board bokeh no people no dogs",
+      "text": {
+        "pt": "Olhem pelo lado bom! Agora o Papai Vlad está com a barba e as sobrancelhas todinhas brancas igualzinho ao Papai Noel da confeitaria!",
+        "en": "Look on the bright side! Now Daddy Vlad has his beard and eyebrows completely white just like the Bakery Santa Claus!"
+      }
+    },
+    {
+      "id": "10",
+      "character": "LUNA",
+      "mood": "upbeat_dance",
+      "sfx": "yay_fanfare",
+      "motion": "dance_bounce",
+      "vfx": "sparkles",
+      "imageFile": "scene_10.png",
+      "bgPrompt": "3D Pixar three-tier silver dessert stand with rose-frosted strawberry cupcakes gold sugar pearls warm kitchen bokeh no people no dogs",
+      "text": {
+        "pt": "Meus cupcakes saíram do forno douradinhos e perfumados! Coloquei até pérolas de açúcar comestíveis para combinar com o colar da mamãe!",
+        "en": "My cupcakes came out of the oven golden and fragrant! I even added edible sugar pearls to match Mommy's pearl necklace!"
+      }
+    },
+    {
+      "id": "11",
+      "character": "VLAD",
+      "mood": "curious_pop",
+      "sfx": "pop_click",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "imageFile": "scene_11.png",
+      "bgPrompt": "3D Pixar towering crooked leaning three-tier chocolate cake covered in whipped cream and bone biscuits on golden stand no people no dogs",
+      "text": {
+        "pt": "Calma que a obra-prima do papai ficou pronta! Contemplem a Torre Imperial de Três Andares com biscoitos crocantes e calda vulcânica!",
+        "en": "Stay calm because Daddy's masterpiece is ready! Behold the Three-Tier Imperial Tower with crunchy biscuits and volcanic fudge!"
+      }
+    },
+    {
+      "id": "12",
+      "character": "THEO",
+      "mood": "shock_mystery",
+      "sfx": "dun_dun_dun",
+      "motion": "detective_pan",
+      "vfx": "magnifying_glass",
+      "imageFile": "scene_12.png",
+      "bgPrompt": "3D Pixar close up of leaning crooked three-tier chocolate cake tilting sideways with ruler and protractor on counter no people no dogs",
+      "text": {
+        "pt": "Papai, a sua torre imperial está inclinada em vinte e cinco graus para a esquerda! Pela lei da gravidade, o terceiro andar vai escorregar!",
+        "en": "Daddy, your imperial tower is leaning twenty-five degrees to the left! By the laws of gravity, the third tier is about to slide!"
+      }
+    },
+    {
+      "id": "13",
+      "character": "JONNY",
+      "mood": "tiptoe_suspense",
+      "sfx": "whoosh_magnifying",
+      "motion": "detective_pan",
+      "vfx": "sparkles",
+      "imageFile": "scene_13.png",
+      "bgPrompt": "3D Pixar chocolate cake dripping thick glossy fudge and rainbow sprinkles onto golden cake platter marble counter bokeh no people no dogs",
+      "text": {
+        "pt": "Deixa que eu seguro o lado que está caindo com uma colher bem grande! Se um pedaço escorregar, ele cai direto no meu pratinho!",
+        "en": "Let me hold up the leaning side with a big spoon! If a piece slides off, it will fall straight onto my little plate!"
+      }
+    },
+    {
+      "id": "14",
+      "character": "VLAD",
+      "mood": "comedy_boing",
+      "sfx": "boing",
+      "motion": "crash_zoom_shake",
+      "vfx": "shock_lines",
+      "imageFile": "scene_14.png",
+      "bgPrompt": "3D Pixar funny explosion of pink strawberry whipped cream swirls and white meringue clouds on gourmet kitchen counter no people no dogs",
+      "text": {
+        "pt": "Eu só preciso colocar uma cereja no topo para equilibrar o peso... Opa! O saco de chantilly estourou e cobriu meus óculos de glacê rosa!",
+        "en": "I just need to place one cherry on top to balance the weight... Oops! The whipped cream bag burst and covered my glasses in pink frosting!"
+      }
+    },
+    {
+      "id": "15",
+      "character": "RAVEN",
+      "mood": "cozy",
+      "sfx": "chime",
+      "motion": "gentle_float",
+      "vfx": "hearts",
+      "imageFile": "scene_15.png",
+      "bgPrompt": "3D Pixar MasterChef judging table red velvet runner golden tasting spoons crystal cloche dome warm spotlight bokeh no people no dogs",
+      "text": {
+        "pt": "Hora da degustação oficial! Apesar de o bolo do Vlad parecer uma montanha-russa de chocolate, o cheirinho de baunilha está irresistível!",
+        "en": "Time for the official tasting! Even though Vlad's cake looks like a chocolate roller coaster, the vanilla aroma is irresistible!"
+      }
+    },
+    {
+      "id": "16",
+      "character": "LUNA",
+      "mood": "upbeat_dance",
+      "sfx": "pop_click",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "imageFile": "scene_16.png",
+      "bgPrompt": "3D Pixar porcelain dessert plates with delicious slice of chocolate layer cake pink strawberry cupcake and caramel tart no people no dogs",
+      "text": {
+        "pt": "Preciso confessar uma coisa: o bolo torto do papai ficou super fofinho por dentro! Com a calda de caramelo do Theo, ficou perfeito!",
+        "en": "I have to confess something: Daddy's crooked cake turned out super fluffy inside! With Theo's caramel sauce, it tastes perfect!"
+      }
+    },
+    {
+      "id": "17",
+      "character": "THEO",
+      "mood": "happy_celebration",
+      "sfx": "yay_fanfare",
+      "motion": "gentle_float",
+      "vfx": "sparkles",
+      "imageFile": "scene_17.png",
+      "bgPrompt": "3D Pixar glowing golden scoreboard with five golden paw print stars above gourmet dessert table warm festive lights no people no dogs",
+      "text": {
+        "pt": "Resultado da avaliação gastronômica: nota dez em sabor para toda a família, e nota mil em bagunça criativa para o chef Papai Vlad!",
+        "en": "Culinary evaluation results: ten out of ten in flavor for the whole family, and a thousand out of ten in creative mess for Chef Daddy Vlad!"
+      }
+    },
+    {
+      "id": "18",
+      "character": "VLAD",
+      "mood": "happy_celebration",
+      "sfx": "yay_fanfare",
+      "motion": "gentle_float",
+      "vfx": "confetti",
+      "imageFile": "scene_18.png",
+      "bgPrompt": "3D Pixar gleaming golden MasterChef trophy shaped like a golden chef hat and whisk on marble pedestal golden confetti no people no dogs",
+      "text": {
+        "pt": "O segredo da receita do papai é misturar bastante alegria e dividir cada fatia com a família mais doce do mundo! Mas quem lava a louça?",
+        "en": "The secret to Daddy's recipe is mixing in lots of joy and sharing every slice with the sweetest family in the world! Now who washes the dishes?"
+      }
+    },
+    {
+      "id": "19",
+      "character": "FAMILIA",
+      "mood": "happy_celebration",
+      "sfx": "yay_fanfare",
+      "motion": "celebration_zoom",
+      "vfx": "confetti",
+      "isFinale": true,
+      "banner": {
+        "pt": [
+          "Somos a Funny Spitz Family!",
+          "Inscreva-se e deixe seu Like! 🐾👨‍🍳🎂"
+        ],
+        "en": [
+          "We are the Funny Spitz Family!",
+          "Subscribe and leave a Like! 🐾👨‍🍳🎂"
+        ]
+      },
+      "imageFile": "scene_19.png",
+      "bgPrompt": "3D Pixar festive gourmet kitchen banquet table with giant chocolate cake cupcakes golden trophy warm lights confetti no people no dogs",
+      "text": {
+        "pt": "Somos a Família Spitz! Qual sobremesa você mais gostou? Deixe seu like, inscreva-se no canal e até a nossa próxima aventura deliciosa!",
+        "en": "We are the Spitz Family! Which dessert did you like best? Leave a like, subscribe to the channel, and see you in our next delicious adventure!"
+      }
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import sharp from "sharp";
 import { synthesizeSpeech } from "./tts.js";
 import { CHARACTERS } from "./characters.js";
 import { ensureChristmasMusicMp3 } from "./christmas-music.js";
+import { renderLipSyncSceneClip } from "./lip-sync-animator.js";
 
 const ffprobePath = ffprobeStatic.path;
 
@@ -283,11 +284,29 @@ export async function produceEpisodeForLanguage({ episodeData, episodeDir, asset
     const svgBuffer = buildOverlaySvg({ scene, lang, isChristmas });
     await sharp(svgBuffer).png().toFile(overlayPng);
 
-    // 4. Renderiza clipe MP4 da cena (prioriza clipe 3D com movimento real em clips/scene_XX.mp4!)
-    const fps = 25;
+    // 4. Renderiza clipe MP4 30fps da cena com Lip-Sync (boca articulada sincronizada com a voz + piscar de olhos + giro 3D de cabeça!)
+    const fps = 30;
     const totalFrames = Math.ceil(durationSec * fps);
-    const clipsDir = path.join(episodeDir, "clips");
-    const realMotionClip = path.join(clipsDir, `scene_${scene.id}.mp4`);
+    const backgroundsDir = path.join(episodeDir, "backgrounds");
+    const bgForLipSync = fs.existsSync(path.join(backgroundsDir, `bg_${scene.id}.png`))
+      ? path.join(backgroundsDir, `bg_${scene.id}.png`)
+      : baseCleanPng;
+
+    const realMotionClip = path.join(workDir, `scene_${scene.id}_lipsync9x16_${lang}.mp4`);
+    if (!fs.existsSync(realMotionClip) || fs.statSync(realMotionClip).size < 10000) {
+      console.log(`   👄 [9:16 ${lang.toUpperCase()}] Renderizando Lip-Sync 30fps (boca + olhos + cabeça 3D) sincronizado com a voz: Cena ${scene.id} (${scene.character})`);
+      await renderLipSyncSceneClip({
+        character: scene.character,
+        sceneIndex: Number(scene.id) || 0,
+        backgroundPath: bgForLipSync,
+        voiceAudioPath: paddedVoicePath,
+        outputClipPath: realMotionClip,
+        durationSec,
+        fps: 30,
+        width: 1080,
+        height: 1920
+      });
+    }
     const segmentMp4 = path.join(workDir, `scene_${scene.id}_segment.mp4`);
 
     let ffRes;
@@ -492,9 +511,15 @@ export async function produceEpisodeForLanguage({ episodeData, episodeDir, asset
       break;
     }
   }
+  const seoObj = episodeData.seo?.[lang] || {
+    title: episodeData.title?.[lang] || "Funny Spitz Family",
+    description: episodeData.description?.[lang] || "",
+    tags: episodeData.tags || [],
+    thumbnailText: lang === "pt" ? "BOLO GIGANTE DO VLAD! 🎂🐾" : "VLAD'S GIANT CAKE! 🎂🐾"
+  };
   const thumbnailPath = await generateThumbnail({
     baseImagePath: thumbSourceScene,
-    titleText: episodeData.seo[lang].thumbnailText,
+    titleText: seoObj.thumbnailText,
     lang,
     outDir
   });
@@ -509,7 +534,7 @@ export async function produceEpisodeForLanguage({ episodeData, episodeDir, asset
     videoPath: finalMp4,
     thumbnailPath,
     durationSec: Number(finalDurationSec.toFixed(1)),
-    seo: episodeData.seo[lang]
+    seo: seoObj
   };
 }
 

@@ -1,0 +1,110 @@
+{
+  "episodeNumber": 11,
+  "series": "Série_Normal_9x16_Shorts",
+  "theme": {
+    "pt": "O Bolo Gigante do Papai Vlad na Batalha de MasterChef!",
+    "en": "Daddy Vlad's Giant Cake in the MasterChef Kitchen Battle!"
+  },
+  "title": {
+    "pt": "O Bolo Gigante do Papai Vlad na Batalha MasterChef! 👨‍🍳🎂 #Shorts",
+    "en": "Daddy Vlad's Giant Cake in the MasterChef Battle! 👨‍🍳🎂 #Shorts"
+  },
+  "description": {
+    "pt": "A cozinha da Família Spitz virou um campeonato de MasterChef! 🐾👨‍🍳🎂 Papai Vlad ligou a batedeira no turbo sem tampa e construiu uma torre de bolo de três andares torta como a Torre de Pisa! Assista e inscreva-se no canal @FunnySpitzFamily! 🐾❤️ #Shorts #SpitzAlemao #Pomeranian #FunnyDogs",
+    "en": "The Spitz Family kitchen turned into a MasterChef battle! 🐾👨‍🍳🎂 Daddy Vlad turned the mixer to turbo without a lid and built a leaning three-tier cake! Watch and subscribe to @FunnySpitzFamily! 🐾❤️ #Shorts #Pomeranian #TalkingDogs"
+  },
+  "tags": [
+    "Shorts",
+    "Funny Spitz Family",
+    "Spitz Alemão",
+    "Lulu da Pomerânia",
+    "Pomeranian",
+    "Talking Dogs",
+    "MasterChef"
+  ],
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "imageFile": "scene_00.png",
+      "text": {
+        "pt": "Começou a grande Batalha de MasterChef na cozinha da Família Spitz!",
+        "en": "The great MasterChef Kitchen Battle has begun in the Spitz Family house!"
+      }
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "imageFile": "scene_01.png",
+      "text": {
+        "pt": "Quem preparar o bolo mais gostoso sem sujar a bancada ganha o troféu dourado!",
+        "en": "Whoever bakes the tastiest cake without making a mess wins the golden trophy!"
+      }
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "imageFile": "scene_06.png",
+      "text": {
+        "pt": "O papai vai ligar a batedeira na potência turbo máxima... Eita, cadê a tampa?!",
+        "en": "Daddy is turning the mixer to maximum turbo power... Whoa, where is the lid?!"
+      }
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "imageFile": "scene_08.png",
+      "text": {
+        "pt": "Papai, você lançou uma nuvem de farinha num raio de três metros pela cozinha!",
+        "en": "Daddy, you just launched a cloud of flour across a three-meter radius in the kitchen!"
+      }
+    },
+    {
+      "id": "04",
+      "character": "JONNY",
+      "imageFile": "scene_09.png",
+      "text": {
+        "pt": "Olhem! O Papai Vlad ficou com a barba todinha branca igual ao Papai Noel!",
+        "en": "Look! Daddy Vlad has his beard completely white just like Santa Claus!"
+      }
+    },
+    {
+      "id": "05",
+      "character": "VLAD",
+      "imageFile": "scene_11.png",
+      "text": {
+        "pt": "Mas o meu bolo de três andares ficou pronto! Só está um pouquinho inclinado!",
+        "en": "But my three-tier cake is ready! It is just leaning a tiny bit to the side!"
+      }
+    },
+    {
+      "id": "06",
+      "character": "LUNA",
+      "imageFile": "scene_16.png",
+      "text": {
+        "pt": "Pior que o bolo torto do papai ficou super fofinho e delicioso por dentro!",
+        "en": "Even though Daddy's cake is crooked, it turned out super fluffy and delicious inside!"
+      }
+    },
+    {
+      "id": "07",
+      "character": "FAMILIA",
+      "isFinale": true,
+      "banner": {
+        "pt": [
+          "Funny Spitz Family!",
+          "Inscreva-se no Canal! 🐾🎂"
+        ],
+        "en": [
+          "Funny Spitz Family!",
+          "Subscribe Now! 🐾🎂"
+        ]
+      },
+      "imageFile": "scene_19.png",
+      "text": {
+        "pt": "Quem quer uma fatia do bolo do Papai Vlad? Deixe seu like e inscreva-se no canal!",
+        "en": "Who wants a slice of Daddy Vlad's cake? Leave a like and subscribe to our channel!"
+      }
+    }
+  ]
+}
