@@ -1,0 +1,132 @@
+{
+  "episodeNumber": 9,
+  "cycleDate": "2026-11-22",
+  "bgKeys": [
+    "giant_tree_door",
+    "cozy_tree_room",
+    "giant_tree_door",
+    "snowy_pines_2",
+    "cozy_tree_room",
+    "giant_tree_door",
+    "cozy_tree_room",
+    "cozy_tree_room"
+  ],
+  "theme": {
+    "pt": "O Pinheiro Gigante Chegou! Como Passar pela Porta da Sala?",
+    "en": "The Giant Pine Tree Arrived! How to Fit It Through the Living Room Door?"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "🎄 O Pinheiro Gigante Empacou na Porta! | Especial de Natal #9 #Shorts",
+      "description": "O pinheiro de Natal chegou na Casa Azul, mas é tão fofo e largo que empacou bem na porta da sala! 🎄🐾 Veja a confusão do Papai Vlad e a solução genial do Theo para colocar a árvore no lugar! Inscreva-se no canal @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #EspecialDeNatal #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Especial de Natal",
+        "Árvore de Natal",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Shorts de Natal"
+      ],
+      "thumbnailText": "NATAL SPITZ #9 🎄"
+    },
+    "en": {
+      "selectedTitle": "🎄 The Giant Tree Got Stuck in the Door! | Christmas Special #9 #Shorts",
+      "description": "The Christmas pine tree arrived at the Blue House, but it is so fluffy and wide that it got stuck right in the doorway! 🎄🐾 Watch Daddy Vlad and Theo team up to get the tree inside! Subscribe to @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #ChristmasShorts #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Christmas Special",
+        "Christmas Tree",
+        "Pomeranian Christmas",
+        "Cute Dogs",
+        "Holiday Shorts"
+      ],
+      "thumbnailText": "SPITZ XMAS #9 🎄"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "text": {
+        "pt": "Nono dia do Especial de Natal! O grande pinheiro chegou na Casa Azul, mas surgiu um pequeno desafio na porta da sala!",
+        "en": "Day nine of our Christmas Special! The grand pine tree arrived at the Blue House, but a funny challenge appeared at the door!"
+      },
+      "imageFile": "00_NARRADOR_Natal_9x16.png"
+    },
+    {
+      "id": "01",
+      "character": "VLAD",
+      "text": {
+        "pt": "Empurrem mais um pouquinho, crianças! Eu tenho certeza absoluta de que essa porta encolheu desde o Natal passado!",
+        "en": "Push just a little bit more, kids! I am completely sure that this doorway shrank since last Christmas!"
+      },
+      "imageFile": "01_VLAD_Natal_9x16.png"
+    },
+    {
+      "id": "02",
+      "character": "RAVEN",
+      "text": {
+        "pt": "Vlad querido, a porta não encolheu! É que você escolheu o pinheiro mais gordinho e frondoso de toda a cidade!",
+        "en": "Vlad dear, the door did not shrink! You just picked the chubbiest and fluffiest pine tree in the entire city!"
+      },
+      "imageFile": "02_RAVEN_Natal_9x16.png"
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "text": {
+        "pt": "Esperem! Se amarrarmos uma fita macia ao redor dos galhos como um abraço, o diâmetro diminui pela metade!",
+        "en": "Wait! If we tie a soft ribbon around the branches like a hug, the diameter will shrink by half!"
+      },
+      "imageFile": "03_THEO_Natal_9x16.png"
+    },
+    {
+      "id": "04",
+      "character": "JONNY",
+      "text": {
+        "pt": "Boa ideia, Theo! Agora o pinheiro ficou fininho igual a um foguete pronto para pousar no meio do tapete!",
+        "en": "Great idea, Theo! Now the pine tree is slim like a rocket ship ready to land right in the middle of the rug!"
+      },
+      "imageFile": "04_JONNY_Natal_9x16.png"
+    },
+    {
+      "id": "05",
+      "character": "LUNA",
+      "text": {
+        "pt": "Passou direitinho! E quando soltamos a fita, os galhos abriram com um perfume maravilhoso de floresta encantada!",
+        "en": "It slid right through! And when we untied the ribbon, the branches opened up with a wonderful enchanted forest scent!"
+      },
+      "imageFile": "05_LUNA_Natal_9x16.png"
+    },
+    {
+      "id": "06",
+      "character": "VLAD",
+      "text": {
+        "pt": "Trabalho em equipe nota mil! O nosso pinheiro já está de pé ao lado da lareira esperando as luzes brilhantes!",
+        "en": "Teamwork ten out of ten! Our pine tree is standing tall beside the fireplace waiting for the twinkling lights!"
+      },
+      "imageFile": "06_VLAD_Natal_9x16.png"
+    },
+    {
+      "id": "07",
+      "character": "FAMILIA",
+      "isFinale": true,
+      "banner": {
+        "pt": [
+          "🎄 Especial de Natal Spitz!",
+          "Inscreva-se no Canal! 🐾🎅"
+        ],
+        "en": [
+          "🎄 Spitz Christmas Special!",
+          "Subscribe Now! 🐾🎅"
+        ]
+      },
+      "text": {
+        "pt": "Amanhã começa a missão dos pisca-piscas! Deixe seu like, inscreva-se no canal e acompanhe o nosso Natal!",
+        "en": "Tomorrow the fairy lights mission begins! Leave a like, subscribe to the channel, and follow our Christmas countdown!"
+      },
+      "imageFile": "07_FAMILIA_Natal_9x16.png"
+    }
+  ],
+  "series": "Especial_de_Natal"
+}

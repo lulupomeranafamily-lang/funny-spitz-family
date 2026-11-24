@@ -336,9 +336,10 @@ export function deformCharacterMultiFaceRGBA(srcBuf, W, H, faces, frameState) {
       hCx: (rig.head?.cx ?? 0.5) * W,
       hCy: (rig.head?.cy ?? 0.40) * H,
       neckY: (rig.head?.neckY ?? 0.62) * H,
-      yawPx: (faceState.headYaw || 0) * W * (faces.length > 1 ? 0.012 : 0.028),
-      pitchPx: (faceState.headPitch || 0) * H * (faces.length > 1 ? 0.010 : 0.019),
-      earLiftPx: (faceState.earPerk || 0) * H * (faces.length > 1 ? 0.014 : 0.025),
+      yawPx: (faceState.headYaw || 0) * W * (faces.length > 1 ? 0.014 : 0.032),
+      pitchPx: (faceState.headPitch || 0) * H * (faces.length > 1 ? 0.012 : 0.024),
+      headRollRad: (faceState.headRoll || 0) * (faces.length > 1 ? 0.038 : 0.078),
+      earLiftPx: (faceState.earPerk || 0) * H * (faces.length > 1 ? 0.016 : 0.030),
       blink: faceState.blink || 0,
       furR: rig.furColor ? rig.furColor[0] : 30,
       furG: rig.furColor ? rig.furColor[1] : 25,
@@ -369,6 +370,18 @@ export function deformCharacterMultiFaceRGBA(srcBuf, W, H, faces, frameState) {
         let localYaw = 0;
         let localPitch = 0;
         if (headW > 0.001) {
+          // 1A. Adorable Pomeranian Neck-Pivot Head Tilt (headRoll around (hCx, neckY) while shoulders stay anchored!)
+          const theta = pf.headRollRad * headW;
+          if (Math.abs(theta) > 0.0005) {
+            const dxNeck = x - pf.hCx;
+            const dyNeck = y - pf.neckY;
+            const cosT = Math.cos(theta);
+            const sinT = Math.sin(theta);
+            srcX += (dxNeck * cosT + dyNeck * sinT) - dxNeck;
+            srcY += (-dxNeck * sinT + dyNeck * cosT) - dyNeck;
+          }
+
+          // 1B. 3D Pseudo-Perspective Snout Parallax (Yaw & Pitch)
           const dxN = (x - pf.nCx) / (pf.horizSpan * 0.65);
           const dyN = (y - pf.nCy) / (H * 0.20);
           const snoutDepth = Math.exp(-0.5 * (dxN * dxN + dyN * dyN));
@@ -399,27 +412,30 @@ export function deformCharacterMultiFaceRGBA(srcBuf, W, H, faces, frameState) {
           }
         }
 
-        // Mouth & Jaw Lip-Sync:
-        // When opening wider than base (closure < 0), drop the lower jaw downward.
-        // When closing (closure > 0), keep spatial warp subtle and let the Photographic Cheek-Fur & Moving Lower-Lip Shader articulate the exact mouth opening height!
+        // Mouth & Jaw Lip-Sync: Full-range physical lower-jaw & tongue vertical motion + vowel spread across the ENTIRE [0.0 .. 1.1] range!
         const shiftedMCx = pf.mCx + localYaw;
         const shiftedMCy = pf.mCy + localPitch;
-        const dxM = (x - shiftedMCx) / (pf.mRx * 1.35);
-        if (Math.abs(dxM) < 1.35) {
-          const upperMuzzleY = shiftedMCy - pf.mRy * 0.55;
-          const lowerChinY = shiftedMCy + pf.mRy * 1.15;
+        const dxM = (x - shiftedMCx) / (pf.mRx * 1.38);
+        if (Math.abs(dxM) < 1.38) {
+          const upperMuzzleY = shiftedMCy - pf.mRy * 0.50;
+          const lowerChinY = shiftedMCy + pf.mRy * 1.18;
           if (y > upperMuzzleY && y < lowerChinY) {
-            const horizM = Math.cos((dxM / 1.35) * (Math.PI / 2)) ** 2;
+            const horizM = Math.cos((dxM / 1.38) * (Math.PI / 2)) ** 2;
             const normY = (y - upperMuzzleY) / (lowerChinY - upperMuzzleY);
-            const vertM = Math.sin(normY * Math.PI) ** 1.3;
+            const vertM = Math.sin(normY * Math.PI) ** 1.25;
 
-            if (pf.closure < 0) {
-              // Opening wider than base portrait on loud vowels!
-              const jawDrop = (-pf.closure) * pf.mRy * 1.55 * horizM * vertM;
+            if (pf.closure >= 0) {
+              // Closing/semi-open: physically lift the lower lip & tongue upward (clamped above the bow tie / necklace!)
+              const jawLift = pf.closure * pf.mRy * 0.48 * horizM * vertM;
+              const maxSafeChinSampleY = shiftedMCy + pf.mRy * 0.90;
+              srcY = Math.min(maxSafeChinSampleY, srcY + jawLift);
+            } else {
+              // Wide-open vowel peak: physically drop the lower jaw & tongue downward!
+              const jawDrop = (-pf.closure) * pf.mRy * 1.75 * horizM * vertM;
               srcY -= jawDrop;
             }
 
-            const spreadFactor = pf.mouthSpread * 0.16 * horizM * vertM;
+            const spreadFactor = pf.mouthSpread * 0.22 * horizM * vertM;
             srcX -= (x - shiftedMCx) * spreadFactor;
           }
         }
@@ -677,22 +693,23 @@ export async function renderLipSyncSceneClip({
         const progress = f / totalFrames;
         const env = lipSyncEnv[f] || { mouthOpen: 0, mouthSpread: 0 };
 
-        // Build per-face animation state for frame f
+        // Build per-face animation state for frame f driven by speech prosody (calm during pauses, expressive during syllables!)
         const perFace = chosenRig.faces.map((_, faceIdx) => {
-          const phase = sceneIndex * 1.1 + faceIdx * 1.7;
-          // In group shots, stagger speech slightly or animate all together
+          const phase = sceneIndex * 1.3 + faceIdx * 1.7;
           const mouthOpen = env.mouthOpen;
           const mouthSpread = env.mouthSpread;
           const blink = computeBlinkAtTime(t, phase);
-          // 3D Head Yaw & Pitch correlated with speech energy + smooth organic drift
-          const speechActive = mouthOpen > 0.12 ? 1.0 : 0.35;
-          const headYaw = Math.sin(t * 1.85 + phase) * 0.65 + Math.cos(t * 3.4 + phase) * 0.25 * speechActive;
-          const headPitch = -mouthOpen * 0.35 + Math.sin(t * 2.6 + phase) * 0.25;
-          const earPerk = Math.min(1.0, mouthOpen * 0.85 + Math.max(0, Math.sin(t * 4.2 + phase) * 0.25));
-          const breath = Math.sin(t * 2.2 + phase);
-          const pawWave = Math.sin(t * 5.2 + phase) * (0.35 + 0.65 * Math.min(1, mouthOpen));
 
-          return { mouthOpen, mouthSpread, blink, headYaw, headPitch, earPerk, breath, pawWave };
+          // Speech-driven prosody: head tilt (headRoll), 3D head turn (headYaw), and syllable nod (headPitch)
+          const speechDrive = 0.25 + 0.75 * Math.min(1.0, mouthOpen * 1.25);
+          const headYaw = (Math.sin(t * 1.65 + phase) * 0.65 + Math.cos(t * 2.9 + phase) * 0.35) * speechDrive;
+          const headRoll = (Math.sin(t * 1.35 + phase * 0.8) * 0.70 + Math.sin(t * 3.1 + phase) * 0.30 * mouthOpen);
+          const headPitch = -mouthOpen * 0.48 + Math.sin(t * 2.4 + phase) * 0.20;
+          const earPerk = Math.min(1.0, mouthOpen * 0.95 + Math.max(0, Math.sin(t * 4.5 + phase) * 0.25));
+          const breath = Math.sin(t * 2.3 + phase) * (1.0 + 0.35 * mouthOpen);
+          const pawWave = Math.sin(t * 5.6 + phase) * (0.20 + 0.80 * Math.min(1, mouthOpen));
+
+          return { mouthOpen, mouthSpread, blink, headYaw, headRoll, headPitch, earPerk, breath, pawWave };
         });
 
         // 1. Deform character mesh at meshW x meshH
@@ -759,6 +776,36 @@ export async function renderLipSyncSceneClip({
               frameBuf[fIdx] = Math.min(255, Math.round(baseR + centerGlow));
               frameBuf[fIdx + 1] = Math.min(255, Math.round(baseG + centerGlow * 0.75));
               frameBuf[fIdx + 2] = Math.min(255, Math.round(baseB + centerGlow * 0.45));
+            }
+          }
+        }
+
+        // 4. 30fps Ambient Floating Golden Dust / Christmas Snow Particles (adds living 3D atmosphere to the scene!)
+        const isXmasClip = /natal|christmas/i.test(outputClipPath);
+        const numParticles = isXmasClip ? 36 : 18;
+        for (let p = 0; p < numParticles; p++) {
+          const speedY = isXmasClip ? (55 + (p % 5) * 22) : (24 + (p % 4) * 12);
+          const px = Math.round(((p * 173 + sceneIndex * 67) + Math.sin(t * 1.8 + p) * 38) % width);
+          const py = Math.round(((p * 137 + t * speedY) % (charBottom - 20)));
+          const pr = isXmasClip ? (3 + (p % 4)) : (2 + (p % 3));
+          const pAlpha = (0.35 + 0.35 * Math.sin(t * 4.0 + p)) * (isXmasClip ? 0.9 : 0.6);
+          const pR = 255;
+          const pG = isXmasClip && (p % 2 === 0) ? 255 : 238;
+          const pB = isXmasClip && (p % 2 === 0) ? 255 : 175;
+
+          for (let dy = -pr; dy <= pr; dy++) {
+            const yy = py + dy;
+            if (yy < 0 || yy >= charBottom) continue;
+            for (let dx = -pr; dx <= pr; dx++) {
+              const xx = px + dx;
+              if (xx < 0 || xx >= width) continue;
+              const dist2 = (dx * dx + dy * dy) / (pr * pr);
+              if (dist2 > 1.0) continue;
+              const wP = (1.0 - dist2) * pAlpha;
+              const fIdx = (yy * width + xx) * 4;
+              frameBuf[fIdx] = Math.min(255, Math.round(frameBuf[fIdx] * (1 - wP) + pR * wP));
+              frameBuf[fIdx + 1] = Math.min(255, Math.round(frameBuf[fIdx + 1] * (1 - wP) + pG * wP));
+              frameBuf[fIdx + 2] = Math.min(255, Math.round(frameBuf[fIdx + 2] * (1 - wP) + pB * wP));
             }
           }
         }

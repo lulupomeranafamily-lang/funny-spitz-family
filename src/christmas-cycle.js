@@ -150,7 +150,116 @@ Retorne APENAS um JSON válido seguindo exatamente este schema:
     }
   }
 
-  throw new Error(`Erro na Gemini API (Especial de Natal): ${lastErr}`);
+  console.warn(`⚠️ Gemini API indisponível (${lastErr.slice(0, 120)}). Usando gerador roteirizado natalino natural para #${christmasDayNumber}...`);
+  return buildFallbackChristmasScript({ christmasDayNumber, cycleDate, suggestedChapter });
+}
+
+function buildFallbackChristmasScript({ christmasDayNumber, cycleDate, suggestedChapter }) {
+  const cleanTitlePt = suggestedChapter.replace(/^Dia\s+\d+\s*\([^)]+\):\s*/i, "").trim();
+  return {
+    episodeNumber: christmasDayNumber,
+    series: "Especial_de_Natal",
+    cycleDate,
+    theme: {
+      pt: cleanTitlePt,
+      en: `Christmas Preparation Day #${christmasDayNumber}: The Spitz Family Holiday Magic!`
+    },
+    seo: {
+      pt: {
+        titleOptions: [`🎄 ${cleanTitlePt} | Especial de Natal #${christmasDayNumber} #Shorts`],
+        selectedTitle: `🎄 ${cleanTitlePt.slice(0, 52)} | Especial de Natal #${christmasDayNumber} #Shorts`,
+        description: `Mais um capítulo mágico da série Especial de Natal da Funny Spitz Family! 🎄🐾 Hoje: ${cleanTitlePt}! Inscreva-se no canal @FunnySpitzFamily e acompanhe nossa contagem regressiva até o Natal! 🎅❤️ #FunnySpitzFamily #EspecialDeNatal #Shorts`,
+        tags: ["Funny Spitz Family", "Especial de Natal", "Natal em Família", "Spitz Alemão", "Lulu da Pomerânia", "Shorts de Natal"],
+        hashtags: ["#FunnySpitzFamily", "#EspecialDeNatal", "#Shorts"],
+        thumbnailText: `NATAL SPITZ #${christmasDayNumber} 🎄`,
+        scheduledTime: "12:00"
+      },
+      en: {
+        titleOptions: [`🎄 Spitz Family Holiday Magic! | Christmas Special #${christmasDayNumber} #Shorts`],
+        selectedTitle: `🎄 Spitz Family Holiday Magic! | Christmas Special #${christmasDayNumber} #Shorts`,
+        description: `Another magical chapter of the Funny Spitz Family Christmas Special! 🎄🐾 Watch Raven, Vlad, Luna, Theo, and Jonny get the Blue House ready for Christmas Eve! Subscribe to @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #ChristmasShorts #Shorts`,
+        tags: ["Funny Spitz Family", "Christmas Special", "Pomeranian Christmas", "Cute Dogs", "Holiday Shorts"],
+        hashtags: ["#FunnySpitzFamily", "#ChristmasShorts", "#Shorts"],
+        thumbnailText: `SPITZ XMAS #${christmasDayNumber} 🎄`,
+        scheduledTime: "20:00"
+      }
+    },
+    scenes: [
+      {
+        id: "00",
+        character: "NARRADOR",
+        imageFile: "00_NARRADOR_Natal_9x16.png",
+        text: {
+          pt: `A contagem regressiva de Natal continua na Casa Azul! Hoje a missão da família é: ${cleanTitlePt}!`,
+          en: `The Christmas countdown continues at the Blue House! Today the Spitz Family has a brand new holiday mission!`
+        }
+      },
+      {
+        id: "01",
+        character: "RAVEN",
+        imageFile: "01_RAVEN_Natal_9x16.png",
+        text: {
+          pt: "Meus amores, venham todos para a sala! Precisamos deixar cada cantinho da nossa casa brilhando para a noite de Natal!",
+          en: "My loves, come to the living room! We need to make every corner of our home shine for Christmas Eve!"
+        }
+      },
+      {
+        id: "02",
+        character: "VLAD",
+        imageFile: "02_VLAD_Natal_9x16.png",
+        text: {
+          pt: "Deixem comigo! O papai aqui tem um plano infalível para deixar a nossa decoração natalina digna do Polo Norte!",
+          en: "Leave it to me! Daddy has a foolproof plan to make our Christmas decorations worthy of the North Pole!"
+        }
+      },
+      {
+        id: "03",
+        character: "THEO",
+        imageFile: "03_THEO_Natal_9x16.png",
+        text: {
+          pt: "Papai, eu já calculei a simetria perfeita dos enfeites! Só cuidado para não tropeçar no tapete com as caixas!",
+          en: "Daddy, I already calculated the perfect symmetry for the ornaments! Just be careful not to trip on the rug!"
+        }
+      },
+      {
+        id: "04",
+        character: "JONNY",
+        imageFile: "04_JONNY_Natal_9x16.png",
+        text: {
+          pt: "Eu quero ajudar na parte mais divertida! Será que o Papai Noel vai dar nota dez para a nossa sala decorada?",
+          en: "I want to help with the most fun part! Do you think Santa Claus will give our decorated living room a ten out of ten?"
+        }
+      },
+      {
+        id: "05",
+        character: "LUNA",
+        imageFile: "05_LUNA_Natal_9x16.png",
+        text: {
+          pt: "Está ficando tão lindo e aconchegante que eu já quero tirar cem fotos da nossa família perto das luzes douradas!",
+          en: "It is looking so pretty and cozy that I already want to take a hundred photos of our family by the golden lights!"
+        }
+      },
+      {
+        id: "06",
+        character: "VLAD",
+        imageFile: "06_VLAD_Natal_9x16.png",
+        text: {
+          pt: "Prontinho! Quando trabalhamos juntos com alegria, a magia do Natal ilumina a nossa casa inteira num piscar de olhos!",
+          en: "All done! When we work together with joy, the magic of Christmas lights up our entire home in the blink of an eye!"
+        }
+      },
+      {
+        id: "07",
+        character: "FAMILIA",
+        isFinale: true,
+        imageFile: "07_FAMILIA_Natal_9x16.png",
+        text: {
+          pt: "Somos a Família Spitz! Deixe seu like, inscreva-se no canal e acompanhe todos os dias o nosso Especial de Natal!",
+          en: "We are the Spitz Family! Leave a like, subscribe to the channel, and follow our Christmas Special every single day!"
+        }
+      }
+    ]
+  };
 }
 
 const CHRISTMAS_SCENE_BANK = {

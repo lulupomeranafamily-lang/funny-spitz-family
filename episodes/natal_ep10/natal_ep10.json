@@ -1,0 +1,132 @@
+{
+  "episodeNumber": 10,
+  "cycleDate": "2026-11-23",
+  "bgKeys": [
+    "fairy_lights_1",
+    "fairy_lights_2",
+    "fairy_lights_1",
+    "cozy_tree_room",
+    "fairy_lights_2",
+    "fairy_lights_1",
+    "cozy_tree_room",
+    "fairy_lights_2"
+  ],
+  "theme": {
+    "pt": "Papai Vlad Enrolado em Cem Metros de Pisca-Pisca Colorido",
+    "en": "Daddy Vlad Tangled in a Hundred Meters of Colorful Christmas Lights"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "🎄 Papai Vlad Enrolado em Cem Metros de Pisca-Pisca! | Especial de Natal #10 #Shorts",
+      "description": "Papai Vlad tentou colocar cem metros de pisca-pisca colorido no pinheiro sozinho e acabou todo enrolado brilhando como uma árvore ambulante! 🎄🐾 Assista e inscreva-se no canal @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #EspecialDeNatal #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Especial de Natal",
+        "Pisca-Pisca de Natal",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Shorts de Natal"
+      ],
+      "thumbnailText": "NATAL SPITZ #10 🎄"
+    },
+    "en": {
+      "selectedTitle": "🎄 Daddy Vlad Tangled in Christmas Lights! | Christmas Special #10 #Shorts",
+      "description": "Daddy Vlad tried to wrap a hundred meters of colorful fairy lights around the tree by himself and ended up glowing like a walking Christmas tree! 🎄🐾 Watch and subscribe to @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #ChristmasShorts #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Christmas Special",
+        "Christmas Lights",
+        "Pomeranian Christmas",
+        "Cute Dogs",
+        "Holiday Shorts"
+      ],
+      "thumbnailText": "SPITZ XMAS #10 🎄"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "text": {
+        "pt": "Décimo dia do Especial de Natal! Chegou a hora de passar cem metros de luzes pisca-pisca ao redor do nosso pinheiro!",
+        "en": "Day ten of our Christmas Special! It is time to wrap a hundred meters of twinkling fairy lights around our pine tree!"
+      },
+      "imageFile": "00_NARRADOR_Natal_9x16.png"
+    },
+    {
+      "id": "01",
+      "character": "VLAD",
+      "text": {
+        "pt": "Para passar o fio de luzes bem rápido, o papai vai girar ao redor da árvore... Opa, acho que girei para o lado errado!",
+        "en": "To wrap the light cord super fast, Daddy will spin around the tree... Oops, I think I spun the wrong way!"
+      },
+      "imageFile": "01_VLAD_Natal_9x16.png"
+    },
+    {
+      "id": "02",
+      "character": "JONNY",
+      "text": {
+        "pt": "Quem ligou a tomada?! Agora o Papai Vlad está piscando em vermelho, verde e dourado igual a um boneco luminoso!",
+        "en": "Who plugged in the cord?! Now Daddy Vlad is flashing in red, green, and gold just like a glowing holiday snowman!"
+      },
+      "imageFile": "02_JONNY_Natal_9x16.png"
+    },
+    {
+      "id": "03",
+      "character": "RAVEN",
+      "text": {
+        "pt": "Fique paradinho, Vlad! Se você der mais um passo, vai levar a árvore e o sofá inteiro junto com esse fio!",
+        "en": "Stand completely still, Vlad! If you take one more step, you will pull the tree and the whole sofa with that cord!"
+      },
+      "imageFile": "03_RAVEN_Natal_9x16.png"
+    },
+    {
+      "id": "04",
+      "character": "THEO",
+      "text": {
+        "pt": "Para desenrolar o papai, precisamos girar três voltas no sentido anti-horário enquanto a Luna segura a ponta do fio!",
+        "en": "To untangle Daddy, we need to spin three turns counterclockwise while Luna holds the end of the light cord!"
+      },
+      "imageFile": "04_THEO_Natal_9x16.png"
+    },
+    {
+      "id": "05",
+      "character": "LUNA",
+      "text": {
+        "pt": "Prontinho! Passamos cada voltinha do pisca-pisca para os galhos do pinheiro, e o brilho dourado ficou um encanto!",
+        "en": "All fixed! We transferred every loop of the fairy lights onto the pine branches, and the golden glow looks magical!"
+      },
+      "imageFile": "05_LUNA_Natal_9x16.png"
+    },
+    {
+      "id": "06",
+      "character": "VLAD",
+      "text": {
+        "pt": "Pelo menos eu testei todas as lâmpadas no meu próprio pelo antes! Nenhuma falhou, estão todas cem por cento aprovadas!",
+        "en": "At least I tested every single bulb on my own fur first! Not a single one failed, they are one hundred percent approved!"
+      },
+      "imageFile": "06_VLAD_Natal_9x16.png"
+    },
+    {
+      "id": "07",
+      "character": "FAMILIA",
+      "isFinale": true,
+      "banner": {
+        "pt": [
+          "🎄 Especial de Natal Spitz!",
+          "Inscreva-se no Canal! 🐾🎅"
+        ],
+        "en": [
+          "🎄 Spitz Christmas Special!",
+          "Subscribe Now! 🐾🎅"
+        ]
+      },
+      "text": {
+        "pt": "Você também se enrola todo com o pisca-pisca de Natal? Deixe seu like e inscreva-se no nosso canal!",
+        "en": "Do you also get tangled up in Christmas fairy lights? Leave a like and subscribe to our channel!"
+      },
+      "imageFile": "07_FAMILIA_Natal_9x16.png"
+    }
+  ],
+  "series": "Especial_de_Natal"
+}

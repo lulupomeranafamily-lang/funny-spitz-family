@@ -1,0 +1,132 @@
+{
+  "episodeNumber": 8,
+  "cycleDate": "2026-11-21",
+  "bgKeys": [
+    "snowy_pines_1",
+    "snowy_pines_2",
+    "giant_tree_door",
+    "snowy_pines_1",
+    "snowy_pines_2",
+    "cozy_tree_room",
+    "snowy_pines_1",
+    "cozy_tree_room"
+  ],
+  "theme": {
+    "pt": "A Missão de Escolher o Pinheiro de Natal Mais Fofo da Cidade",
+    "en": "The Mission to Choose the Fluffiest Christmas Pine Tree in Town"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "🎄 Escolhendo o Pinheiro de Natal Mais Fofo! | Especial de Natal #8 #Shorts",
+      "description": "A Família Spitz saiu em missão especial para escolher o pinheiro de Natal mais fofo e perfumado da cidade! 🎄🐾 Papai Vlad quer levar o maior pinheiro da floresta, enquanto o Theo mede cada galho com sua fita métrica! Inscreva-se no canal @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #EspecialDeNatal #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Especial de Natal",
+        "Pinheiro de Natal",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Shorts de Natal"
+      ],
+      "thumbnailText": "NATAL SPITZ #8 🎄"
+    },
+    "en": {
+      "selectedTitle": "🎄 Choosing the Fluffiest Christmas Tree! | Christmas Special #8 #Shorts",
+      "description": "The Spitz Family is on a special mission to pick the fluffiest and most fragrant Christmas pine tree in town! 🎄🐾 Daddy Vlad wants the biggest tree in the forest while Theo measures every branch! Subscribe to @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #ChristmasShorts #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Christmas Special",
+        "Christmas Tree",
+        "Pomeranian Christmas",
+        "Cute Dogs",
+        "Holiday Shorts"
+      ],
+      "thumbnailText": "SPITZ XMAS #8 🎄"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "text": {
+        "pt": "Chegou o oitavo dia do nosso Especial de Natal! Hoje a Família Spitz vai escolher o grande pinheiro da Casa Azul!",
+        "en": "Day eight of our Christmas Special is here! Today the Spitz Family is picking the grand pine tree for the Blue House!"
+      },
+      "imageFile": "00_NARRADOR_Natal_9x16.png"
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "text": {
+        "pt": "Meus amores, precisamos de um pinheiro bem verdinho, cheiroso e com galhos fortes para segurar todos os nossos enfeites!",
+        "en": "My loves, we need a bright green, fragrant pine tree with strong branches to hold all our holiday ornaments!"
+      },
+      "imageFile": "01_RAVEN_Natal_9x16.png"
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "text": {
+        "pt": "O papai já encontrou o campeão! Olhem esse pinheiro imperial gigante, ele é quase do tamanho de um prédio!",
+        "en": "Daddy already found the champion! Look at this giant imperial pine tree, it is almost as tall as a building!"
+      },
+      "imageFile": "02_VLAD_Natal_9x16.png"
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "text": {
+        "pt": "Papai, o teto da nossa sala tem três metros de altura, e esse pinheiro que você escolheu tem quase cinco metros!",
+        "en": "Daddy, our living room ceiling is three meters high, and that pine tree you picked is almost five meters tall!"
+      },
+      "imageFile": "03_THEO_Natal_9x16.png"
+    },
+    {
+      "id": "04",
+      "character": "JONNY",
+      "text": {
+        "pt": "Eu gostei desse pinheiro bem fofinho aqui! Ele parece até o pelo do Papai Vlad depois de secar com o soprador!",
+        "en": "I like this super fluffy pine tree right here! It looks just like Daddy Vlad fur after drying with the blower!"
+      },
+      "imageFile": "04_JONNY_Natal_9x16.png"
+    },
+    {
+      "id": "05",
+      "character": "LUNA",
+      "text": {
+        "pt": "Esse é perfeito, Jonny! Os galhos são bem redondinhos e vão ficar maravilhosos com as nossas fitas douradas!",
+        "en": "That one is perfect, Jonny! The branches are so round and will look wonderful with our golden ribbons!"
+      },
+      "imageFile": "05_LUNA_Natal_9x16.png"
+    },
+    {
+      "id": "06",
+      "character": "VLAD",
+      "text": {
+        "pt": "Está decidido! Vamos levar o pinheiro mais fofo da cidade para deixar a nossa sala com cheirinho de Natal!",
+        "en": "It is decided! Let us bring the fluffiest pine tree in town to fill our living room with the scent of Christmas!"
+      },
+      "imageFile": "06_VLAD_Natal_9x16.png"
+    },
+    {
+      "id": "07",
+      "character": "FAMILIA",
+      "isFinale": true,
+      "banner": {
+        "pt": [
+          "🎄 Especial de Natal Spitz!",
+          "Inscreva-se no Canal! 🐾🎅"
+        ],
+        "en": [
+          "🎄 Spitz Christmas Special!",
+          "Subscribe Now! 🐾🎅"
+        ]
+      },
+      "text": {
+        "pt": "E na sua casa, a árvore de Natal já está montada? Deixe seu like e inscreva-se no canal da Família Spitz!",
+        "en": "Is your Christmas tree already up at home? Leave a like and subscribe to the Spitz Family channel!"
+      },
+      "imageFile": "07_FAMILIA_Natal_9x16.png"
+    }
+  ],
+  "series": "Especial_de_Natal"
+}

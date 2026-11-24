@@ -1,0 +1,132 @@
+{
+  "episodeNumber": 11,
+  "cycleDate": "2026-11-24",
+  "bgKeys": [
+    "red_gold_ornaments_1",
+    "red_gold_ornaments_2",
+    "red_gold_ornaments_1",
+    "cozy_tree_room",
+    "red_gold_ornaments_2",
+    "red_gold_ornaments_1",
+    "cozy_tree_room",
+    "red_gold_ornaments_2"
+  ],
+  "theme": {
+    "pt": "Pendurando as Bolinhas Douradas e Vermelhas sem Quebrar Nenhuma",
+    "en": "Hanging the Golden and Red Christmas Ornaments Without Breaking Any"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "🎄 Pendurando as Bolinhas Douradas na Árvore! | Especial de Natal #11 #Shorts",
+      "description": "Chegou o momento de pendurar as bolinhas douradas e vermelhas na árvore de Natal da Família Spitz sem deixar nenhuma cair! 🎄🐾 Veja o cuidado do pequeno Jonny e a organização perfeita da Mamãe Raven! Inscreva-se no canal @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #EspecialDeNatal #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Especial de Natal",
+        "Enfeites de Natal",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Shorts de Natal"
+      ],
+      "thumbnailText": "NATAL SPITZ #11 🎄"
+    },
+    "en": {
+      "selectedTitle": "🎄 Hanging the Golden Christmas Ornaments! | Christmas Special #11 #Shorts",
+      "description": "It is time to hang the golden and red ornaments on the Spitz Family Christmas tree without dropping a single one! 🎄🐾 Watch little Jonny and Mommy Raven decorate every branch! Subscribe to @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #ChristmasShorts #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Christmas Special",
+        "Christmas Ornaments",
+        "Pomeranian Christmas",
+        "Cute Dogs",
+        "Holiday Shorts"
+      ],
+      "thumbnailText": "SPITZ XMAS #11 🎄"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "text": {
+        "pt": "Décimo primeiro dia do Especial de Natal! Hoje a Família Spitz vai pendurar as bolinhas douradas e vermelhas na árvore!",
+        "en": "Day eleven of our Christmas Special! Today the Spitz Family is hanging the golden and red ornaments on the Christmas tree!"
+      },
+      "imageFile": "00_NARRADOR_Natal_9x16.png"
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "text": {
+        "pt": "Abri a caixa das bolinhas brilhantes! Vamos pendurar com bastante delicadeza para que todas fiquem bem firmes nos galhos!",
+        "en": "I opened the box of shiny ornaments! Let us hang them gently so every single one stays secure on the branches!"
+      },
+      "imageFile": "01_RAVEN_Natal_9x16.png"
+    },
+    {
+      "id": "02",
+      "character": "LUNA",
+      "text": {
+        "pt": "Eu vou intercalar uma bolinha vermelha aveludada e uma dourada espelhada para criar um efeito digno de palácio!",
+        "en": "I am going to alternate a velvet red ornament with a mirrored gold one to create a palace-worthy holiday look!"
+      },
+      "imageFile": "02_LUNA_Natal_9x16.png"
+    },
+    {
+      "id": "03",
+      "character": "JONNY",
+      "text": {
+        "pt": "Olhem para mim dentro dessa bolinha dourada! O meu focinho fica redondo e engraçado igual a uma maçã do amor!",
+        "en": "Look at my reflection inside this golden ornament! My little nose looks round and funny just like a candy apple!"
+      },
+      "imageFile": "03_JONNY_Natal_9x16.png"
+    },
+    {
+      "id": "04",
+      "character": "THEO",
+      "text": {
+        "pt": "Eu coloquei almofadas fofinhas ao redor da base da árvore, assim se alguma bolinha escorregar da patinha, ela pousa no macio!",
+        "en": "I placed fluffy pillows around the base of the tree, so if any ornament slips from a paw, it lands softly!"
+      },
+      "imageFile": "04_THEO_Natal_9x16.png"
+    },
+    {
+      "id": "05",
+      "character": "VLAD",
+      "text": {
+        "pt": "Essa prevenção do Theo acabou de salvar a minha bolinha dourada favorita! Ela quicou na almofada e voltou para a minha patinha!",
+        "en": "Theo safety pillows just saved my favorite golden ornament! It bounced off the cushion right back into my paw!"
+      },
+      "imageFile": "05_VLAD_Natal_9x16.png"
+    },
+    {
+      "id": "06",
+      "character": "RAVEN",
+      "text": {
+        "pt": "Nenhuma bolinha quebrada e a nossa árvore está radiante! Agora só falta escolhermos quem vai colocar a grande estrela no topo!",
+        "en": "Not a single broken ornament and our tree looks radiant! Now we just need to see who will place the grand star on top!"
+      },
+      "imageFile": "06_RAVEN_Natal_9x16.png"
+    },
+    {
+      "id": "07",
+      "character": "FAMILIA",
+      "isFinale": true,
+      "banner": {
+        "pt": [
+          "🎄 Especial de Natal Spitz!",
+          "Inscreva-se no Canal! 🐾🎅"
+        ],
+        "en": [
+          "🎄 Spitz Christmas Special!",
+          "Subscribe Now! 🐾🎅"
+        ]
+      },
+      "text": {
+        "pt": "Qual é a cor das bolinhas da sua árvore de Natal? Conte nos comentários, deixe seu like e inscreva-se no canal!",
+        "en": "What color are the ornaments on your Christmas tree? Tell us in the comments, leave a like, and subscribe!"
+      },
+      "imageFile": "07_FAMILIA_Natal_9x16.png"
+    }
+  ],
+  "series": "Especial_de_Natal"
+}
