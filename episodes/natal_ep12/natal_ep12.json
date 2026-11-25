@@ -1,0 +1,122 @@
+{
+  "episodeNumber": 12,
+  "series": "Especial_de_Natal",
+  "cycleDate": "2026-11-25",
+  "theme": {
+    "pt": "Quem Vai Colocar a Estrela Iluminada no Topo da Árvore?",
+    "en": "Who Will Place the Glowing Star on Top of the Christmas Tree?"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "🎄 Quem Vai Colocar a Estrela no Topo da Árvore? | Especial de Natal #12 #Shorts",
+      "description": "Chegou o momento mais esperado da decoração da árvore de Natal da Família Spitz: colocar a grande Estrela Dourada Iluminada no topo! 🎄⭐🐾 Veja como toda a família se une para alcançar o galho mais alto! Inscreva-se no canal @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #EspecialDeNatal #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Especial de Natal",
+        "Estrela de Natal",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Shorts de Natal"
+      ],
+      "thumbnailText": "NATAL SPITZ #12 ⭐🎄"
+    },
+    "en": {
+      "selectedTitle": "🎄 Placing the Glowing Star on the Christmas Tree! | Christmas Special #12 #Shorts",
+      "description": "The most awaited moment of decorating the Spitz Family Christmas tree is here: placing the glowing Golden Star on the very top! 🎄⭐🐾 Watch the whole family team up to reach the highest branch! Subscribe to @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #ChristmasShorts #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Christmas Special",
+        "Christmas Star",
+        "Pomeranian Christmas",
+        "Cute Dogs",
+        "Holiday Shorts"
+      ],
+      "thumbnailText": "SPITZ XMAS #12 ⭐🎄"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "text": {
+        "pt": "Décimo segundo dia do Especial de Natal! Chegou a hora de colocar a grande estrela dourada no topo da nossa árvore!",
+        "en": "Day twelve of our Christmas Special! It is time to place the grand golden star right on top of our Christmas tree!"
+      },
+      "imageFile": "00_NARRADOR_Natal_9x16.png"
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "text": {
+        "pt": "Aqui está a nossa estrela iluminada! Mas o topo do pinheiro é tão alto que precisamos decidir quem vai subir para colocar!",
+        "en": "Here is our glowing Christmas star! But the top of the pine tree is so high that we need to decide who will reach it!"
+      },
+      "imageFile": "01_RAVEN_Natal_9x16.png"
+    },
+    {
+      "id": "02",
+      "character": "JONNY",
+      "text": {
+        "pt": "Eu quero colocar a estrela! Se eu der um super pulo do sofá, acho que consigo alcançar a pontinha da árvore!",
+        "en": "I want to place the star! If I take a super jump from the sofa, I think I can reach the very tip of the tree!"
+      },
+      "imageFile": "02_JONNY_Natal_9x16.png"
+    },
+    {
+      "id": "03",
+      "character": "THEO",
+      "text": {
+        "pt": "Nada de saltos acrobáticos, Jonny! Pela física, a melhor solução é fazermos uma escadinha segura com a ajuda do papai!",
+        "en": "No acrobatic jumps, Jonny! By physics, the safest solution is building a steady family boost with Daddy Vlad!"
+      },
+      "imageFile": "03_THEO_Natal_9x16.png"
+    },
+    {
+      "id": "04",
+      "character": "VLAD",
+      "text": {
+        "pt": "Suba nos ombros fortes do papai, pequeno Jonny! Eu seguro firme na base enquanto a Luna e o Theo guiam a direção!",
+        "en": "Climb onto Daddy strong shoulders, little Jonny! I will hold steady at the base while Luna and Theo guide the way!"
+      },
+      "imageFile": "04_VLAD_Natal_9x16.png"
+    },
+    {
+      "id": "05",
+      "character": "LUNA",
+      "text": {
+        "pt": "Mais um pouquinho para a direita, Jonny! Isso mesmo, encaixou perfeitamente no galho principal do topo!",
+        "en": "Just a tiny bit to the right, Jonny! That is it, it slid right onto the main branch at the very top!"
+      },
+      "imageFile": "05_LUNA_Natal_9x16.png"
+    },
+    {
+      "id": "06",
+      "character": "JONNY",
+      "text": {
+        "pt": "Consegui! A nossa estrela dourada está brilhando lá no alto igual a um solzinho mágico dentro da sala!",
+        "en": "I did it! Our golden star is shining way up high just like a magical little sun inside our living room!"
+      },
+      "imageFile": "06_JONNY_Natal_9x16.png"
+    },
+    {
+      "id": "07",
+      "character": "FAMILIA",
+      "isFinale": true,
+      "banner": {
+        "pt": [
+          "🎄 Especial de Natal Spitz!",
+          "Inscreva-se no Canal! 🐾⭐"
+        ],
+        "en": [
+          "🎄 Spitz Christmas Special!",
+          "Subscribe Now! 🐾⭐"
+        ]
+      },
+      "text": {
+        "pt": "Quem coloca a estrela na árvore da sua casa? Conte nos comentários, deixe seu like e inscreva-se no canal!",
+        "en": "Who places the star on top of your Christmas tree at home? Tell us in the comments, leave a like, and subscribe!"
+      },
+      "imageFile": "07_FAMILIA_Natal_9x16.png"
+    }
+  ]
+}

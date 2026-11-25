@@ -1,0 +1,187 @@
+{
+  "episodeNumber": 12,
+  "series": "Série_Normal_16x9_Longa",
+  "theme": {
+    "pt": "O Grande Show de Talentos Musical da Família Spitz! O Solo de Guitarra do Papai Vlad (Especial de 3 Minutos)",
+    "en": "The Great Spitz Family Musical Talent Show! Daddy Vlad's Rock Guitar Solo (3-Minute Full Episode)"
+  },
+  "title": {
+    "pt": "Show de Talentos Musical da Família Spitz! 🎤🎸 O Solo de Guitarra do Papai Vlad! | Funny Spitz Family",
+    "en": "The Spitz Family Musical Talent Show! 🎤🎸 Daddy Vlad's Rock Guitar Solo! | Funny Spitz Family"
+  },
+  "description": {
+    "pt": "A sala da Família Spitz se transformou em um grande palco de Show de Talentos Musical! 🐾🎤🎸 Mamãe Raven apresenta a noite de gala, Luna canta pop sob o globo espelhado, Theo toca piano clássico com partitura científica, Jonny faz um solo de bateria super animado e o Papai Vlad resolve aumentar o amplificador da guitarra no volume máximo! Assista a esse episódio completo de 3 minutos com movimentos naturais e sincronia labial!\n\nInscreva-se no canal @FunnySpitzFamily e deixe seu like! 🐾❤️",
+    "en": "The Spitz Family living room has transformed into a grand Musical Talent Show stage! 🐾🎤🎸 Mommy Raven hosts the gala night, Luna sings pop under the mirror disco ball, Theo plays classical piano, Jonny performs an energetic drum solo, and Daddy Vlad turns his electric guitar amplifier all the way up! Watch this full 3-minute comedy episode with natural movements and lip-sync!\n\nSubscribe to @FunnySpitzFamily and leave a like! 🐾❤️"
+  },
+  "tags": [
+    "Funny Spitz Family",
+    "Spitz Alemão",
+    "Lulu da Pomerânia",
+    "Pomeranian",
+    "Talking Dogs",
+    "Cachorros Falantes",
+    "Show de Talentos",
+    "Animação 3D Família"
+  ],
+  "seo": {
+    "pt": {
+      "title": "Show de Talentos Musical da Família Spitz! 🎤🎸 O Solo de Guitarra do Papai Vlad! | Funny Spitz Family",
+      "description": "A sala da Família Spitz se transformou em um grande palco de Show de Talentos Musical! 🐾🎤🎸 Assista ao episódio completo de 3 minutos e inscreva-se no canal @FunnySpitzFamily!",
+      "tags": ["Funny Spitz Family", "Spitz Alemão", "Lulu da Pomerânia", "Show de Talentos", "Cachorros Falantes"],
+      "thumbnailText": "SHOW DE TALENTOS! 🎤🎸"
+    },
+    "en": {
+      "title": "The Spitz Family Musical Talent Show! 🎤🎸 Daddy Vlad's Rock Guitar Solo! | Funny Spitz Family",
+      "description": "The Spitz Family living room has transformed into a grand Musical Talent Show stage! 🐾🎤🎸 Watch the full 3-minute episode and subscribe to @FunnySpitzFamily!",
+      "tags": ["Funny Spitz Family", "Pomeranian", "Talking Dogs", "Talent Show", "3D Dog Animation"],
+      "thumbnailText": "FAMILY TALENT SHOW! 🎤🎸"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00", "character": "NARRADOR", "mood": "happy_celebration", "sfx": "chime", "motion": "pan_right_zoom_in", "vfx": "confetti", "imageFile": "scene_00.png",
+      "text": {
+        "pt": "Hoje as cortinas vermelhas se abriram na Casa Azul para o primeiro Grande Show de Talentos Musical da Família Spitz!",
+        "en": "Today the red velvet curtains opened at the Blue House for the first ever Great Spitz Family Musical Talent Show!"
+      }
+    },
+    {
+      "id": "01", "character": "RAVEN", "mood": "cozy", "sfx": "chime", "motion": "gentle_float", "vfx": "sparkles", "imageFile": "scene_01.png",
+      "text": {
+        "pt": "Boa noite, plateia querida! Eu sou a apresentadora oficial desta noite e cada artista da nossa família preparou um número musical inesquecível!",
+        "en": "Good evening, dear audience! I am tonight's official host, and every artist in our family has prepared an unforgettable musical act!"
+      }
+    },
+    {
+      "id": "02", "character": "LUNA", "mood": "upbeat_dance", "sfx": "disco_drop", "motion": "dance_bounce", "vfx": "sparkles", "imageFile": "scene_02.png",
+      "text": {
+        "pt": "Eu vou abrir o espetáculo com o meu microfone dourado brilhante e uma coreografia pop debaixo do globo espelhado!",
+        "en": "I am opening the show with my sparkling golden microphone and a pop dance routine right under the mirror disco ball!"
+      }
+    },
+    {
+      "id": "03", "character": "THEO", "mood": "curious_pop", "sfx": "pop_click", "motion": "gentle_float", "vfx": "sparkles", "imageFile": "scene_03.png",
+      "text": {
+        "pt": "Minha apresentação será uma sonata clássica no piano de cauda, calculada com cento e vinte batidas por minuto no metrônomo!",
+        "en": "My performance will be a classical sonata on the grand piano, calculated at exactly one hundred and twenty beats per minute!"
+      }
+    },
+    {
+      "id": "04", "character": "JONNY", "mood": "upbeat_dance", "sfx": "pop_click", "motion": "dance_bounce", "vfx": "music_notes", "imageFile": "scene_04.png",
+      "text": {
+        "pt": "E eu vou tocar a bateria completa com dois pratos dourados! Quando eu bato as baquetas, até as almofadas do sofá pulam no ritmo!",
+        "en": "And I am playing the full drum kit with two golden cymbals! When I hit the drumsticks, even the sofa pillows jump to the beat!"
+      }
+    },
+    {
+      "id": "05", "character": "VLAD", "mood": "curious_pop", "sfx": "pop_click", "motion": "gentle_float", "vfx": "sparkles", "imageFile": "scene_05.png",
+      "text": {
+        "pt": "Preparem os ouvidos porque o papai trouxe a lendária guitarra elétrica vermelha dos meus tempos de estrela do rock!",
+        "en": "Prepare your ears because Daddy brought out the legendary red electric guitar from my golden rock star days!"
+      }
+    },
+    {
+      "id": "06", "character": "LUNA", "mood": "upbeat_dance", "sfx": "yay_fanfare", "motion": "dance_bounce", "vfx": "music_notes", "imageFile": "scene_06.png",
+      "text": {
+        "pt": "Hora do meu número! Luzes cor-de-rosa no palco, som na caixa e todo mundo batendo patinhas no refrão comigo!",
+        "en": "Time for my act! Pink spotlights on the stage, music playing, and everybody clapping their paws along with my chorus!"
+      }
+    },
+    {
+      "id": "07", "character": "RAVEN", "mood": "happy_celebration", "sfx": "chime", "motion": "gentle_float", "vfx": "hearts", "imageFile": "scene_07.png",
+      "text": {
+        "pt": "Bravo, minha filha! Que afinação maravilhosa! A Luna merece dez estrelas douradas pela elegância no palco!",
+        "en": "Bravo, my daughter! What wonderful pitch! Luna deserves ten golden stars for her elegance on stage!"
+      }
+    },
+    {
+      "id": "08", "character": "THEO", "mood": "cozy", "sfx": "chime", "motion": "gentle_float", "vfx": "music_notes", "imageFile": "scene_08.png",
+      "text": {
+        "pt": "Agora silêncio no auditório para o meu concerto de piano! Cada tecla branca e preta produz uma onda sonora em perfeita harmonia!",
+        "en": "Now silence in the auditorium for my piano concerto! Every white and black key produces a sound wave in perfect harmony!"
+      }
+    },
+    {
+      "id": "09", "character": "JONNY", "mood": "comedy_boing", "sfx": "boing", "motion": "dance_bounce", "vfx": "music_notes", "imageFile": "scene_09.png",
+      "text": {
+        "pt": "Theo, a sua música clássica está muito calminha! Deixa eu colocar um batuque de bateria bem rápido para animar esse piano!",
+        "en": "Theo, your classical music is way too calm! Let me add a super fast drum beat to spice up that piano!"
+      }
+    },
+    {
+      "id": "10", "character": "THEO", "mood": "shock_mystery", "sfx": "dun_dun_dun", "motion": "detective_pan", "vfx": "magnifying_glass", "imageFile": "scene_10.png",
+      "text": {
+        "pt": "Jonny, você transformou a minha sonata clássica em um samba-rock acelerado! Mas até que a combinação ficou bem divertida!",
+        "en": "Jonny, you turned my classical sonata into a fast samba-rock! Wait a second, that combination actually sounds pretty fun!"
+      }
+    },
+    {
+      "id": "11", "character": "VLAD", "mood": "upbeat_dance", "sfx": "disco_drop", "motion": "dance_bounce", "vfx": "sparkles", "imageFile": "scene_11.png",
+      "text": {
+        "pt": "Afastem as poltronas porque chegou a vez do grande solo de guitarra do Papai Vlad! Vou girar o botão do amplificador até o dez!",
+        "en": "Move the armchairs back because it is time for Daddy Vlad's grand guitar solo! I am turning the amplifier knob all the way to ten!"
+      }
+    },
+    {
+      "id": "12", "character": "RAVEN", "mood": "tiptoe_suspense", "sfx": "whoosh_magnifying", "motion": "detective_pan", "vfx": "shock_lines", "imageFile": "scene_12.png",
+      "text": {
+        "pt": "Vlad querido, não coloque o amplificador no volume máximo! Os quadros da parede já estão começando a tremer!",
+        "en": "Vlad dear, do not set the amplifier to maximum volume! The picture frames on the wall are already starting to shake!"
+      }
+    },
+    {
+      "id": "13", "character": "VLAD", "mood": "comedy_boing", "sfx": "boing", "motion": "crash_zoom_shake", "vfx": "shock_lines", "imageFile": "scene_13.png",
+      "text": {
+        "pt": "Lá vai o acorde lendário do rock... Blergh! A onda sonora do amplificador soprou o meu topete inteiro para trás!",
+        "en": "Here comes the legendary rock chord... Whoa! The sound wave from the amplifier just blew my entire fluffy mane backward!"
+      }
+    },
+    {
+      "id": "14", "character": "JONNY", "mood": "comedy_boing", "sfx": "boing", "motion": "dance_bounce", "vfx": "sparkles", "imageFile": "scene_14.png",
+      "text": {
+        "pt": "Olhem o pelo do Papai Vlad! Ele ficou todo arrepiado igual a um leãozinho cantor de rock com gravata borboleta!",
+        "en": "Look at Daddy Vlad's fur! It puffed up all spiky just like a little rock-and-roll lion wearing a bow tie!"
+      }
+    },
+    {
+      "id": "15", "character": "LUNA", "mood": "upbeat_dance", "sfx": "pop_click", "motion": "dance_bounce", "vfx": "music_notes", "imageFile": "scene_15.png",
+      "text": {
+        "pt": "E o melhor é que o papai se empolgou tanto na dança da guitarra que acionou o botão da máquina de confetes dourados antes da hora!",
+        "en": "And the funniest part is that Daddy got so excited doing his guitar dance that he stepped on the golden confetti cannon button early!"
+      }
+    },
+    {
+      "id": "16", "character": "THEO", "mood": "happy_celebration", "sfx": "chime", "motion": "gentle_float", "vfx": "confetti", "imageFile": "scene_16.png",
+      "text": {
+        "pt": "Mais sabe de uma coisa, pessoal? Se juntarmos a voz da Luna, o meu piano, a bateria do Jonny e a guitarra do papai, formamos uma banda completa!",
+        "en": "You know what, everyone? If we combine Luna's vocals, my piano, Jonny's drums, and Daddy's guitar, we form a complete family band!"
+      }
+    },
+    {
+      "id": "17", "character": "RAVEN", "mood": "happy_celebration", "sfx": "yay_fanfare", "motion": "gentle_float", "vfx": "hearts", "imageFile": "scene_17.png",
+      "text": {
+        "pt": "Ideia genial, Theo! Em vez de competir separado, vamos tocar a grande música oficial da Família Spitz todos juntos no palco!",
+        "en": "Brilliant idea, Theo! Instead of competing separately, let us play the official Spitz Family theme song all together on stage!"
+      }
+    },
+    {
+      "id": "18", "character": "VLAD", "mood": "happy_celebration", "sfx": "yay_fanfare", "motion": "gentle_float", "vfx": "confetti", "imageFile": "scene_18.png",
+      "text": {
+        "pt": "Um, dois, três e já! Com o volume do amplificador no nível família feliz, a nossa banda merece o troféu de disco de ouro!",
+        "en": "One, two, three, go! With the amplifier volume set to happy family level, our band deserves the golden record trophy!"
+      }
+    },
+    {
+      "id": "19", "character": "FAMILIA", "mood": "happy_celebration", "sfx": "yay_fanfare", "motion": "celebration_zoom", "vfx": "confetti", "isFinale": true,
+      "banner": {
+        "pt": ["Somos a Banda Funny Spitz Family!", "Inscreva-se e deixe seu Like! 🐾🎤🎸"],
+        "en": ["We are the Funny Spitz Family Band!", "Subscribe and leave a Like! 🐾🎤🎸"]
+      },
+      "imageFile": "scene_19.png",
+      "text": {
+        "pt": "Somos a Banda da Família Spitz! Qual instrumento musical você mais gostou? Deixe seu like, inscreva-se no canal e até o próximo show!",
+        "en": "We are the Spitz Family Band! Which musical instrument did you like best? Leave a like, subscribe to the channel, and see you at the next show!"
+      }
+    }
+  ]
+}

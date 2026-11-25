@@ -1,0 +1,93 @@
+{
+  "episodeNumber": 12,
+  "series": "Série_Normal_9x16_Shorts",
+  "theme": {
+    "pt": "O Solo de Guitarra Maluco do Papai Vlad no Show de Talentos!",
+    "en": "Daddy Vlad's Crazy Guitar Solo at the Family Talent Show!"
+  },
+  "title": {
+    "pt": "O Solo de Guitarra do Papai Vlad no Show de Talentos! 🎸🎤 #Shorts",
+    "en": "Daddy Vlad's Guitar Solo at the Family Talent Show! 🎸🎤 #Shorts"
+  },
+  "description": {
+    "pt": "A Família Spitz montou uma banda completa no Show de Talentos Musical! 🐾🎸🎤 Veja o que acontece quando o Papai Vlad liga a guitarra elétrica no volume máximo! Inscreva-se no canal @FunnySpitzFamily! 🐾❤️ #Shorts #SpitzAlemao #Pomeranian #FunnyDogs",
+    "en": "The Spitz Family formed a full band at the Musical Talent Show! 🐾🎸🎤 See what happens when Daddy Vlad turns his electric guitar amplifier to maximum volume! Subscribe to @FunnySpitzFamily! 🐾❤️ #Shorts #Pomeranian #TalkingDogs"
+  },
+  "tags": ["Shorts", "Funny Spitz Family", "Spitz Alemão", "Lulu da Pomerânia", "Pomeranian", "Show de Talentos"],
+  "seo": {
+    "pt": {
+      "title": "O Solo de Guitarra do Papai Vlad no Show de Talentos! 🎸🎤 #Shorts",
+      "description": "A Família Spitz montou uma banda completa no Show de Talentos Musical! 🐾🎸🎤 Inscreva-se no canal @FunnySpitzFamily!",
+      "tags": ["Shorts", "Funny Spitz Family", "Spitz Alemão", "Lulu da Pomerânia"],
+      "thumbnailText": "BANDA SPITZ! 🎸🎤"
+    },
+    "en": {
+      "title": "Daddy Vlad's Guitar Solo at the Family Talent Show! 🎸🎤 #Shorts",
+      "description": "The Spitz Family formed a full band at the Musical Talent Show! 🐾🎸🎤 Subscribe to @FunnySpitzFamily!",
+      "tags": ["Shorts", "Funny Spitz Family", "Pomeranian", "Talking Dogs"],
+      "thumbnailText": "SPITZ ROCK BAND! 🎸🎤"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00", "character": "NARRADOR", "imageFile": "scene_00.png",
+      "text": {
+        "pt": "Começou o Grande Show de Talentos Musical da Família Spitz!",
+        "en": "The Great Spitz Family Musical Talent Show has begun!"
+      }
+    },
+    {
+      "id": "01", "character": "RAVEN", "imageFile": "scene_01.png",
+      "text": {
+        "pt": "Hoje cada artista da nossa família preparou uma apresentação musical super especial!",
+        "en": "Tonight every artist in our family has prepared a super special musical performance!"
+      }
+    },
+    {
+      "id": "02", "character": "LUNA", "imageFile": "scene_02.png",
+      "text": {
+        "pt": "Eu abro o show cantando pop com meu microfone dourado debaixo do globo espelhado!",
+        "en": "I am opening the show singing pop with my golden microphone under the disco ball!"
+      }
+    },
+    {
+      "id": "03", "character": "THEO", "imageFile": "scene_03.png",
+      "text": {
+        "pt": "E eu toco piano clássico acompanhado pelo ritmo animado da bateria do Jonny!",
+        "en": "And I play classical piano accompanied by Jonny's energetic drum beat!"
+      }
+    },
+    {
+      "id": "04", "character": "VLAD", "imageFile": "scene_11.png",
+      "text": {
+        "pt": "Agora afastem o sofá porque o papai vai ligar a guitarra elétrica no volume dez!",
+        "en": "Now move the sofa back because Daddy is turning the electric guitar amplifier to ten!"
+      }
+    },
+    {
+      "id": "05", "character": "JONNY", "imageFile": "scene_14.png",
+      "text": {
+        "pt": "Olhem! A onda sonora do amplificador deixou o pelo do Papai Vlad todo arrepiado igual a um leão!",
+        "en": "Look! The sound wave from the amplifier puffed Daddy Vlad's fur up just like a lion!"
+      }
+    },
+    {
+      "id": "06", "character": "RAVEN", "imageFile": "scene_17.png",
+      "text": {
+        "pt": "Juntando a voz, o piano, a bateria e a guitarra, formamos a Banda Oficial da Família Spitz!",
+        "en": "Combining vocals, piano, drums, and guitar, we formed the Official Spitz Family Band!"
+      }
+    },
+    {
+      "id": "07", "character": "FAMILIA", "isFinale": true, "imageFile": "scene_19.png",
+      "banner": {
+        "pt": ["Banda Funny Spitz Family!", "Inscreva-se no Canal! 🐾🎸"],
+        "en": ["Funny Spitz Family Band!", "Subscribe Now! 🐾🎸"]
+      },
+      "text": {
+        "pt": "Gostou do nosso show musical? Deixe seu like e inscreva-se no canal da Família Spitz!",
+        "en": "Did you enjoy our musical show? Leave a like and subscribe to the Spitz Family channel!"
+      }
+    }
+  ]
+}

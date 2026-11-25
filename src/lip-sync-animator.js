@@ -381,7 +381,14 @@ export function deformCharacterMultiFaceRGBA(srcBuf, W, H, faces, frameState) {
             srcY += (-dxNeck * sinT + dyNeck * cosT) - dyNeck;
           }
 
-          // 1B. 3D Pseudo-Perspective Snout Parallax (Yaw & Pitch)
+          // 1C. Expressive Eyebrow / Forehead Lift on emphasized syllables (above the eyes, below the ears)
+          const browY = (pf.lEy + pf.rEy) * 0.5 - pf.eRy * 1.45;
+          const dyBrow = (y - browY) / (pf.eRy * 1.35);
+          const dxBrow = (x - pf.nCx) / (pf.horizSpan * 0.55);
+          if (Math.abs(dyBrow) < 1.2 && Math.abs(dxBrow) < 1.2) {
+            const wBrow = Math.exp(-0.8 * (dxBrow * dxBrow + dyBrow * dyBrow));
+            srcY += pf.mouthOpen * pf.eRy * 0.55 * wBrow;
+          }
           const dxN = (x - pf.nCx) / (pf.horizSpan * 0.65);
           const dyN = (y - pf.nCy) / (H * 0.20);
           const snoutDepth = Math.exp(-0.5 * (dxN * dxN + dyN * dyN));
@@ -729,8 +736,10 @@ export async function renderLipSyncSceneClip({
         // Anchor charBottom right behind the 3D studio counter ledge & speech bubble (0.84 * height in 16:9, 0.83 * height in 9:16)
         // so 100% of the character's shirt, bow tie, pearl necklace, paws, and moving mouth sit ABOVE the speech bubble!
         const charLeft = Math.round((width - targetCharW) / 2 + Math.sin(t * 1.4 + sceneIndex) * (width * 0.010));
-        const charBottom = isVertical ? Math.round(height * 0.83) : Math.round(height * 0.84);
-        const charTop = charBottom - maxOpaqueY;
+        // Speech-rhythm vertical bounce + gentle breathing bob so the whole body feels alive while speaking!
+        const speechBouncePx = Math.round((-env.mouthOpen * 9) + Math.sin(t * 2.4 + sceneIndex) * 4);
+        const charBottom = (isVertical ? Math.round(height * 0.83) : Math.round(height * 0.84)) + 12;
+        const charTop = charBottom - maxOpaqueY + speechBouncePx;
 
         for (let y = Math.max(0, charTop); y < Math.min(height, charBottom); y++) {
           const my = y - charTop;
