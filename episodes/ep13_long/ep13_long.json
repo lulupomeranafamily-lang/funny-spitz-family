@@ -1,0 +1,187 @@
+{
+  "episodeNumber": 13,
+  "series": "Série_Normal_16x9_Longa",
+  "theme": {
+    "pt": "Um Dia de Praia e Surf da Família Spitz! O Castelo de Areia Gigante do Papai Vlad (Especial de 3 Minutos)",
+    "en": "The Spitz Family Beach and Surf Adventure! Daddy Vlad's Giant Sandcastle (3-Minute Full Episode)"
+  },
+  "title": {
+    "pt": "Aventura na Praia e Surf! 🏖️🏄‍♂️ O Castelo de Areia Gigante do Papai Vlad! | Funny Spitz Family",
+    "en": "The Beach and Surf Adventure! 🏖️🏄‍♂️ Daddy Vlad's Giant Sandcastle! | Funny Spitz Family"
+  },
+  "description": {
+    "pt": "A Família Spitz foi passar um dia ensolarado na praia! 🐾🏖️🏄‍♂️ Mamãe Raven organizou o piquenique tropical debaixo do guarda-sol colorido, Theo calculou a engenharia do maior castelo de areia da praia, Jonny procurou conchinhas douradas, Luna tirou fotos à beira-mar e o Papai Vlad tentou pegar uma onda na prancha de surf bem na frente do castelo de areia! Assista a esse episódio completo de 3 minutos com movimentos naturais e sincronia labial!\n\nInscreva-se no canal @FunnySpitzFamily e deixe seu like! 🐾❤️",
+    "en": "The Spitz Family went for a sunny day at the beach! 🐾🏖️🏄‍♂️ Mommy Raven set up a tropical picnic under the colorful umbrella, Theo engineered the biggest sandcastle on the shore, Jonny searched for golden seashells, Luna took seaside photos, and Daddy Vlad tried to surf a wave right in front of the sandcastle! Watch this full 3-minute comedy episode with natural movements and lip-sync!\n\nSubscribe to @FunnySpitzFamily and leave a like! 🐾❤️"
+  },
+  "tags": [
+    "Funny Spitz Family",
+    "Spitz Alemão",
+    "Lulu da Pomerânia",
+    "Pomeranian",
+    "Talking Dogs",
+    "Cachorros Falantes",
+    "Praia",
+    "Animação 3D Família"
+  ],
+  "seo": {
+    "pt": {
+      "title": "Aventura na Praia e Surf! 🏖️🏄‍♂️ O Castelo de Areia Gigante do Papai Vlad! | Funny Spitz Family",
+      "description": "A Família Spitz foi passar um dia ensolarado na praia! 🐾🏖️🏄‍♂️ Assista ao episódio completo de 3 minutos e inscreva-se no canal @FunnySpitzFamily!",
+      "tags": ["Funny Spitz Family", "Spitz Alemão", "Lulu da Pomerânia", "Praia", "Cachorros Falantes"],
+      "thumbnailText": "DIA DE PRAIA E SURF! 🏖️🏄‍♂️"
+    },
+    "en": {
+      "title": "The Beach and Surf Adventure! 🏖️🏄‍♂️ Daddy Vlad's Giant Sandcastle! | Funny Spitz Family",
+      "description": "The Spitz Family went for a sunny day at the beach! 🐾🏖️🏄‍♂️ Watch the full 3-minute episode and subscribe to @FunnySpitzFamily!",
+      "tags": ["Funny Spitz Family", "Pomeranian", "Talking Dogs", "Beach Adventure", "3D Dog Animation"],
+      "thumbnailText": "BEACH & SURF DAY! 🏖️🏄‍♂️"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00", "character": "NARRADOR", "mood": "happy_celebration", "sfx": "chime", "motion": "pan_right_zoom_in", "vfx": "sparkles", "imageFile": "scene_00.png",
+      "text": {
+        "pt": "O sol brilhou forte hoje e a Família Spitz chegou à praia de águas cristalinas para um dia inesquecível de férias e diversão!",
+        "en": "The sun is shining bright today and the Spitz Family has arrived at the crystal-clear beach for an unforgettable day of fun!"
+      }
+    },
+    {
+      "id": "01", "character": "RAVEN", "mood": "cozy", "sfx": "chime", "motion": "gentle_float", "vfx": "sparkles", "imageFile": "scene_01.png",
+      "text": {
+        "pt": "Meus amores, já abri o nosso guarda-sol listrado e preparei água de coco geladinha! Mas antes de correrem para a areia, vamos proteger as patinhas!",
+        "en": "My loves, I already opened our striped beach umbrella and prepared chilled coconut water! First let us protect our little paws from the warm sand!"
+      }
+    },
+    {
+      "id": "02", "character": "VLAD", "mood": "curious_pop", "sfx": "pop_click", "motion": "gentle_float", "vfx": "sparkles", "imageFile": "scene_02.png",
+      "text": {
+        "pt": "O papai trouxe a prancha de surf amarela e dezesseis baldinhos! Hoje eu vou construir o maior palácio de areia de todo o litoral!",
+        "en": "Daddy brought the yellow surfboard and sixteen beach buckets! Today I am going to build the biggest sand palace on the entire coast!"
+      }
+    },
+    {
+      "id": "03", "character": "THEO", "mood": "suspense_detective", "sfx": "whoosh_magnifying", "motion": "detective_pan", "vfx": "magnifying_glass", "imageFile": "scene_03.png",
+      "text": {
+        "pt": "Papai, para as torres do castelo de areia não desmoronarem, a proporção ideal é misturar três medidas de areia fina para uma de água do mar!",
+        "en": "Daddy, so the sandcastle towers do not collapse, the ideal formula is mixing three parts fine sand with one part ocean water!"
+      }
+    },
+    {
+      "id": "04", "character": "JONNY", "mood": "upbeat_dance", "sfx": "pop_click", "motion": "dance_bounce", "vfx": "sparkles", "imageFile": "scene_04.png",
+      "text": {
+        "pt": "Eu sou o encarregado de procurar conchinhas brilhantes na beira da água para decorar as janelas e a ponte levadiça do nosso castelo!",
+        "en": "I am in charge of searching for shiny seashells by the water edge to decorate the windows and drawbridge of our sandcastle!"
+      }
+    },
+    {
+      "id": "05", "character": "LUNA", "mood": "upbeat_dance", "sfx": "disco_drop", "motion": "dance_bounce", "vfx": "sparkles", "imageFile": "scene_05.png",
+      "text": {
+        "pt": "A brisa do mar está deixando o meu pelo super macio! Vou decorar a nossa cadeira de praia com flores tropicais para tirar fotos lindas!",
+        "en": "The ocean breeze is making my fur super soft! I am decorating our beach chair with tropical flowers to take gorgeous photos!"
+      }
+    },
+    {
+      "id": "06", "character": "VLAD", "mood": "upbeat_dance", "sfx": "pop_click", "motion": "dance_bounce", "vfx": "sparkles", "imageFile": "scene_06.png",
+      "text": {
+        "pt": "Olhem só a velocidade do papai cavando o fosso ao redor do castelo! Já levantamos quatro torres gigantes e uma muralha digna de rei!",
+        "en": "Just look at Daddy speed digging the moat around the castle! We already built four giant towers and a royal fortress wall!"
+      }
+    },
+    {
+      "id": "07", "character": "THEO", "mood": "curious_pop", "sfx": "chime", "motion": "gentle_float", "vfx": "magnifying_glass", "imageFile": "scene_07.png",
+      "text": {
+        "pt": "Pelos meus cálculos da tábua de marés, a maré está subindo dois centímetros por minuto! Precisamos construir uma barreira de proteção na frente!",
+        "en": "According to my tide chart calculations, the ocean tide is rising two centimeters per minute! We must build a protective barrier in front!"
+      }
+    },
+    {
+      "id": "08", "character": "JONNY", "mood": "comedy_boing", "sfx": "boing", "motion": "dance_bounce", "vfx": "sparkles", "imageFile": "scene_08.png",
+      "text": {
+        "pt": "Papai, olha o que eu achei perto das pedras! Um siri pequenininho que anda de lado! Acho que ele quer ser o guardião do nosso castelo!",
+        "en": "Daddy, look what I found near the rocks! A tiny little crab that walks sideways! I think he wants to be the guardian of our castle!"
+      }
+    },
+    {
+      "id": "09", "character": "RAVEN", "mood": "cozy", "sfx": "chime", "motion": "gentle_float", "vfx": "hearts", "imageFile": "scene_09.png",
+      "text": {
+        "pt": "Que castelo espetacular, família! Coloquei bandeirinhas coloridas no topo de cada torre e trouxe salada de frutas fresquinhas para os construtores!",
+        "en": "What a spectacular sandcastle, family! I placed colorful little flags on top of each tower and brought fresh fruit salad for the builders!"
+      }
+    },
+    {
+      "id": "10", "character": "VLAD", "mood": "upbeat_dance", "sfx": "yay_fanfare", "motion": "dance_bounce", "vfx": "sparkles", "imageFile": "scene_10.png",
+      "text": {
+        "pt": "Agora que o palácio de areia está pronto, chegou a hora do papai mostrar o seu talento secreto como surfista profissional nas ondas!",
+        "en": "Now that the sand palace is finished, it is time for Daddy to show off his secret talent as a professional surfer on the waves!"
+      }
+    },
+    {
+      "id": "11", "character": "LUNA", "mood": "tiptoe_suspense", "sfx": "whoosh_magnifying", "motion": "detective_pan", "vfx": "sparkles", "imageFile": "scene_11.png",
+      "text": {
+        "pt": "Papai, você tem certeza de que sabe ficar em pé nessa prancha escorregadia? As ondinhas da beirada estão bem rápidas hoje!",
+        "en": "Daddy, are you sure you know how to stand up on that slippery surfboard? The shore waves are moving pretty fast today!"
+      }
+    },
+    {
+      "id": "12", "character": "VLAD", "mood": "comedy_boing", "sfx": "boing", "motion": "crash_zoom_shake", "vfx": "shock_lines", "imageFile": "scene_12.png",
+      "text": {
+        "pt": "Observem o equilíbrio perfeito do papai na prancha... Opa! Uma marolinha bateu na prancha e eu estou deslizando direto para a areia!",
+        "en": "Watch Daddy perfect balance on the surfboard... Whoa! A little wave hit the board and I am sliding straight toward the sandy shore!"
+      }
+    },
+    {
+      "id": "13", "character": "THEO", "mood": "shock_mystery", "sfx": "dun_dun_dun", "motion": "crash_zoom_shake", "vfx": "shock_lines", "imageFile": "scene_13.png",
+      "text": {
+        "pt": "Cuidado, papai! A sua trajetória de deslize na prancha está apontando exatamente para a porta do nosso castelo de areia!",
+        "en": "Watch out, Daddy! Your surfboard sliding trajectory is pointing straight at the front gate of our giant sandcastle!"
+      }
+    },
+    {
+      "id": "14", "character": "VLAD", "mood": "comedy_boing", "sfx": "boing", "motion": "crash_zoom_shake", "vfx": "sparkles", "imageFile": "scene_14.png",
+      "text": {
+        "pt": "Freia, prancha, freia! Puxa vida, parei a um centímetro do fosso, mas voei direto dentro do monte de areia fofinha e fiquei todo empanado!",
+        "en": "Brake, surfboard, brake! Phew, I stopped one centimeter from the moat, but I landed right in the soft sand pile and got completely breaded!"
+      }
+    },
+    {
+      "id": "15", "character": "JONNY", "mood": "comedy_boing", "sfx": "boing", "motion": "dance_bounce", "vfx": "sparkles", "imageFile": "scene_15.png",
+      "text": {
+        "pt": "O Papai Vlad salvou o nosso castelo e ainda virou uma escultura de areia falante com óculos dourados e gravata borboleta!",
+        "en": "Daddy Vlad saved our sandcastle and turned himself into a talking sand sculpture wearing gold glasses and a bow tie!"
+      }
+    },
+    {
+      "id": "16", "character": "LUNA", "mood": "upbeat_dance", "sfx": "pop_click", "motion": "dance_bounce", "vfx": "sparkles", "imageFile": "scene_16.png",
+      "text": {
+        "pt": "Essa cena valeu a melhor foto das férias! O grande surfista protetor dos castelos de areia ao lado da nossa fortaleza intacta!",
+        "en": "That moment made the best vacation photo ever! The grand sandcastle-protecting surfer right beside our untouched fortress!"
+      }
+    },
+    {
+      "id": "17", "character": "RAVEN", "mood": "cozy", "sfx": "chime", "motion": "gentle_float", "vfx": "hearts", "imageFile": "scene_17.png",
+      "text": {
+        "pt": "Venha cá, meu surfista corajoso! Vamos sacudir essa areia do pelo e assistir juntos ao pôr do sol dourado refletindo nas ondas do mar!",
+        "en": "Come here, my brave surfer! Let us shake that sand off your fur and watch the golden sunset reflecting on the ocean waves together!"
+      }
+    },
+    {
+      "id": "18", "character": "VLAD", "mood": "happy_celebration", "sfx": "yay_fanfare", "motion": "gentle_float", "vfx": "confetti", "imageFile": "scene_18.png",
+      "text": {
+        "pt": "Nada melhor do que água de coco fresquinha, o nosso castelo de areia brilhando ao pôr do sol e a família mais divertida do mundo reunida!",
+        "en": "Nothing beats fresh coconut water, our sandcastle glowing in the sunset, and the most fun family in the world all together!"
+      }
+    },
+    {
+      "id": "19", "character": "FAMILIA", "mood": "happy_celebration", "sfx": "yay_fanfare", "motion": "celebration_zoom", "vfx": "confetti", "isFinale": true,
+      "banner": {
+        "pt": ["Férias com a Funny Spitz Family!", "Inscreva-se e deixe seu Like! 🐾🏖️🏄‍♂️"],
+        "en": ["Vacation with the Funny Spitz Family!", "Subscribe and leave a Like! 🐾🏖️🏄‍♂️"]
+      },
+      "imageFile": "scene_19.png",
+      "text": {
+        "pt": "Somos a Família Spitz! Você prefere construir castelo de areia ou pular ondas na praia? Deixe seu like e inscreva-se no nosso canal!",
+        "en": "We are the Spitz Family! Do you prefer building sandcastles or jumping waves at the beach? Leave a like and subscribe to our channel!"
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "episodeNumber": 13,
+  "series": "Especial_de_Natal",
+  "cycleDate": "2026-11-26",
+  "theme": {
+    "pt": "Acendendo a Árvore de Natal da Casa Azul pela Primeira Vez!",
+    "en": "Lighting Up the Blue House Christmas Tree for the Very First Time!"
+  },
+  "seo": {
+    "pt": {
+      "selectedTitle": "🎄 Acendendo a Árvore de Natal pela Primeira Vez! | Especial de Natal #13 #Shorts",
+      "description": "Chegou a noite mágica de acender todas as luzes da árvore de Natal da Família Spitz pela primeira vez! 🎄✨🐾 Veja a contagem regressiva e o brilho encantado na sala da Casa Azul! Inscreva-se no canal @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #EspecialDeNatal #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Especial de Natal",
+        "Árvore de Natal Iluminada",
+        "Spitz Alemão",
+        "Lulu da Pomerânia",
+        "Shorts de Natal"
+      ],
+      "thumbnailText": "NATAL SPITZ #13 ✨🎄"
+    },
+    "en": {
+      "selectedTitle": "🎄 Lighting Up the Christmas Tree for the First Time! | Christmas Special #13 #Shorts",
+      "description": "The magical night has arrived to light up the Spitz Family Christmas tree for the very first time! 🎄✨🐾 Watch the countdown and the golden glow inside the Blue House! Subscribe to @FunnySpitzFamily! 🎅❤️ #FunnySpitzFamily #ChristmasShorts #Shorts",
+      "tags": [
+        "Funny Spitz Family",
+        "Christmas Special",
+        "Christmas Tree Lights",
+        "Pomeranian Christmas",
+        "Cute Dogs",
+        "Holiday Shorts"
+      ],
+      "thumbnailText": "SPITZ XMAS #13 ✨🎄"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00",
+      "character": "NARRADOR",
+      "text": {
+        "pt": "Décimo terceiro dia do Especial de Natal! A árvore está pronta e chegou a hora de acender as luzes pela primeira vez!",
+        "en": "Day thirteen of our Christmas Special! The tree is decorated and it is time to turn on the lights for the very first time!"
+      },
+      "imageFile": "00_NARRADOR_Natal_9x16.png"
+    },
+    {
+      "id": "01",
+      "character": "RAVEN",
+      "text": {
+        "pt": "Apaguei as lâmpadas do teto da sala para que o brilho dourado do nosso pinheiro deixe tudo ainda mais mágico!",
+        "en": "I dimmed the living room ceiling lamps so the golden glow of our pine tree will make everything even more magical!"
+      },
+      "imageFile": "01_RAVEN_Natal_9x16.png"
+    },
+    {
+      "id": "02",
+      "character": "VLAD",
+      "text": {
+        "pt": "O papai está com a patinha pronta no interruptor principal! Preparem-se para a contagem regressiva oficial da Família Spitz!",
+        "en": "Daddy has his paw ready right on the main switch! Get ready for the official Spitz Family holiday countdown!"
+      },
+      "imageFile": "02_VLAD_Natal_9x16.png"
+    },
+    {
+      "id": "03",
+      "character": "JONNY",
+      "text": {
+        "pt": "Cinco, quatro, três, dois, um... Liga agora, papai! Quero ver a estrela brilhando lá no teto!",
+        "en": "Five, four, three, two, one... Turn it on right now, Daddy! I want to see the star shining up by the ceiling!"
+      },
+      "imageFile": "03_JONNY_Natal_9x16.png"
+    },
+    {
+      "id": "04",
+      "character": "LUNA",
+      "text": {
+        "pt": "Uau! Olhem como as bolinhas douradas e vermelhas refletem as luzinhas igual a milhares de estrelinhas na sala!",
+        "en": "Wow! Look how the golden and red ornaments reflect the little lights just like thousands of tiny stars in our room!"
+      },
+      "imageFile": "04_LUNA_Natal_9x16.png"
+    },
+    {
+      "id": "05",
+      "character": "THEO",
+      "text": {
+        "pt": "A luminosidade está tão forte e aconchegante que dá para ver a nossa árvore brilhando lá da calçada da Casa Azul!",
+        "en": "The brightness is so warm and cozy that you can see our Christmas tree glowing all the way from the Blue House sidewalk!"
+      },
+      "imageFile": "05_THEO_Natal_9x16.png"
+    },
+    {
+      "id": "06",
+      "character": "VLAD",
+      "text": {
+        "pt": "Com essa árvore iluminada, o trenó do Papai Noel vai encontrar a nossa casa até em noite de neblina!",
+        "en": "With this glowing Christmas tree, Santa Claus sleigh will find our house easily even on a foggy winter night!"
+      },
+      "imageFile": "06_VLAD_Natal_9x16.png"
+    },
+    {
+      "id": "07",
+      "character": "FAMILIA",
+      "isFinale": true,
+      "banner": {
+        "pt": [
+          "🎄 Especial de Natal Spitz!",
+          "Inscreva-se no Canal! 🐾✨"
+        ],
+        "en": [
+          "🎄 Spitz Christmas Special!",
+          "Subscribe Now! 🐾✨"
+        ]
+      },
+      "text": {
+        "pt": "Você já acendeu as luzes de Natal da sua casa? Deixe seu like e inscreva-se no canal da Família Spitz!",
+        "en": "Have you turned on your Christmas lights at home yet? Leave a like and subscribe to the Spitz Family channel!"
+      },
+      "imageFile": "07_FAMILIA_Natal_9x16.png"
+    }
+  ]
+}

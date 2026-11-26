@@ -1,0 +1,93 @@
+{
+  "episodeNumber": 13,
+  "series": "Série_Normal_9x16_Shorts",
+  "theme": {
+    "pt": "O Castelo de Areia Gigante e o Surf do Papai Vlad na Praia!",
+    "en": "Daddy Vlad's Giant Sandcastle and Surfing at the Beach!"
+  },
+  "title": {
+    "pt": "O Castelo de Areia e o Surf do Papai Vlad na Praia! 🏖️🏄‍♂️ #Shorts",
+    "en": "Daddy Vlad's Sandcastle & Surfing at the Beach! 🏖️🏄‍♂️ #Shorts"
+  },
+  "description": {
+    "pt": "A Família Spitz foi passar o dia na praia! 🐾🏖️🏄‍♂️ Veja o castelo de areia gigante que eles construíram e a manobra maluca do Papai Vlad na prancha de surf! Inscreva-se no canal @FunnySpitzFamily! 🐾❤️ #Shorts #SpitzAlemao #Pomeranian #FunnyDogs",
+    "en": "The Spitz Family spent a sunny day at the beach! 🐾🏖️🏄‍♂️ Check out their giant sandcastle and Daddy Vlad's funny surfboard slide! Subscribe to @FunnySpitzFamily! 🐾❤️ #Shorts #Pomeranian #TalkingDogs"
+  },
+  "tags": ["Shorts", "Funny Spitz Family", "Spitz Alemão", "Lulu da Pomerânia", "Pomeranian", "Praia"],
+  "seo": {
+    "pt": {
+      "title": "O Castelo de Areia e o Surf do Papai Vlad na Praia! 🏖️🏄‍♂️ #Shorts",
+      "description": "A Família Spitz foi passar o dia na praia! 🐾🏖️🏄‍♂️ Inscreva-se no canal @FunnySpitzFamily!",
+      "tags": ["Shorts", "Funny Spitz Family", "Spitz Alemão", "Lulu da Pomerânia"],
+      "thumbnailText": "SURF DO VLAD! 🏖️🏄‍♂️"
+    },
+    "en": {
+      "title": "Daddy Vlad's Sandcastle & Surfing at the Beach! 🏖️🏄‍♂️ #Shorts",
+      "description": "The Spitz Family spent a sunny day at the beach! 🐾🏖️🏄‍♂️ Subscribe to @FunnySpitzFamily!",
+      "tags": ["Shorts", "Funny Spitz Family", "Pomeranian", "Talking Dogs"],
+      "thumbnailText": "VLAD BEACH SURF! 🏖️🏄‍♂️"
+    }
+  },
+  "scenes": [
+    {
+      "id": "00", "character": "NARRADOR", "imageFile": "scene_00.png",
+      "text": {
+        "pt": "Dia de sol radiante e a Família Spitz chegou à praia para construir um castelo de areia gigante!",
+        "en": "It is a bright sunny day and the Spitz Family arrived at the beach to build a giant sandcastle!"
+      }
+    },
+    {
+      "id": "01", "character": "RAVEN", "imageFile": "scene_01.png",
+      "text": {
+        "pt": "Abri o nosso guarda-sol colorido e trouxe água de coco geladinha para toda a família!",
+        "en": "I opened our colorful beach umbrella and brought chilled coconut water for the whole family!"
+      }
+    },
+    {
+      "id": "02", "character": "THEO", "imageFile": "scene_03.png",
+      "text": {
+        "pt": "Calculamos a mistura perfeita de areia e água para levantar quatro torres gigantes no nosso castelo!",
+        "en": "We calculated the perfect mix of sand and water to raise four giant towers on our sandcastle!"
+      }
+    },
+    {
+      "id": "03", "character": "JONNY", "imageFile": "scene_04.png",
+      "text": {
+        "pt": "E eu decorei todas as janelas e a ponte do castelo com conchinhas douradas do mar!",
+        "en": "And I decorated all the castle windows and bridge with golden seashells from the shore!"
+      }
+    },
+    {
+      "id": "04", "character": "VLAD", "imageFile": "scene_10.png",
+      "text": {
+        "pt": "Agora observem o talento do papai surfando na prancha amarela... Opa, a prancha escorregou!",
+        "en": "Now watch Daddy surf on the yellow surfboard... Whoa, the surfboard is sliding away!"
+      }
+    },
+    {
+      "id": "05", "character": "VLAD", "imageFile": "scene_14.png",
+      "text": {
+        "pt": "Desviei do castelo no último segundo e caí direto no monte de areia fofinha!",
+        "en": "I dodged the sandcastle at the last second and landed right in the soft sand pile!"
+      }
+    },
+    {
+      "id": "06", "character": "LUNA", "imageFile": "scene_16.png",
+      "text": {
+        "pt": "O papai salvou o nosso castelo e virou uma escultura de areia falante de gravata borboleta!",
+        "en": "Daddy saved our sandcastle and turned into a talking sand sculpture wearing a bow tie!"
+      }
+    },
+    {
+      "id": "07", "character": "FAMILIA", "isFinale": true, "imageFile": "scene_19.png",
+      "banner": {
+        "pt": ["Férias Funny Spitz Family!", "Inscreva-se no Canal! 🐾🏖️"],
+        "en": ["Funny Spitz Family Beach!", "Subscribe Now! 🐾🏖️"]
+      },
+      "text": {
+        "pt": "Você gosta de ir à praia com a família? Deixe seu like e inscreva-se no nosso canal!",
+        "en": "Do you love going to the beach with your family? Leave a like and subscribe to our channel!"
+      }
+    }
+  ]
+}
