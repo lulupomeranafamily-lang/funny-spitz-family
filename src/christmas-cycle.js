@@ -269,8 +269,10 @@ const CHRISTMAS_SCENE_BANK = {
     "assets/christmas_scenes/raven_dining_table_christmas.jpg"
   ],
   VLAD: [
+    "assets/christmas_scenes/vlad_christmas_portrait.jpg",
     "assets/christmas_scenes/vlad_living_room_tree.jpg",
-    "assets/christmas_scenes/vlad_santa_armchair.jpg"
+    "assets/christmas_scenes/vlad_santa_armchair.jpg",
+    "assets/christmas_scenes/vlad_christmas_closeup.jpg"
   ],
   LUNA: [
     "assets/christmas_scenes/luna_hallway_wreath.jpg",
@@ -335,6 +337,10 @@ export async function runChristmasSpecialCycle({ publishNow = false } = {}) {
   });
 
   episodeData.series = "Especial_de_Natal";
+  const clipsDir = path.join(epFolder, "clips");
+  fs.mkdirSync(clipsDir, { recursive: true });
+  const wan22VladClip = path.resolve("episodes/teste_realismo/wan22_raw_vlad.mp4");
+
   const charCounter = {};
   for (let idx = 0; idx < episodeData.scenes.length; idx++) {
     const s = episodeData.scenes[idx];
@@ -347,28 +353,19 @@ export async function runChristmasSpecialCycle({ publishNow = false } = {}) {
 
     const imgOut = path.join(imagesDir, s.imageFile);
     if (!fs.existsSync(imgOut)) {
-      const christmasPrompt =
-        s.imagePrompt ||
-        `${
-          CHARACTERS[roleKey]?.visual || "family of five fluffy Pomeranian dogs"
-        }, magical Christmas holiday setting with pine garlands, warm fairy lights, ornaments and snow outside, acting out: "${
-          s.text?.en || episodeData.theme.en
-        }"`;
-      try {
-        await generateUniqueSceneImage({
-          prompt: christmasPrompt,
-          aspectRatio: "9:16",
-          outPath: imgOut,
-          seed: 70000 + nextNum * 1000 + idx * 41
-        });
-      } catch (err) {
-        console.warn(`⚠️ Contingência natalina na cena ${s.id}: ${err.message}`);
-        assignVariedChristmasScene({
-          character: roleKey,
-          charUsageCount: usage,
-          episodeNumber: nextNum,
-          outPath: imgOut
-        });
+      assignVariedChristmasScene({
+        character: roleKey,
+        charUsageCount: usage,
+        episodeNumber: nextNum,
+        outPath: imgOut
+      });
+    }
+
+    // Se for a primeira cena do Papai Vlad e o clipe 3D real Wan 2.2 14B estiver disponível, usa o clipe 3D com Lip-Sync Suave!
+    if (roleKey === "VLAD" && usage === 0 && fs.existsSync(wan22VladClip)) {
+      const targetClip = path.join(clipsDir, `scene_${s.id}.mp4`);
+      if (!fs.existsSync(targetClip)) {
+        fs.copyFileSync(wan22VladClip, targetClip);
       }
     }
   }
@@ -412,6 +409,9 @@ export async function runChristmasSpecialCycle({ publishNow = false } = {}) {
     );
   }
 
+  // Regra solicitada pelo usuário: publicação imediata até 28/11/2026 para validação; a partir de 29/11/2026 volta ao horário programado
+  const shouldSchedule = !publishNow && cycleDate >= "2026-11-29";
+
   const ptUpload = await uploadVideoToYouTube({
     videoPath: ptResult.videoPath,
     thumbnailPath: ptResult.thumbnailPath,
@@ -419,7 +419,7 @@ export async function runChristmasSpecialCycle({ publishNow = false } = {}) {
     description: episodeData.seo.pt.description,
     tags: episodeData.seo.pt.tags,
     defaultLanguage: "pt-BR",
-    publishAtIso: publishNow ? null : `${cycleDate}T12:00:00-03:00`,
+    publishAtIso: shouldSchedule ? `${cycleDate}T12:00:00-03:00` : null,
     madeForKids: true
   });
 
@@ -430,7 +430,7 @@ export async function runChristmasSpecialCycle({ publishNow = false } = {}) {
     description: episodeData.seo.en.description,
     tags: episodeData.seo.en.tags,
     defaultLanguage: "en-US",
-    publishAtIso: publishNow ? null : `${cycleDate}T20:00:00-03:00`,
+    publishAtIso: shouldSchedule ? `${cycleDate}T20:00:00-03:00` : null,
     madeForKids: true
   });
 

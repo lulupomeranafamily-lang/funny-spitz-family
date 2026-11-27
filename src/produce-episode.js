@@ -284,17 +284,18 @@ export async function produceEpisodeForLanguage({ episodeData, episodeDir, asset
     const svgBuffer = buildOverlaySvg({ scene, lang, isChristmas });
     await sharp(svgBuffer).png().toFile(overlayPng);
 
-    // 4. Renderiza clipe MP4 30fps da cena com Lip-Sync (boca articulada sincronizada com a voz + piscar de olhos + giro 3D de cabeça!)
+    // 4. Renderiza clipe MP4 30fps da cena com Lip-Sync Suave e Natural (0% distorção de fundo) sobre cena 3D integrada ou clipe 3D
     const fps = 30;
     const totalFrames = Math.ceil(durationSec * fps);
-    const backgroundsDir = path.join(episodeDir, "backgrounds");
-    const bgForLipSync = fs.existsSync(path.join(backgroundsDir, `bg_${scene.id}.png`))
-      ? path.join(backgroundsDir, `bg_${scene.id}.png`)
+    const clipsDir = path.join(episodeDir, "clips");
+    const real3dClipPath = path.join(clipsDir, `scene_${scene.id}.mp4`);
+    const bgForLipSync = (fs.existsSync(real3dClipPath) && fs.statSync(real3dClipPath).size > 20000)
+      ? real3dClipPath
       : baseCleanPng;
 
-    const realMotionClip = path.join(workDir, `scene_${scene.id}_lipsync9x16_${lang}.mp4`);
+    const realMotionClip = path.join(workDir, `scene_${scene.id}_smoothmouth9x16_${lang}.mp4`);
     if (!fs.existsSync(realMotionClip) || fs.statSync(realMotionClip).size < 10000) {
-      console.log(`   👄 [9:16 ${lang.toUpperCase()}] Renderizando Lip-Sync 30fps (boca + olhos + cabeça 3D) sincronizado com a voz: Cena ${scene.id} (${scene.character})`);
+      console.log(`   👄 [9:16 ${lang.toUpperCase()}] Renderizando Lip-Sync Suave 30fps (0% distorção de fundo) sincronizado com a voz: Cena ${scene.id} (${scene.character})`);
       await renderLipSyncSceneClip({
         character: scene.character,
         sceneIndex: Number(scene.id) || 0,

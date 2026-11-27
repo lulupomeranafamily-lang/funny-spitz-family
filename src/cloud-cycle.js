@@ -282,7 +282,9 @@ async function runDailyCloudCycle() {
     lang: "en"
   });
 
-  // Etapa 6: Publicação e Agendamento Automático (07:00 e 18:00 America/Sao_Paulo)
+  // Etapa 6: Publicação (imediata até 28/11/2026 para validação; a partir de 29/11/2026 volta ao agendamento 07:00 e 18:00 America/Sao_Paulo)
+  const shouldSchedule = cycleDate >= "2026-11-29";
+
   const ptUpload = await uploadVideoToYouTube({
     videoPath: ptResult.videoPath,
     thumbnailPath: ptResult.thumbnailPath,
@@ -290,7 +292,7 @@ async function runDailyCloudCycle() {
     description: episodeData.seo.pt.description,
     tags: episodeData.seo.pt.tags,
     defaultLanguage: "pt-BR",
-    publishAtIso: `${cycleDate}T07:00:00-03:00`,
+    publishAtIso: shouldSchedule ? `${cycleDate}T07:00:00-03:00` : null,
     madeForKids: true
   });
 
@@ -301,7 +303,7 @@ async function runDailyCloudCycle() {
     description: episodeData.seo.en.description,
     tags: episodeData.seo.en.tags,
     defaultLanguage: "en-US",
-    publishAtIso: `${cycleDate}T18:00:00-03:00`,
+    publishAtIso: shouldSchedule ? `${cycleDate}T18:00:00-03:00` : null,
     madeForKids: true
   });
 

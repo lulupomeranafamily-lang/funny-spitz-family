@@ -398,18 +398,18 @@ export async function produceLongEpisode16x9({ episodeData, episodeDir, lang }) 
     const svgBuffer = buildWidescreenVfxAndOverlaySvg({ scene, lang });
     await sharp(svgBuffer).png().toFile(overlayPng);
 
-    // 4. Renderiza clipe 30fps com Lip-Sync (boca articulada sincronizada com a voz + piscar de olhos + giro 3D de cabeça)
+    // 4. Renderiza clipe 30fps com Lip-Sync Suave e Natural (0% distorção de fundo) sobre cena 3D integrada ou clipe 3D
     const clipsDir = path.join(episodeDir, "clips");
-    const backgroundsDir = path.join(episodeDir, "backgrounds");
     fs.mkdirSync(clipsDir, { recursive: true });
 
-    const bgForLipSync = fs.existsSync(path.join(backgroundsDir, `bg_${scene.id}.png`))
-      ? path.join(backgroundsDir, `bg_${scene.id}.png`)
+    const real3dClipPath = path.join(clipsDir, `scene_${scene.id}.mp4`);
+    const bgForLipSync = (fs.existsSync(real3dClipPath) && fs.statSync(real3dClipPath).size > 20000)
+      ? real3dClipPath
       : baseCleanPng;
 
-    const langLipSyncClip = path.join(workDir, `scene_${scene.id}_lipsync_${lang}.mp4`);
+    const langLipSyncClip = path.join(workDir, `scene_${scene.id}_smoothmouth16x9_${lang}.mp4`);
     if (!fs.existsSync(langLipSyncClip) || fs.statSync(langLipSyncClip).size < 10000) {
-      console.log(`   👄 [${lang.toUpperCase()}] Renderizando Lip-Sync 30fps (boca + olhos + cabeça 3D) sincronizado com a voz: Cena ${scene.id} (${scene.character})`);
+      console.log(`   👄 [${lang.toUpperCase()}] Renderizando Lip-Sync Suave 30fps (0% distorção de fundo) sincronizado com a voz: Cena ${scene.id} (${scene.character})`);
       await renderLipSyncSceneClip({
         character: scene.character,
         sceneIndex: Number(scene.id) || 0,
@@ -424,7 +424,7 @@ export async function produceLongEpisode16x9({ episodeData, episodeDir, lang }) 
     }
     let realMotionVideoPath = langLipSyncClip;
 
-    const fps = 25;
+    const fps = 30;
     const totalFrames = Math.ceil(durationSec * fps);
     const segmentMp4 = path.join(workDir, `scene_${scene.id}_segment16x9.mp4`);
 

@@ -53,18 +53,21 @@ function ensureFuturePublishAt(isoString) {
 }
 
 /**
- * Carrega cliente OAuth2 autenticado para YouTube Data API v3
+ * Carrega cliente OAuth2 autenticado para YouTube Data API v3 de acordo com o idioma
+ * language = "pt-BR" (Canal Principal @FunnySpitzFamily) ou "en-US" (Canal @FunnySpitzFamilyEN)
  */
-export async function getAuthenticatedClient() {
+export async function getAuthenticatedClient(language = "pt-BR") {
+  const isEnglish = String(language).toLowerCase().startsWith("en");
+  const specificTokenName = isEnglish ? "youtube_token_en.json" : "youtube_token_pt.json";
+  const tokenPath = path.join(CONFIG_DIR, specificTokenName);
+  const fallbackTokenPath = path.join(CONFIG_DIR, "youtube_token.json");
+
   // Suporte para execução 100% em Nuvem (GitHub Actions Secrets)
-  if (process.env.YOUTUBE_CLIENT_SECRET_JSON && process.env.YOUTUBE_TOKEN_JSON) {
+  if (process.env.YOUTUBE_CLIENT_SECRET_JSON) {
     fs.mkdirSync(CONFIG_DIR, { recursive: true });
     const envCredsPath = path.join(CONFIG_DIR, "client_secret.json");
     if (!fs.existsSync(envCredsPath)) {
       fs.writeFileSync(envCredsPath, process.env.YOUTUBE_CLIENT_SECRET_JSON, "utf-8");
-    }
-    if (!fs.existsSync(TOKEN_PATH)) {
-      fs.writeFileSync(TOKEN_PATH, process.env.YOUTUBE_TOKEN_JSON, "utf-8");
     }
   }
 
@@ -90,9 +93,11 @@ export async function getAuthenticatedClient() {
     "http://localhost:48888/oauth2callback"
   );
 
-  if (fs.existsSync(TOKEN_PATH)) {
+  const activeTokenPath = fs.existsSync(tokenPath) ? tokenPath : (fs.existsSync(fallbackTokenPath) ? fallbackTokenPath : null);
+
+  if (activeTokenPath) {
     try {
-      const token = JSON.parse(fs.readFileSync(TOKEN_PATH, "utf-8"));
+      const token = JSON.parse(fs.readFileSync(activeTokenPath, "utf-8"));
       oauth2Client.setCredentials(token);
       await oauth2Client.getAccessToken();
       return oauth2Client;
@@ -101,7 +106,7 @@ export async function getAuthenticatedClient() {
         `⚠️ Token OAuth expirado (${err.message}). Iniciando renovação automática no navegador...`
       );
       try {
-        fs.unlinkSync(TOKEN_PATH);
+        fs.unlinkSync(activeTokenPath);
       } catch {}
     }
   }
@@ -112,9 +117,10 @@ export async function getAuthenticatedClient() {
     scope: SCOPES
   });
 
+  const channelLabel = isEnglish ? "@FunnySpitzFamilyEN" : "@FunnySpitzFamily";
   console.log("\n========================================================");
-  console.log("🔑 AUTORIZAÇÃO DO YOUTUBE (NECESSÁRIA APENAS 1 VEZ)");
-  console.log("Abra este link no navegador e selecione o canal @FunnySpitzFamily:");
+  console.log(`🔑 AUTORIZAÇÃO DO YOUTUBE PARA O CANAL ${channelLabel}`);
+  console.log(`Abra este link no navegador e selecione o canal ${channelLabel}:`);
   console.log(authUrl);
   console.log("========================================================\n");
 
@@ -125,7 +131,7 @@ export async function getAuthenticatedClient() {
       if (authCode) {
         res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
         res.end(
-          "<h2>✅ Canal Funny Spitz Family conectado com sucesso! Você já pode fechar esta janela e voltar ao Antigravity.</h2>"
+          `<h2>✅ Canal ${channelLabel} conectado com sucesso! Você já pode fechar esta janela e voltar ao Antigravity.</h2>`
         );
         server.close();
         resolve(authCode);
@@ -143,9 +149,7 @@ export async function getAuthenticatedClient() {
           detached: true,
           stdio: "ignore"
         }).unref();
-      } catch {
-        // Caso não abra automaticamente, o link já está impresso no console
-      }
+      } catch {}
     });
     server.on("error", reject);
   });
@@ -153,9 +157,9 @@ export async function getAuthenticatedClient() {
   const { tokens } = await oauth2Client.getToken(code);
   oauth2Client.setCredentials(tokens);
   fs.mkdirSync(CONFIG_DIR, { recursive: true });
-  fs.writeFileSync(TOKEN_PATH, JSON.stringify(tokens, null, 2), "utf-8");
+  fs.writeFileSync(tokenPath, JSON.stringify(tokens, null, 2), "utf-8");
   console.log(
-    `✅ Token salvo em ${TOKEN_PATH}! Os próximos uploads serão 100% automáticos.`
+    `✅ Token salvo em ${tokenPath}! Os próximos uploads para ${channelLabel} serão 100% automáticos.`
   );
   return oauth2Client;
 }
@@ -173,7 +177,7 @@ export async function uploadVideoToYouTube({
   publishAtIso = null,
   madeForKids = true
 }) {
-  const auth = await getAuthenticatedClient();
+  const auth = await getAuthenticatedClient(defaultLanguage);
   const youtube = google.youtube({ version: "v3", auth });
 
   const validPublishAt = ensureFuturePublishAt(publishAtIso);
